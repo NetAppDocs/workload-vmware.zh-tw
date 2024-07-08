@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: connect-sddc-to-fsx.html 
+keywords: vm workloads, fsx for ontap, sddc, vmware cloud on aws 
+summary: 部署適用於 ONTAP 檔案系統的 FSX 之後、您需要將該系統連線至 AWS 基礎架構上的 VMware Cloud 。您的 SDDC 提供網路選項、可透過 VPC 對等功能將網路連線延伸至外部 NFS 儲存磁碟區、以連線至 ONTAP 檔案系統的 FSx 。 
+---
+= 將適用於 ONTAP 檔案系統的 FSX 連線至 AWS 上的 VMware Cloud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+為 ONTAP 檔案系統部署 FSX 之後、您需要將該系統連線至 AWS 基礎架構上的 VMware Cloud 。您的軟體定義資料中心（ SDDC ）提供網路選項、可透過 VPC 對等功能將網路連線延伸至外部 NFS 儲存磁碟區、連接至適用於 ONTAP 檔案系統的 FSx 。
+
+https://vmc.techzone.vmware.com/fsx-guide?check_logged_in=1#amazon-vpc-peering["如需詳細資訊、請參閱 Amazon VPC 對等記錄"^]
+
+下圖顯示如何使用 VPC 對等功能、將單一可用性區域（ AZ ） SDDC 叢集連接至適用於 ONTAP 單一 AZ 部署的 FSX 。
+
+image:diagram-vpc-connect-vmware-fsx.png["顯示如何使用 VPC 對等連接將單一 AZ SDDC 叢集連接至 ONTAP 單一 AZ 部署的 FSX 的圖表。"]

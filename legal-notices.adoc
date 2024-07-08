@@ -1,0 +1,54 @@
+---
+permalink: legal-notices.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 法律聲明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+法律聲明提供版權聲明、商標、專利等存取權限。
+
+
+
+== 版權
+
+link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
+
+
+
+== 商標
+
+NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。
+
+link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/company/legal/trademarks/"^]
+
+
+
+== 專利
+
+如需最新的 NetApp 擁有專利清單、請參閱：
+
+link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf"^]
+
+
+
+== 隱私權政策
+
+link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
+
+
+
+== 開放原始碼
+
+通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
+
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["工作負載工廠"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["適用於資料庫的 Workload Factory"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["GenAI 的工作負載工廠"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["VMware 工作負載工廠"^]
+

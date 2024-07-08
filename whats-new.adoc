@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。 
+---
+= 新功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解 VMware Cloud 移轉顧問工作負載工廠元件的新功能。
+
+
+
+== 2024 年 7 月 7 日
+
+
+
+=== VMware Workload Factory 的初始版本
+
+初始版本包含使用 VMware 移轉顧問來分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS 上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。

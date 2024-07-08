@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: migrate-data.html 
+keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
+summary: 使用 VMware 混合雲延伸等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP Volume 的 FSX 。VMware HCX 核心功能可讓您以透明方式將工作負載從內部部署資料中心移轉至 SDDC 。 
+---
+= 將資料移轉至新的基礎架構
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 VMware 混合雲延伸（ HCX ）等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。VMware HCX 核心功能可讓您以透明的方式、將工作負載從內部部署資料中心移轉至軟體定義資料中心（ SDDC ）。
+
+https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["如需詳細資訊、請參閱 VMware HCX 文件"^]
+
+.接下來呢？
+現在您已將資料移轉至 AWS 上的 VMware Cloud 、以及 NetApp ONTAP 外部資料存放區的 Amazon FSX 、您可以備份和保護 FSX for ONTAP 檔案系統上的重要資料、以確保資料永遠可用。
+
+如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 的支援文件"] 以檢視您可以使用的備份與保護功能。

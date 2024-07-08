@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。 
+---
+= 擷取您目前的 VM 組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。
+
+如果您計畫根據先前儲存在本機的現有部署計畫來部署新系統、您可以跳過此步驟、然後選取現有的部署計畫。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["瞭解如何使用現有計畫來建立新計畫"]。
+
+[role="tabbed-block"]
+====
+.使用移轉顧問 VM 收集器指令碼
+--
+NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。
+
+您必須啟動移轉顧問、才能從 Codebox 視窗複製移轉顧問 VM 收集器指令碼。
+
+.開始之前
+執行收集器指令碼的系統必須符合下列需求：
+
+* 必須安裝 Microsoft PowerShell 7.0 或更新版本。如果您需要安裝 PowerShell 、請參閱 https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Microsoft PowerShell 文件"^] 。
+* 必須安裝 VMware PowerCLI 。如果您需要安裝 PowerCLI 、請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["VMware PowerCLI 文件"^] 。
+* 必須停用 SSL 憑證檢查。
+* PowerShell 必須允許執行未簽署的指令碼。
+
+
+請注意、如果您計畫從虛擬機器擷取長期統計資料（每日統計資料）、則必須在 vSphere 管理主控台（ VMware 管理環境）中啟用第 3 級或更高層級的統計資料。
+
+.步驟
+. 登入 Workload Factory 。
+. 在 VMware 方塊中、選取 * 規劃與部署 * 。
++
+image:screenshot-choose-method.png["您可以用來收集目前 VM 組態資訊的各種方法的螢幕擷取畫面。"]
+
+. 選取 * 建立新的部署計畫 * 、選取 * 使用移轉顧問 VMware 資料收集器 * 選項、然後選取 * 下一步 * 。
++
+隨即顯示 * 準備 VMware Cloud on AWS 移轉 * 頁面。
+
+. 在 Codebox 視窗中、選取 image:button-download-codebox.png["下載按鈕"] 以將移轉顧問 VM 收集器指令碼（名為「 list-vms.ps1 」）儲存至目標系統、或選取 image:button-copy-codebox.png["複製按鈕"] 以複製指令碼、以便將其貼到適當的系統上。
+. 請依照下列步驟擷取目前虛擬機器的組態：
++
+.. 登入您下載資料收集器的系統、並在其中安裝 PowerShell 和 PowerCLI 。
+.. 執行下列命令以連線至 VMware vCenter 伺服器：
++
+ Connect-VIServer -server <server_IP>
++
+將 <server_IP> 取代為 VMware 伺服器的 IP 位址或主機名稱。
+
+.. 執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+其中：
+
++
+*** *true* 會收集過去 24 小時的 IOPS 和處理量資料、每隔 5 分鐘收集一次
+*** *FALSE* 會收集過去 1 小時的 IOPS 與處理量資料、每隔 20 秒。
+
+
+
+
+
+
+.結果
+指令碼會輸出在目前工作目錄中命名的 CSV 檔案 `list-vms-yyyy-MM-dd-HH-mm-ss.csv` 。CSV 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。
+
+--
+.使用 RVTools 軟體
+--
+RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。
+
+https://www.robware.net/home["深入瞭解 RVTools"^]
+
+.步驟
+. 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
+. 啟動 RVTools 並登入目標 vCenter Server 。
++
+這會擷取有關 vCenter Server 的資訊。
+
+. 將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。
++
+如需詳細資訊、請參閱中的「命令列參數」一章 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^] 。
+
+
+
+.結果
+包含您結果的 xlsx 或 xls 檔案會儲存至您的工作目錄。
+
+--
+====
+.接下來呢？
+link:launch-onboarding-advisor.html["使用移轉顧問建立部署計畫"]。

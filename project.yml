@@ -1,0 +1,48 @@
+---
+settings:
+  name: VMware workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: VMware 工作負載文件
+    url: "/index.html"
+  - title: 版本資訊
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+  - title: 開始使用
+    entries:
+    - title: 瞭解 VMware 工作負載工廠
+      url: "/learn-about-vmware-workloads.html"
+    - title: 快速入門
+      url: "/quick-start.html"
+  - title: 使用 VMware 移轉顧問
+    entries:
+    - title: 擷取您目前的 VM 組態
+      url: "/capture-vm-configurations.html"
+    - title: 使用移轉顧問建立部署計畫
+      url: "/launch-onboarding-advisor.html"
+    - title: 部署 ONTAP 檔案系統的建議 FSX
+      url: "/deploy-fsx-file-system.html"
+    - title: 將適用於 ONTAP 的 FSX 連接至 AWS 上的 VMware Cloud
+      url: "/connect-sddc-to-fsx.html"
+    - title: 將資料移轉至新的基礎架構
+      url: "/migrate-data.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/support-registration.html"
+    - title: 取得協助
+      url: "/get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

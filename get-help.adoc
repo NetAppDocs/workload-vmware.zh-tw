@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。 
+---
+= 取得協助
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。
+
+
+
+== 取得適用於 ONTAP 的 FSX 支援
+
+如需與適用於 ONTAP 的 FSX 、其基礎架構或使用服務的任何解決方案相關的技術支援、請參閱該產品的工作負載工廠文件中的「取得說明」。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
+
+若要獲得工作負載工廠及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。
+
+
+
+== 使用自我支援選項
+
+這些選項可供免費使用、一天24小時、一週7天：
+
+* 文件
++
+您目前正在檢視的 Workload Factory 文件。
+
+* https://kb.netapp.com["知識庫"^]
++
+搜尋 Workload Factory 知識庫、尋找有助於疑難排解問題的文章。
+
+* http://community.netapp.com/["社群"^]
++
+加入 Workload Factory 社群、追蹤後續的討論或建立新的討論。
+
+
+
+
+
+== 利用NetApp支援建立案例
+
+除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。
+
+.開始之前
+若要使用 * 建立案例 * 功能、您必須先註冊以取得支援。 將您的 NetApp 支援網站認證與工作負載工廠登入建立關聯。link:support-registration.html["瞭解如何註冊以取得支援"]。
+
+.步驟
+. 在 Workload Factory 主控台的右上角、選取 * 說明 > Support* 。
++
+選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
+
+. 在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：
++
+.. 如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。
+.. 選擇 * 建立案例 * 、與 NetApp 支援專家一起開啟 Ticket ：
++
+*** * 服務 * ：選擇 * 工作負載工廠 * 。
+*** *案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。
++
+若要深入瞭解這些優先順序、請將滑鼠游標暫留在欄位名稱旁的資訊圖示上。
+
+*** *問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。
+*** *其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。
+*** * 附件（選填） * ：上傳最多五個附件、一次上傳一個。
++
+每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["「建立案例」表單的快照、可讓您使用NetApp支援建立案例。"]
+
+
+
+.完成後
+您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。
+
+如需支援案例的記錄、您可以選取 * 設定 > 時間軸 * 、然後尋找名為「建立支援案例」的動作。最右側的按鈕可讓您展開動作以查看詳細資料。
+
+嘗試建立案例時、可能會遇到下列錯誤訊息：
+
+"您無權針對所選服務建立案例"
+
+此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以使用下列其中一個選項尋求協助：
+
+* 使用產品內對談
+* 請至提交非技術案例 https://mysupport.netapp.com/site/help[]
+
+
+
+
+== 管理支援案例（預覽）
+
+您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。
+
+案例管理可透過預覽取得。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。
+
+請注意下列事項：
+
+* 頁面頂端的案例管理儀表板提供兩種檢視：
++
+** 左側檢視顯示您所提供的使用者nssc帳戶在過去3個月內開啟的個案總數。
+** 右側檢視顯示過去3個月內、貴公司層級根據您的使用者nssc帳戶所開啟的個案總數。
+
+
++
+表格中的結果會反映您所選檢視的相關個案。
+
+* 您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。
++
+如需詳細資料、請參閱下列步驟。
+
+* 在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。
+
+
+.步驟
+. 在 Workload Factory 主控台的右上角、選取 * 說明 > Support* 。
++
+選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
+
+. 選取 * 個案管理 * 、如果出現提示、請將您的 NSS 帳戶新增至 BlueXP 。
++
+「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。
+
+. （可選）修改表格中顯示的資訊：
++
+** 在 * 組織案例 * 下、選取 * 檢視 * 以檢視與貴公司相關的所有案例。
+** 選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。"]
+
+** 篩選欄的內容。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。"]
+
+** 選取要顯示的欄、然後選擇要顯示的欄、即可變更表格中 image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["出現在表格中的加號圖示"] 顯示的欄。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["顯示可在表格中顯示之欄的快照。"]
+
+
+
+. 選取並選取其中一個可用選項、以管理現有案例 image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["表格最後一欄中出現三個點的圖示"] ：
++
+** *檢視案例*：檢視特定案例的完整詳細資料。
+** * 更新案例附註 * ：提供問題的其他詳細資料、或選擇 * 上傳檔案 * 最多附加五個檔案。
++
+每個檔案的附件上限為 25 MB 。支援下列副檔名： txt 、 log 、 pdf 、 jpg/jpeg 、 rtf 、 doc/dox 、 xls/xlsx 和 csv 。
+
+** * 結案案例 * ：提供結案原因的詳細資料、並選取 * 結案案例 * 。
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。"]
+
+

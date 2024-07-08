@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Workload Factory for VMware 提供工具、可將資料從內部部署系統移至 VMware Cloud on AWS 。VMware 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS vSphere 叢集上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。 
+---
+= 瞭解 VMware 工作負載工廠
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory for VMware 提供工具、可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）。VMware 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS vSphere 叢集上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。
+
+Amazon FSX for NetApp ONTAP 是以 NetApp ONTAP 檔案系統為基礎的外部 NFS 資料存放區、可附加至 AWS vSphere 叢集上的 VMware Cloud 。無需新增更多主機來增加可用儲存空間、只要將 ONTAP Volume 的 FSX 作為外部資料存放區來補充 vSAN 資料存放區即可。這為您提供靈活、高效能的虛擬化儲存基礎架構、可在運算資源之外進行擴充。
+
+image:diagram-vmware-fsx-overview.png["顯示架構的圖表。"]
+
+
+
+== VMware 移轉顧問的運作方式
+
+移轉顧問可協助您將內部部署虛擬機器（ VM ）及其資料（在任何 VMware 支援的資料存放區上執行）移轉至 VMware Cloud 資料存放區、其中包括適用於 ONTAP 檔案系統的 FSX 上的補充 NFS 資料存放區。
+
+image:diagram-vmware-fsx-old-new.png["顯示移轉後舊架構和新架構範例的圖表。"]
+
+請注意、您最多可以將四（ 4 ）個適用於 ONTAP 磁碟區的 FSX 連接至 VMware Cloud 上 AWS 上的單一 vSphere 叢集。
+
+
+
+== 您可以使用移轉顧問做什麼
+
+移轉顧問提供下列功能：
+
+* 分析目前的內部部署 VM 組態
+* 決定要在 AWS 上移轉至 VMware Cloud 的 VM
+* 識別在 FSX 上所需的空間、以將 ONTAP 磁碟區用作 VM 外部資料存放區
+* 檢閱結果報告以瞭解部署步驟
+* 執行實際部署
+
+
+移轉顧問支援在連接至單一 FSX for ONTAP 檔案系統的 AWS 叢集上、針對單一 VMware Cloud 進行組態規劃。
+
+
+
+== 使用移轉顧問的好處
+
+使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區、將目前基礎架構的部分移轉至 AWS 上的 VMware Cloud 、可提供下列優點：
+
+* 由於主機和儲存設備分離、以及進階資料效率、因此能達到成本最佳化
+* 可視需要擴充儲存容量、無需購買額外的主機執行個體
+* 雲端中的 NetApp ONTAP 資料管理功能、例如節省空間的快照、複製、壓縮、重複資料刪除、壓縮、 和複寫
+* 減少硬體更新的管理
+* 除了增加或減少磁碟區大小之外、還能變更資料處理量、 IOPS 和檔案系統大小
+* 高可用度支援多個可用性區域（ AZ ）部署
+* 使用 VPC 對等的單一 AZ 組態、無需使用 Transit Gateway 、即可降低成本和延遲
+
+
+
+
+== 成本
+
+使用 VMware 移轉顧問並不需要花費任何成本。
+
+您必須根據移轉顧問的建議、為部署的 AWS 資源付費。
+
+
+
+== 授權
+
+NetApp 不需要特殊授權即可使用移轉顧問。
