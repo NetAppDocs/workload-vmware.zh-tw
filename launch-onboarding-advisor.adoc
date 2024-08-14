@@ -33,7 +33,7 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 
 
 .步驟
-. 從「 VMware 工作負載」方塊中、選取 * 規劃並部署 * 、此時會顯示 VMware 移轉顧問主頁面。
+. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
 +
 image:screenshot-choose-method-create.png["您可以用來載入目前 VM 組態資訊的不同方法的螢幕擷取畫面。"]
 
