@@ -15,6 +15,16 @@ summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。
 
 
 
+== 2024 年 9 月 1 日
+
+
+
+=== 移轉至 Amazon EC2
+
+VMware 的 Workload Factory 現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。
+
+
+
 == 2024 年 7 月 7 日
 
 

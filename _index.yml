@@ -9,9 +9,11 @@ indexpage:
     links:
     - title: 瞭解 VMware 工作負載工廠
       url: learn-about-vmware-workloads.html
-    - title: 快速入門
+    - title: 快速入門：移轉至 AWS 上的 VMware Cloud
       url: quick-start.html
-  - title: 使用 VMware 移轉顧問
+    - title: 快速入門：移轉至 Amazon EC2
+      url: quick-start-native.html
+  - title: 移轉至 AWS 上的 VMware Cloud
     links:
     - title: 擷取您目前的 VM 組態
       url: capture-vm-configurations.html
@@ -23,3 +25,13 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: 將資料移轉至新的基礎架構
       url: migrate-data.html
+  - title: 移轉至 Amazon EC2
+    links:
+    - title: 擷取您目前的 VM 組態
+      url: capture-vm-configurations-native.html
+    - title: 使用移轉顧問建立部署計畫
+      url: launch-onboarding-advisor-native.html
+    - title: 部署 ONTAP 檔案系統的建議 FSX
+      url: deploy-fsx-file-system.html
+    - title: 將資料移轉至新的基礎架構
+      url: migrate-data-native.html

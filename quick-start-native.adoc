@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start.html 
+permalink: quick-start-native.html 
 keywords: quick start 
-summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 AWS 上的 VMware Cloud 、使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。 
+summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。 
 ---
-= 使用 VMware 移轉顧問快速開始移轉至 AWS 上的 VMware Cloud
+= 使用 VMware 移轉顧問快速開始移轉至 Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 AWS 上的 VMware Cloud 、使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。
+開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。
 
 開始之前、您應該先瞭解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["作業模式"^]
 
@@ -21,7 +21,7 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶
 [role="quick-margin-para"]
-您可以在 _Basic_ 模式中使用 Workload Factory 、而無需新增認證即可存取 AWS 帳戶。在工作負載工廠新增 AWS 認證時、無論是在讀取模式或自動化模式下、都能讓您的 Workload Factory 帳戶擁有為 ONTAP 檔案系統建立和管理 FSX 、以及在 VMware Cloud 內部署和管理工作負載所需的權限。
+您可以在 _Basic_ 模式中使用 Workload Factory 、而無需新增認證即可存取 AWS 帳戶。在工作負載工廠新增 AWS 認證時、無論是在讀取模式或自動化模式下、都能為您的 Workload Factory 帳戶提供建立和管理 ONTAP 檔案系統的 FSX 、以及在 Amazon EC2 中部署和管理工作負載所需的權限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]
@@ -31,18 +31,18 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解�
 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態、以建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["瞭解如何擷取目前的 VM 組態"]。
+link:capture-vm-configurations-native.html["瞭解如何擷取目前的 VM 組態"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 使用 VMware 移轉顧問建立部署計畫
 [role="quick-margin-para"]
-啟動 VMware 移轉顧問、並選取您要移轉至 AWS 基礎架構上新 VMware Cloud 的 VM 、使用 Amazon FSX for ONTAP 檔案系統做為外部 NFS 資料存放區。您可以在儲存計畫之前進行一些修改。
+啟動 VMware 移轉顧問、然後選取您要移轉至 Amazon EC2 基礎架構的 VM 、使用 Amazon FSX for ONTAP 檔案系統做為外部 NFS 資料存放區。您可以在儲存計畫之前進行一些修改。
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor.html["瞭解如何使用 VMware 移轉顧問來建立部署計畫"]。
+link:launch-onboarding-advisor-native.html["瞭解如何使用 VMware 移轉顧問來建立部署計畫"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 部署 ONTAP 檔案系統的建議 FSX
 [role="quick-margin-para"]
-部署適用於 ONTAP 檔案系統的全新 FSX 、在 AWS 基礎架構上為 VMware Cloud 中的虛擬機器提供資料存放區。
+部署適用於 ONTAP 檔案系統的全新 FSX 、為 Amazon EC2 基礎架構中的虛擬機器提供資料存放區。
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system.html["瞭解如何部署適用於 ONTAP 檔案系統的全新 FSX"]。

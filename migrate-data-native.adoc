@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: migrate-data-native.html 
+keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
+summary: 使用 AWS 應用程式移轉服務（ MGN ）等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。 
+---
+= 將資料移轉至新的基礎架構
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 AWS 應用程式移轉服務（ MGN ）等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。
+
+AWS MGN 可讓您將應用程式移轉至 Amazon EC2 中適用於 NetApp ONTAP Volume 的 FSX 。
+
+https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html["檢閱 AWS 應用程式移轉服務文件"^] 以取得詳細資訊。
+
+.接下來呢？
+現在您已將資料移轉至 AWS 和 Amazon FSX for NetApp ONTAP 外部資料存放區、您可以備份和保護 FSX for ONTAP 檔案系統上的重要資料、以確保資料永遠可用。
+
+如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 的支援文件"] 以檢視您可以使用的備份與保護功能。

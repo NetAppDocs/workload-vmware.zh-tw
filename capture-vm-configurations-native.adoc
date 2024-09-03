@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations.html 
+permalink: capture-vm-configurations-native.html 
 keywords: vm workloads, capture vm details 
 summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。 
 ---
-= 在移轉至 VMware Cloud 之前、請先擷取您目前的 VM 組態
+= 在移轉至 Amazon EC2 之前、請先擷取您目前的 VM 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -12,8 +12,6 @@ summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目�
 
 [role="lead"]
 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。
-
-如果您計畫根據先前儲存在本機的現有部署計畫來部署新系統、您可以跳過此步驟、然後選取現有的部署計畫。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["瞭解如何使用現有計畫來建立新計畫"]。
 
 [role="tabbed-block"]
 ====
@@ -36,10 +34,7 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 
 .步驟
 . 登入 Workload Factory 。
-. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
-+
-此時會顯示 VMware 移轉顧問主頁面。
-
+. 在 VMware 方塊中、選取 * 存取與計畫 * 。
 . 選取 * 建立新的部署計畫 * 、選取 * 使用移轉顧問 VMware 資料收集器 * 選項、然後選取 * 下一步 * 。
 +
 隨即顯示 * 準備 VMware Cloud on AWS 移轉 * 頁面。
@@ -70,7 +65,7 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 
 
 .結果
-指令碼會輸出在目前工作目錄中命名的 CSV 檔案 `list-vms-yyyy-MM-dd-HH-mm-ss.csv` 。CSV 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。
+指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。
 
 --
 .使用 RVTools 軟體
@@ -97,4 +92,4 @@ https://www.robware.net/home["深入瞭解 RVTools"^]
 --
 ====
 .接下來呢？
-link:launch-onboarding-advisor.html["使用移轉顧問建立 VMware Cloud on AWS 部署計畫"]。
+link:launch-onboarding-advisor-native.html["使用移轉顧問建立 Amazon EC2 部署計畫"]。

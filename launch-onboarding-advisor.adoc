@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
 ---
-= 使用移轉顧問建立部署計畫
+= 使用移轉顧問為 AWS 上的 VMware Cloud 建立部署計畫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 [role="lead"]
 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。
 
-移轉顧問可用於建立下列案例的部署計畫：
+移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：
 
-* <<根據內部部署 vSphere 環境建立部署計畫,將您目前的內部部署 vSphere 環境移轉至雲端。>>
+* <<根據內部部署 vSphere 環境建立部署計畫,將您目前的內部部署 vSphere 環境移轉至 VMware 雲端。>>
 * <<根據現有計畫建立部署計畫,根據具有類似需求的現有部署計畫、在雲端部署系統。>>
 
 
@@ -33,9 +33,9 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 
 
 .步驟
-. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
+. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
 +
-image:screenshot-choose-method-create.png["您可以用來載入目前 VM 組態資訊的不同方法的螢幕擷取畫面。"]
+此時會顯示 VMware 移轉顧問主頁面。
 
 . 選取 * 建立新的部署計畫 * 。
 . 選取您要用來在 Workload Factory 中填入目前 VM 組態的庫存檔案類型、然後選取 * 下一步 * 。
@@ -96,7 +96,7 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 
 +
 .. * vSAN 架構 * ：選取您要使用 vSAN Express Storage Architecture （ ESA ）或 vSAN 原始儲存架構（ OSA ）架構。
-.. * vSAN 容錯 * ：選取 VM 所需的容錯等級。您可以選擇「 Auto 」（自動）（建議使用）、也可以從各種 RAID 層級中選擇。
+.. * vSAN 容錯 * ：選取 VM 所需的容錯等級。您可以選擇「 Auto 」（自動）（建議使用）、或從各種 RAID 層級中選擇。
 +
 *** RAID-1 （ FTT 1 ）：由 2 個以上磁碟上的一組資料的精確複本（或鏡射）所組成。
 *** RAID-5 （ FTT 1 ）：包含具有分散式同位元檢查的區塊層級等量分拆、同位元檢查資訊會分散在 3 個以上的磁碟機中、而且在單一磁碟故障時仍能繼續運作。
@@ -134,7 +134,7 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 
 . 在 * 檢閱部署計畫 * 頁面上、檢閱您計畫移轉之所有 VM 的預估每月成本。
 +
-頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和「免責聲明」等詳細資料。
+頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和技術「免責聲明」的詳細資料。
 
 . 當您對移轉計畫感到滿意時、有幾個選項可供選擇：
 +
@@ -157,10 +157,7 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 
 .步驟
 . 登入 Workload Factory 。
-. 從「 VMware 工作負載」方塊中、選取 * 規劃並部署 * 、此時會顯示 VMware 移轉顧問主頁面。
-+
-image:screenshot-choose-method-import.png["您可以用來載入目前 VM 組態資訊的不同方法的螢幕擷取畫面。"]
-
+. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
 . 選取 * 匯入現有的部署計畫 * 。
 . 選取 image:button-upload-file.png["上傳按鈕"] 並選取您要在移轉顧問中匯入的現有計畫檔案。
 . 選擇 * 下一步 * 、隨即顯示「審查計畫」頁面。

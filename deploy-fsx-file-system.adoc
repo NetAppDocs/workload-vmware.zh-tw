@@ -15,10 +15,14 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 視您新增至 Workload Factory 帳戶的原則和權限而定、您可以使用 Workload Factory （使用自動化模式）完全部署適用於 ONTAP 檔案系統的 FSX 。如果您擁有較少的權限（讀取模式）、或沒有權限（基本模式）、則必須使用 Codebox 的 CloudForformation 資訊、並在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。
 
-.需求
+.在 AWS 上部署至 VMware Cloud 的需求
 * 您必須在 AWS 軟體定義資料中心（ SDDC ）版本 1.20 或更新版本上使用 VMware Cloud 、才能為 ONTAP 檔案系統部署 FSX 。
 * 您不得將適用於 ONTAP 檔案系統的 FSX 部署在 SDDC 部署期間所使用的相同 VPC 中。您必須將其部署在新的 Amazon VPC 中、以啟用 VMware Cloud on AWS 與 Amazon FSX for NetApp ONTAP 整合。
 * 您必須在與 SDDC 相同的 AWS 區域內部署適用於 ONTAP 檔案系統的 FSX 。
+
+
+.部署至 Amazon EC2 的需求
+* ONTAP 檔案系統的 FSX 根 Volume 必須建立為 EBS Volume 。
 
 
 .步驟
@@ -36,7 +40,7 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 +
 .. * 地區與 VPC* ：選取要部署 ONTAP 檔案系統之 FSX 的區域與 VPC 。
 +
-它應該部署在 VPC 中、而 VPC 與部署 VMware Cloud on AWS 的 VPC 不同。
+如果您要在 AWS 上部署到 VMware Cloud 、請務必將其部署在 VPC 上、而 VPC 與部署 VMware Cloud on AWS 的 VPC 不同。
 
 .. * 安全性群組 * ：使用 * 進階建立 * 選項時、您可以為 ONTAP VPC 的 FSX 選取預設安全性群組、以便所有流量都能存取 ONTAP 檔案系統的 FSX 。
 +
