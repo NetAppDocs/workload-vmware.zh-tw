@@ -472,4 +472,6 @@
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">快速開始移轉至 AWS 上的 VMware Cloud</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">快速開始移轉至 Amazon EC2</block>
   <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問主頁面。</block>
+  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">選取 * 下載計畫 &gt; 執行個體儲存部署 * 、以 .csv 格式下載外部資料存放區部署計畫、以便使用它來建立新的雲端型智慧型資料基礎架構。</block>
+  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">選擇 * 下載方案 &gt; 規劃報告 * 、以 .pdf 格式下載部署計畫、以便您散佈計畫以供審查。</block>
 </blocks>
