@@ -471,4 +471,5 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">移轉至 AWS 上的 VMware Cloud</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">快速開始移轉至 AWS 上的 VMware Cloud</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">快速開始移轉至 Amazon EC2</block>
+  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問主頁面。</block>
 </blocks>
