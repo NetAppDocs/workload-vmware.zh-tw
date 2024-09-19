@@ -435,8 +435,6 @@
   <block id="2371c65768dba03d44190d2797940527" category="list-text">* 平均資料減量比率 * ：從三種常見的資料減量比率中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VM 快照保護 * ：啟用此選項以使用快照保護 VM 。</block>
-  <block id="989b80d51d89a9c4e98f8e9d93a8b430" category="list-text">在 * 檢閱 EC2 Volumes （卷冊） * 頁面上、檢閱 VM 資訊、 Volume 分類規則、 Volume 指派、以及將在部署過程中移轉的卷冊清單。</block>
-  <block id="0bd2351ba13aaa50e485f5d6ed8991d1" category="list-text">在 * 檢閱執行個體儲存 * 頁面上、檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和技術「免責聲明」的詳細資料。</block>
   <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">使用移轉顧問為 AWS 上的 VMware Cloud 建立部署計畫</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：</block>
@@ -471,7 +469,23 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">移轉至 AWS 上的 VMware Cloud</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">快速開始移轉至 AWS 上的 VMware Cloud</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">快速開始移轉至 Amazon EC2</block>
-  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問主頁面。</block>
   <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">選取 * 下載計畫 &gt; 執行個體儲存部署 * 、以 .csv 格式下載外部資料存放區部署計畫、以便使用它來建立新的雲端型智慧型資料基礎架構。</block>
   <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">選擇 * 下載方案 &gt; 規劃報告 * 、以 .pdf 格式下載部署計畫、以便您散佈計畫以供審查。</block>
+  <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware 移轉顧問增強功能</block>
+  <block id="bdcdfcdfcb9e0d2084c9c9ff58163d0b" category="paragraph">此版本的 Workload Factory for VMware 具備功能與穩定性增強功能、並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。</block>
+  <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
+  <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
+  <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">檢閱相關資訊、瞭解移轉顧問的優點。</block>
+  <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">準備好後、請選取 * 開始 * 。</block>
+  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">在 * 檢閱 EC2 Volume 指派 * 頁面上、檢閱 VM 資訊、 Volume 分類規則、 Volume 指派、以及將在部署過程中移轉的磁碟區清單。</block>
+  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">在 * 檢閱執行個體儲存指派 * 頁面上、檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區。</block>
+  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">在 * 檢閱您的移轉計畫 * 頁面上、檢閱您計畫移轉的所有 VM 的預估每月成本。</block>
+  <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">頁面頂端會預估 ONTAP 檔案系統和 EBS 磁碟區每月可節省的 FSX 成本。您可以展開每個區段、以檢視建議的檔案系統組態、預估節約明細、假設及技術免責聲明的詳細資料。</block>
+  <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">如果您正在規劃的新部署與過去使用的現有部署計畫類似、您可以匯入該計畫、進行變更、然後將其儲存為新的部署計畫。</block>
+  <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。</block>
+  <block id="32a33bea1503730affb121be4db1856d" category="list-text">選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取您要在移轉顧問中匯入的現有 .json 計畫檔案。</block>
+  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">隨即顯示 Review plan 頁面。</block>
+  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁、並依照前一節所述修改計畫的設定。</block>
+  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 9 月 19 日</block>
 </blocks>
