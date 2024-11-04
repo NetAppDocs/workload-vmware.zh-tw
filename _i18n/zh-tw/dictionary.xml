@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁、並依照前一節所述修改計畫的設定。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 9 月 19 日</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware 移轉顧問的資料減量比率有助於您</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">此版本的 VMware Workload Factory 提供資料減量比助理。資料減量比率助理可協助您在準備 AWS 雲端上線時、決定哪種比率最適合您的 VMware 庫存和儲存資產。</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不確定要選擇哪種比率、請選取 * 「協助我決定 * 」。此時會顯示 _ 資料減量比助理 _ 對話方塊。請選擇適用於您的 VM 庫存和儲存資產的任何敘述。助理將建議適當的資料減量率。選取 * 套用 * 以使用建議的比率。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
 </blocks>

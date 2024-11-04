@@ -15,6 +15,18 @@ summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。
 
 
 
+== 2024 年 11 月 3 日
+
+
+
+=== VMware 移轉顧問的資料減量比率有助於您
+
+此版本的 VMware Workload Factory 提供資料減量比助理。資料減量比率助理可協助您在準備 AWS 雲端上線時、決定哪種比率最適合您的 VMware 庫存和儲存資產。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
+
+
+
 == 2024 年 9 月 19 日
 
 
