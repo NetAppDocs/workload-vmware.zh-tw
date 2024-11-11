@@ -6,4 +6,4 @@
 
 === 移轉至 Amazon EC2
 
-VMware 的 Workload Factory 現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。
+VMware 的工作負載工廠現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。

@@ -2,20 +2,28 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Workload Factory for VMware 提供工具、可將資料從內部部署系統移至 VMware Cloud on AWS 。VMware 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS vSphere 叢集上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。 
+summary: VMware 的工作負載工廠提供工具，可將您的資料從內部部署系統移至 VMware 的工作負載工廠，並提供工具將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。 
 ---
-= 瞭解 VMware 工作負載工廠
+= 瞭解 VMware 的工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for VMware 提供工具、可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。VMware 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署至 Amazon EC2 或 AWS vSphere 叢集上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。
+VMware 的工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。
+
+
+
+== VMware 的工作負載工廠是什麼？
+
+VMware 的工作負載工廠提供移轉顧問，可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態。然後移轉顧問會產生計畫，將建議的 VM 配置部署到 AWS vSphere 叢集上的 Amazon EC2 或 VMware Cloud ，並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。
 
 Amazon FSX for NetApp ONTAP 是一種外部 NFS 資料存放區、建置於 NetApp 的 ONTAP 檔案系統上、可附加至 Amazon EC2 執行個體或 AWS vSphere 叢集上的 VMware Cloud 。無需新增更多主機來增加可用儲存空間、只要將 ONTAP Volume 的 FSX 作為外部資料存放區來補充 vSAN 資料存放區即可。這為您提供靈活、高效能的虛擬化儲存基礎架構、可在運算資源之外進行擴充。
 
 image:diagram-vmware-fsx-overview.png["顯示架構的圖表。"]
+
+如需工作負載工廠的詳細資訊，請 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載原廠總覽"^]參閱。
 
 
 
@@ -55,6 +63,19 @@ image:diagram-vmware-fsx-old-new.png["顯示移轉後舊架構和新架構範例
 * 除了增加或減少磁碟區大小之外、還能變更資料處理量、 IOPS 和檔案系統大小
 * 高可用度支援多個可用性區域（ AZ ）部署
 * 使用 VPC 對等的單一 AZ 組態、無需使用 Transit Gateway 、即可降低成本和延遲
+
+
+
+
+== 使用工作負載工廠的工具
+
+您可以搭配下列工具使用 BlueXP  工作負載工廠：
+
+* * 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案。
+* * BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。
+* * REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX
+* * CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。
+* * Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程。
 
 
 

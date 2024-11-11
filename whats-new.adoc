@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware 移轉顧問增強功能
 
-此版本的 Workload Factory for VMware 具備功能與穩定性增強功能、並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。
+此 VMware 工作負載工廠版本具備功能與穩定性強化功能，並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 移轉至 Amazon EC2
 
-VMware 的 Workload Factory 現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。
+VMware 的工作負載工廠現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。
 
 
 
@@ -53,6 +53,6 @@ VMware 的 Workload Factory 現在支援使用 VMware 移轉顧問移轉至 Amaz
 
 
 
-=== VMware Workload Factory 的初始版本
+=== VMware 工作負載工廠的初始版本
 
 初始版本包含使用 VMware 移轉顧問來分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS 上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。

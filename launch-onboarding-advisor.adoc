@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
+summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
 ---
 = 使用移轉顧問為 AWS 上的 VMware Cloud 建立部署計畫
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 
 
 [role="lead"]
-登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。
+登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。
 
 移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：
 
@@ -19,7 +19,7 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 * <<根據現有計畫建立部署計畫,根據具有類似需求的現有部署計畫、在雲端部署系統。>>
 
 
-請注意、您必須擁有使用者名稱和密碼才能存取 Workload Factory 。如果您沒有存取權、請立即建立帳戶。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
+請注意，您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您沒有存取權、請立即建立帳戶。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
 
 
 
@@ -29,16 +29,17 @@ summary: 登入 NetApp Workload Factory 、存取 VMware 移轉顧問。您將�
 
 .需求
 * 您必須使用移轉顧問 VM 收集器（ .csv 檔案）或使用 RVTools （ .xlsx 檔案）、從現有系統建立清查檔案。
-* 您必須能夠從登入 Workload Factory 的系統存取清查檔案。
+* 您必須能夠從登入工作負載工廠的系統存取庫存檔案。
 
 
 .步驟
+. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
 +
 此時會顯示 VMware 移轉顧問主頁面。
 
 . 選取 * 建立新的部署計畫 * 。
-. 選取您要用來在 Workload Factory 中填入目前 VM 組態的庫存檔案類型、然後選取 * 下一步 * 。
+. 選取您要用來將工作負載工廠填入目前虛擬機器組態的庫存檔案類型，然後選取 * 下一步 * 。
 +
 ** 選取 * 使用移轉顧問 VMware 資料收集器 * 來使用您使用 VMware 資料收集器所建立的 .csv 檔案。
 ** 選取 * 使用 RVTools* 來使用您使用 RVTools 建立的 .xlsx 檔案。
@@ -153,10 +154,10 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 如果您正在規劃的新部署與過去使用的現有部署計畫類似、您可以匯入該計畫、進行編輯、然後將其儲存為新的部署計畫。
 
 .需求
-您必須從登入 Workload Factory 的系統、存取現有部署計畫的 .json 檔案。
+您必須從登入工作負載工廠的系統，存取現有部署計畫的 .json 檔案。
 
 .步驟
-. 登入 Workload Factory 。
+. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 . 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
 . 選取 * 匯入現有的部署計畫 * 。
 . 選取 image:button-upload-file.png["上傳按鈕"] 並選取您要在移轉顧問中匯入的現有計畫檔案。

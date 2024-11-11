@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: deploy-fsx-file-system.html 
+permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。 
 ---
@@ -15,10 +15,8 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 視您新增至工作負載原廠帳戶的原則和權限而定，您可以使用工作負載原廠（使用自動化模式），完全部署適用於 ONTAP 檔案系統的 FSX 。如果您擁有較少的權限（讀取模式）、或沒有權限（基本模式）、則必須使用 Codebox 的 CloudForformation 資訊、並在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。
 
-.在 AWS 上部署至 VMware Cloud 的需求
-* 您必須在 AWS 軟體定義資料中心（ SDDC ）版本 1.20 或更新版本上使用 VMware Cloud 、才能為 ONTAP 檔案系統部署 FSX 。
-* 您不得將適用於 ONTAP 檔案系統的 FSX 部署在 SDDC 部署期間所使用的相同 VPC 中。您必須將其部署在新的 Amazon VPC 中、以啟用 VMware Cloud on AWS 與 Amazon FSX for NetApp ONTAP 整合。
-* 您必須在與 SDDC 相同的 AWS 區域內部署適用於 ONTAP 檔案系統的 FSX 。
+.部署至 Amazon EC2 的需求
+* ONTAP 檔案系統的 FSX 根 Volume 必須建立為 EBS Volume 。
 
 
 .步驟

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: Workload Factory for VMware 文件
+  title: VMware 工作負載工廠文件
   summary: 簡化從內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud 、並將 ONTAP 檔案系統的自訂 FSX 作為外部資料存放區。
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
   lead: 簡化從內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud 、並將 ONTAP 檔案系統的自訂 FSX 作為外部資料存放區。
   tiles:
   - title: 開始使用
     links:
-    - title: 瞭解 VMware 工作負載工廠
+    - title: 瞭解 VMware 的工作負載工廠
       url: learn-about-vmware-workloads.html
     - title: 快速入門：移轉至 AWS 上的 VMware Cloud
       url: quick-start.html

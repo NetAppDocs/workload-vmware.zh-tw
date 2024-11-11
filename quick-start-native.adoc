@@ -13,18 +13,17 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 [role="lead"]
 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。
 
-開始之前、您應該先瞭解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["作業模式"^]
+開始之前，您應該先瞭解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["作業模式"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 註冊並建立 Workload Factory 帳戶
-[role="quick-margin-para"]
-前往 https://console.workloads.netapp.com["Workload Factory 主控台"^] 並註冊。 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["深入瞭解如何建立帳戶"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
+您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶
 [role="quick-margin-para"]
-您可以在 _Basic_ 模式中使用 Workload Factory 、而無需新增認證即可存取 AWS 帳戶。在工作負載工廠新增 AWS 認證時、無論是在讀取模式或自動化模式下、都能為您的 Workload Factory 帳戶提供建立和管理 ONTAP 檔案系統的 FSX 、以及在 Amazon EC2 中部署和管理工作負載所需的權限。
+您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以讀取或自動化模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及在 Amazon EC2 中部署和管理工作負載所需的權限。
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 在 vSphere 環境中擷取您目前的 VM 組態
 [role="quick-margin-para"]
@@ -45,18 +44,4 @@ link:launch-onboarding-advisor-native.html["瞭解如何使用 VMware 移轉顧�
 部署適用於 ONTAP 檔案系統的全新 FSX 、為 Amazon EC2 基礎架構中的虛擬機器提供資料存放區。
 
 [role="quick-margin-para"]
-link:deploy-fsx-file-system.html["瞭解如何部署適用於 ONTAP 檔案系統的全新 FSX"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 將適用於 ONTAP 檔案系統的 FSX 連線至 AWS 上的 VMware Cloud
-[role="quick-margin-para"]
-您的軟體定義資料中心（ SDDC ）提供網路選項、可透過 VPC 對等功能將網路連線延伸至外部 NFS 儲存磁碟區、連接至適用於 ONTAP 檔案系統的 FSx 。
-
-[role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["深入瞭解如何移轉資料"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"] 將資料從舊系統移轉至適用於 ONTAP 檔案系統的全新 FSX
-[role="quick-margin-para"]
-使用 VMware HCX （混合雲延伸）等外部工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。
-
-[role="quick-margin-para"]
-link:migrate-data.html["深入瞭解如何移轉資料"]。
+link:deploy-fsx-file-system-native.html["瞭解如何部署適用於 ONTAP 檔案系統的全新 FSX"]。

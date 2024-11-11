@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: 開始使用
     entries:
-    - title: 瞭解 VMware 工作負載工廠
+    - title: 瞭解 VMware 的工作負載工廠
       url: "/learn-about-vmware-workloads.html"
     - title: 快速開始移轉至 AWS 上的 VMware Cloud
       url: "/quick-start.html"
@@ -36,9 +36,7 @@ sidebar:
       - title: 使用移轉顧問建立部署計畫
         url: "/launch-onboarding-advisor-native.html"
       - title: 部署 ONTAP 檔案系統的建議 FSX
-        url: "/deploy-fsx-file-system.html"
-      - title: 將資料移轉至新的基礎架構
-        url: "/migrate-data-native.html"
+        url: "/deploy-fsx-file-system-native.html"
     - title: 移轉至 AWS 上的 VMware Cloud
       entries:
       - title: 擷取您目前的 VM 組態
@@ -60,5 +58,5 @@ sidebar:
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family
