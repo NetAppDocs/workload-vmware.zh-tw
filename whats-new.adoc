@@ -15,6 +15,23 @@ summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。
 
 
 
+== 2024 年 12 月 1 日
+
+
+
+=== Amazon EC2 移轉顧問的改善
+
+此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善移轉顧問的體驗：
+
+* * 資料收集 * ： BlueXP  工作負載工廠 for VMware 支援您在使用移轉顧問時，在特定期間內收集資料的能力。
+* * 虛擬機器選擇 * ： BlueXP  VMware 工作負載工廠現在支援您選擇要納入移轉部署的虛擬機器。
+* * 快速與進階體驗 * ：當您使用移轉顧問時，您現在可以選擇快速移轉體驗，使用 RVtooles ，或是使用移轉顧問資料收集器的進階體驗。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
+
+
+
 == 2024 年 11 月 3 日
 
 
@@ -35,11 +52,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 此 VMware 工作負載工廠版本具備功能與穩定性強化功能，並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
-
-
-
-== 2024 年 9 月 1 日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]= 2024 年 9 月 1 日
 
 
 

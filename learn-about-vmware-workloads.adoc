@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: VMware 的工作負載工廠提供工具，可將您的資料從內部部署系統移至 VMware 的工作負載工廠，並提供工具將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。 
+summary: VMware 的 BlueXP  工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。 
 ---
-= 瞭解 VMware 的工作負載工廠
+= 瞭解 VMware 的 BlueXP  工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-VMware 的工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。
+VMware 的 BlueXP  工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。
 
 
 
-== VMware 的工作負載工廠是什麼？
+== 什麼是 VMware 的 BlueXP  工作負載工廠？
 
-VMware 的工作負載工廠提供移轉顧問，可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態。然後移轉顧問會產生計畫，將建議的 VM 配置部署到 AWS vSphere 叢集上的 Amazon EC2 或 VMware Cloud ，並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。
+BlueXP  Workload Factory for VMware 提供移轉顧問，可讓您在內部部署 vSphere 環境中分析目前的虛擬機器組態。然後移轉顧問會產生計畫，將建議的 VM 配置部署到 AWS vSphere 叢集上的 Amazon EC2 或 VMware Cloud ，並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。
 
 Amazon FSX for NetApp ONTAP 是一種外部 NFS 資料存放區、建置於 NetApp 的 ONTAP 檔案系統上、可附加至 Amazon EC2 執行個體或 AWS vSphere 叢集上的 VMware Cloud 。無需新增更多主機來增加可用儲存空間、只要將 ONTAP Volume 的 FSX 作為外部資料存放區來補充 vSAN 資料存放區即可。這為您提供靈活、高效能的虛擬化儲存基礎架構、可在運算資源之外進行擴充。
 

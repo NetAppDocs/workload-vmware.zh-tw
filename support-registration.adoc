@@ -7,7 +7,7 @@ summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，
 = 註冊以取得支援
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

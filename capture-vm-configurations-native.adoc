@@ -34,12 +34,16 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 
 .步驟
 . 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-. 在 VMware 方塊中、選取 * 存取與計畫 * 。
-. 選取 * 建立新的部署計畫 * 、選取 * 使用移轉顧問 VMware 資料收集器 * 選項、然後選取 * 下一步 * 。
+. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。
 +
-隨即顯示 * 準備 VMware Cloud on AWS 移轉 * 頁面。
+檢閱相關資訊、瞭解移轉顧問的優點。
 
-. 在 Codebox 視窗中、選取 image:button-download-codebox.png["下載按鈕"] 以將移轉顧問 VM 收集器指令碼（名為「 list-vms.ps1 」）儲存至目標系統、或選取 image:button-copy-codebox.png["複製按鈕"] 以複製指令碼、以便將其貼到適當的系統上。
+. 準備好後、請選取 * 開始 * 。
+. 選取 * 詳細規劃 * 方塊，然後選取 * 下一步 * 。
++
+代碼方塊視窗會出現在頁面右側。
+
+. 在 Codebox 視窗中，選取image:button-download-codebox.png["下載按鈕"]以將移轉顧問資料收集器指令碼（名為「 list-VMs.ps1 」）儲存至目標系統，或選取image:button-copy-codebox.png["複製按鈕"]以複製指令碼，以便將其貼到適當的系統上。
 . 請依照下列步驟擷取目前虛擬機器的組態：
 +
 .. 登入您下載資料收集器的系統、並在其中安裝 PowerShell 和 PowerCLI 。

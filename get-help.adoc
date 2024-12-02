@@ -7,7 +7,7 @@ summary: NetApp 以多種方式支援工作負載工廠。我們全年無休提�
 = 取得協助
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

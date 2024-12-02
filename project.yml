@@ -10,7 +10,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
   - title: VMware 工作負載文件
@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: 開始使用
     entries:
-    - title: 瞭解 VMware 的工作負載工廠
+    - title: 瞭解 VMware 的 BlueXP  工作負載工廠
       url: "/learn-about-vmware-workloads.html"
     - title: 快速開始移轉至 AWS 上的 VMware Cloud
       url: "/quick-start.html"

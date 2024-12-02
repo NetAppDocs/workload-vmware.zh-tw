@@ -7,7 +7,7 @@ indexpage:
   tiles:
   - title: 開始使用
     links:
-    - title: 瞭解 VMware 的工作負載工廠
+    - title: 瞭解 VMware 的 BlueXP  工作負載工廠
       url: learn-about-vmware-workloads.html
     - title: 快速入門：移轉至 AWS 上的 VMware Cloud
       url: quick-start.html
@@ -33,5 +33,3 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: 部署 ONTAP 檔案系統的建議 FSX
       url: deploy-fsx-file-system.html
-    - title: 將資料移轉至新的基礎架構
-      url: migrate-data-native.html

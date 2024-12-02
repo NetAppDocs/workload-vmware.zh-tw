@@ -276,14 +276,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">工作負載工廠</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">適用於資料庫的 Workload Factory</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI 的工作負載工廠</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware 工作負載工廠</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">使用 VMware 混合雲延伸等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP Volume 的 FSX 。VMware HCX 核心功能可讓您以透明方式將工作負載從內部部署資料中心移轉至 SDDC 。</block>
   <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">將資料移轉至新的基礎架構</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">使用 VMware 混合雲延伸（ HCX ）等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。VMware HCX 核心功能可讓您以透明的方式、將工作負載從內部部署資料中心移轉至軟體定義資料中心（ SDDC ）。</block>
@@ -376,7 +368,6 @@
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">移轉至 Amazon EC2</block>
   <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">在移轉至 Amazon EC2 之前、請先擷取您目前的 VM 組態</block>
-  <block id="1af00da7b1991dc3522efa12b13d06a5" category="list-text">在 VMware 方塊中、選取 * 存取與計畫 * 。</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph">如<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>需詳細資訊、請參閱中的「命令列參數」一章。</block>
@@ -394,16 +385,7 @@
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">使用移轉顧問為 Amazon EC2 建立部署計畫</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">您可以將內部部署 vSphere 環境中目前的虛擬機器組態移轉至 Amazon EC2 中的虛擬機器、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。</block>
   <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">您必須使用移轉顧問 VM 收集器（ .zip 檔案）或使用 RVTools （ .xlsx 檔案）、從現有系統建立清查檔案。</block>
-  <block id="278a85e02b26dbd2e7a5074820679e8c" category="list-text">選取 * 使用移轉顧問 VMware 資料收集器 * 來使用您使用 VMware 資料收集器所建立的檔案。</block>
-  <block id="26a805e1dd0fca3151bedb2d8e12a651" category="paragraph">畫面會顯示「準備 AWS Cloud 就職」頁面。</block>
-  <block id="5d962e477a215e1da47c1123eb0453bc" category="list-text">在 _ 上傳 VM 組態 _ 區段中、選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取您要使用的庫存檔案。</block>
-  <block id="6b5dae90780a08c5ba86866abd8a1432" category="list-text">使用移轉顧問 VM 收集器時、請選取 .zip 檔案。</block>
   <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">「 * VM 摘要 * 」區段會從庫存檔案填入、以反映 VM 數量和總儲存容量。</block>
-  <block id="1a04b9149745d21476396398a73240e3" category="list-text">* 考慮 VMS* ：根據虛擬機器的運作電源狀態、指出將從庫存檔案中擷取哪些虛擬機器。您可以移入所有 VM 、或只移入開啟、關閉或暫停的 VM 。</block>
-  <block id="5e6d5c629d61f338ad33388904a1a38d" category="list-text">在 _ 雲端部署組態 _ 區段中、輸入所需 Amazon EC2 組態的詳細資料。</block>
-  <block id="284c0194166a2962fd51534f6158914b" category="list-text">* 地區 * ：選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的地區。</block>
-  <block id="57fd0f79436be23d539fc3dd6791b37f" category="paragraph">為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。</block>
-  <block id="aec55cbdf93104d8f633395f34d47241" category="list-text">* 平均 I/O 區塊大小 * ：包含讀取或寫入作業的每個區塊大小。預設大小為 4 KB 。較大的區塊大小可能較適合大型循序讀寫工作負載。較小的區塊大小可能會為執行小型隨機寫入稀疏檔案或大型檔案的工作負載提供更好的效能。</block>
   <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">在 _ 目標容量與保護考量 _ 區段中、從幾個儲存選項中進行選擇。</block>
   <block id="2371c65768dba03d44190d2797940527" category="list-text">* 平均資料減量比率 * ：從三種常見的資料減量比率中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。</block>
@@ -429,7 +411,6 @@
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>。</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">部署適用於 ONTAP 檔案系統的全新 FSX 、為 Amazon EC2 基礎架構中的虛擬機器提供資料存放區。</block>
   <block id="d8329106d0f4da40a239ea890e93904c" category="doc">使用 VMware 移轉顧問快速開始移轉至 AWS 上的 VMware Cloud</block>
-  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">快速入門：移轉至 AWS 上的 VMware Cloud</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">快速入門：移轉至 Amazon EC2</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">移轉至 AWS 上的 VMware Cloud</block>
@@ -442,15 +423,9 @@
   <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
   <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">檢閱相關資訊、瞭解移轉顧問的優點。</block>
   <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">準備好後、請選取 * 開始 * 。</block>
-  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">在 * 檢閱 EC2 Volume 指派 * 頁面上、檢閱 VM 資訊、 Volume 分類規則、 Volume 指派、以及將在部署過程中移轉的磁碟區清單。</block>
-  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">在 * 檢閱執行個體儲存指派 * 頁面上、檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區。</block>
-  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">在 * 檢閱您的移轉計畫 * 頁面上、檢閱您計畫移轉的所有 VM 的預估每月成本。</block>
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">頁面頂端會預估 ONTAP 檔案系統和 EBS 磁碟區每月可節省的 FSX 成本。您可以展開每個區段、以檢視建議的檔案系統組態、預估節約明細、假設及技術免責聲明的詳細資料。</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">如果您正在規劃的新部署與過去使用的現有部署計畫類似、您可以匯入該計畫、進行變更、然後將其儲存為新的部署計畫。</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。</block>
-  <block id="32a33bea1503730affb121be4db1856d" category="list-text">選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取您要在移轉顧問中匯入的現有 .json 計畫檔案。</block>
-  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">隨即顯示 Review plan 頁面。</block>
-  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁、並依照前一節所述修改計畫的設定。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 9 月 19 日</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware 移轉顧問的資料減量比率有助於您</block>
@@ -472,11 +447,6 @@
   <block id="f8ca7604a7d532f5f35cb42769a74291" category="list-text">您必須能夠從登入工作負載工廠的系統存取庫存檔案。</block>
   <block id="49560c1c66151469e4510dc332719b0f" category="list-text">選取您要用來將工作負載工廠填入目前虛擬機器組態的庫存檔案類型，然後選取 * 下一步 * 。</block>
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">您必須從登入工作負載工廠的系統，存取現有部署計畫的 .json 檔案。</block>
-  <block id="da815c20aaea2edb198e469b3c876791" category="summary">VMware 的工作負載工廠提供工具，可將您的資料從內部部署系統移至 VMware 的工作負載工廠，並提供工具將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。</block>
-  <block id="4f373148ed2de637be7edb26c4e2311a" category="doc">瞭解 VMware 的工作負載工廠</block>
-  <block id="ddbac8a6a6590fc2ecb2b323c6e8e1ff" category="paragraph">VMware 的工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。</block>
-  <block id="f050b6dd74962f8256e223aa2552ec0d" category="section-title">VMware 的工作負載工廠是什麼？</block>
-  <block id="eceaa4dccec237f43c9e610c6a989dd2" category="paragraph">VMware 的工作負載工廠提供移轉顧問，可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態。然後移轉顧問會產生計畫，將建議的 VM 配置部署到 AWS vSphere 叢集上的 Amazon EC2 或 VMware Cloud ，並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作負載原廠總覽</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">如需工作負載工廠的詳細資訊，請<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>參閱。</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
@@ -500,4 +470,45 @@
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">瞭解 VMware 移轉顧問工作負載工廠元件的新功能。</block>
   <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">瞭解 VMware Cloud 移轉顧問工作負載工廠元件的新功能。</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">BlueXP  工作負載工廠 for VMware 文件</block>
+  <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Amazon EC2 移轉顧問的改善</block>
+  <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善移轉顧問的體驗：</block>
+  <block id="80384840ba856b44e35be4918f28a26b" category="list-text">* 資料收集 * ： BlueXP  工作負載工廠 for VMware 支援您在使用移轉顧問時，在特定期間內收集資料的能力。</block>
+  <block id="2e47bf0e10f6acdee08b3889dc872c4c" category="list-text">* 虛擬機器選擇 * ： BlueXP  VMware 工作負載工廠現在支援您選擇要納入移轉部署的虛擬機器。</block>
+  <block id="3f4f1b85f4effee9c5e9ae9034f0e684" category="list-text">* 快速與進階體驗 * ：當您使用移轉顧問時，您現在可以選擇快速移轉體驗，使用 RVtooles ，或是使用移轉顧問資料收集器的進階體驗。</block>
+  <block id="c20f4c2c66d387d7831ea5e0b0ec1825" category="list-text">選取 * 詳細規劃 * 方塊，然後選取 * 下一步 * 。</block>
+  <block id="a9c684bfbdda0fc1f3c7654eb995d2a2" category="paragraph">代碼方塊視窗會出現在頁面右側。</block>
+  <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">在 Codebox 視窗中，選取<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>以將移轉顧問資料收集器指令碼（名為「 list-VMs.ps1 」）儲存至目標系統，或選取<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>以複製指令碼，以便將其貼到適當的系統上。</block>
+  <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">在建立部署計畫的過程中，選擇您偏好的詳細程度和方法：</block>
+  <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">* 快速評估 * ：此選項使用 RVtools 庫存檔案，在加速程序期間擷取有關 VM 的資訊，進而產生雲端移轉的設計藍圖。</block>
+  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">* 詳細規劃 * ：使用移轉顧問資料收集器庫存檔案來收集詳細資訊，進而實現部署就緒的設計。</block>
+  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">快速評估</block>
+  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">選取 * 快速評估 * 方塊，然後選取 * 下一步 * 。</block>
+  <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">隨即顯示「 * 準備 AWS Cloud 就職 * 」頁面。</block>
+  <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">在 _VM 組態上傳 _ 區段中，選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取由 RVTools 建立的 .xlsx 檔案。</block>
+  <block id="b201be50fb24455e1169e30ba042483c" category="list-text">* 地區 * ：選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的地區。為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。</block>
+  <block id="3b4b72587570c96b11427b0d7983dc63" category="list-text">為此區域中的虛擬機器選擇預測的效能等級。我們建議您先使用較小的 IOPS 設定。在移轉或部署工作負載時建立檔案系統之後，您可以增加已配置的 SSD IOPS ：</block>
+  <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">* 標準到高效能 * ：適用於平均 IO 速率介於 20 到 5000 IOPS 之間的 VM 。</block>
+  <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">* 極高效能 * ：適用於平均 IO 速率超過 5000 IOPS 的 VM 。</block>
+  <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">* 極低效能 * ：適用於平均 IO 速率低於 20 IOPS 的 VM 。</block>
+  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">在 * 範圍 * 頁面上，從清單中選取您要納入 AWS 雲端移轉的 VM ，然後選取 * 下一步 * 。</block>
+  <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">在 * 分類 * 頁面上，檢閱 VM 資訊， Volume 分類規則， Volume 指派，以及將在部署過程中移轉的磁碟區清單，然後選取 * 下一步 * 。</block>
+  <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">在 * 封裝 * 頁面上，檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區，然後選取 * 下一步 * 。</block>
+  <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">在 * 審查計畫 * 頁面上，檢閱您計畫移轉的所有 VM 的預估每月節約成本和成本預估。</block>
+  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">詳細規劃</block>
+  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">選取 * 詳細規劃 * 方塊，然後選取 * 下一步 * 。</block>
+  <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">在 _VM 組態上傳 _ 區段中，選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取由移轉顧問資料收集器所建立的 .zip 檔案。</block>
+  <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">在 _ 虛擬機器庫存考量 _ 區段中，選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的區域。為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。</block>
+  <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">您可以選擇 * 完成 * 返回 VMware 移轉顧問頁面。</block>
+  <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">選取 * 匯入計畫 * 。</block>
+  <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">選取您要在移轉顧問中匯入的現有 .json 計畫檔案，然後選取 * 開啟 * 。</block>
+  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">此時會顯示 * 檢閱計畫 * 頁面。</block>
+  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁，並依照前一節所述修改計畫的設定。</block>
+  <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">VMware 的 BlueXP  工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。</block>
+  <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">瞭解 VMware 的 BlueXP  工作負載工廠</block>
+  <block id="878b0838fec14a308c058b697894e8b9" category="section-title">什麼是 VMware 的 BlueXP  工作負載工廠？</block>
+  <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">BlueXP  Workload Factory for VMware 提供移轉顧問，可讓您在內部部署 vSphere 環境中分析目前的虛擬機器組態。然後移轉顧問會產生計畫，將建議的 VM 配置部署到 AWS vSphere 叢集上的 Amazon EC2 或 VMware Cloud ，並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
+  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 9 月 1 日</block>
 </blocks>
