@@ -4,7 +4,7 @@ permalink: support-registration.html
 keywords: support registration, register for support, support, nss account, add nss account, 
 summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。 
 ---
-= 註冊以取得支援
+= 註冊以取得 VMware BlueXP  工作負載工廠支援
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

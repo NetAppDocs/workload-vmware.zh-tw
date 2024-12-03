@@ -4,7 +4,7 @@ permalink: capture-vm-configurations-native.html
 keywords: vm workloads, capture vm details 
 summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。 
 ---
-= 在移轉至 Amazon EC2 之前、請先擷取您目前的 VM 組態
+= 使用 VMware 工作負載移轉至 Amazon EC2 之前，請先擷取您的 VM 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

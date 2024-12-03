@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor-native.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
 ---
-= 使用移轉顧問為 Amazon EC2 建立部署計畫
+= 使用 VMware 工作負載移轉顧問為 Amazon EC2 建立部署計畫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

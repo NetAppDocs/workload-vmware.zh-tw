@@ -4,7 +4,7 @@ permalink: get-help.html
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
 summary: NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。 
 ---
-= 取得協助
+= 取得 VMware BlueXP  工作負載工廠的協助
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

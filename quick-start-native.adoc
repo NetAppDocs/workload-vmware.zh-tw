@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。 
 ---
-= 使用 VMware 移轉顧問快速開始移轉至 Amazon EC2
+= 使用 VMware 工作負載移轉顧問快速開始移轉至 Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -16,6 +16,7 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 開始之前，您應該先瞭解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["作業模式"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
+[role="quick-margin-para"]
 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶

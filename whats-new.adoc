@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。 
 ---
-= 新功能
+= 適用於 VMware 的 BlueXP  工作負載工廠的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

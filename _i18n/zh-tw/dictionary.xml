@@ -352,7 +352,6 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有 NetApp 支援網站帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024 年 7 月 7 日</block>
   <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">初始版本包含使用 VMware 移轉顧問來分析內部部署 vSphere 環境中目前的虛擬機器組態、並制定計畫、將建議的虛擬機器配置部署到 AWS 上的 VMware Cloud 、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">簡化從內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud 、並將 ONTAP 檔案系統的自訂 FSX 作為外部資料存放區。</block>
@@ -367,13 +366,11 @@
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">您必須使用移轉顧問 VM 收集器（ .csv 檔案）或使用 RVTools （ .xlsx 檔案）、從現有系統建立清查檔案。</block>
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">移轉至 Amazon EC2</block>
-  <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">在移轉至 Amazon EC2 之前、請先擷取您目前的 VM 組態</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph">如<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>需詳細資訊、請參閱中的「命令列參數」一章。</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">使用移轉顧問建立 Amazon EC2 部署計畫</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>。</block>
-  <block id="2937dfbcdcb41e8eba68b50ecd25d526" category="doc">在移轉至 VMware Cloud 之前、請先擷取您目前的 VM 組態</block>
   <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">此時會顯示 VMware 移轉顧問主頁面。</block>
   <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">使用移轉顧問建立 VMware Cloud on AWS 部署計畫</block>
@@ -391,7 +388,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VM 快照保護 * ：啟用此選項以使用快照保護 VM 。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和技術「免責聲明」的詳細資料。</block>
-  <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">使用移轉顧問為 AWS 上的 VMware Cloud 建立部署計畫</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：</block>
   <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">將您目前的內部部署 vSphere 環境移轉至 VMware 雲端。</block>
   <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
@@ -405,12 +401,10 @@
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">檢閱 VMware HCX 文件</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> 以取得詳細資訊。</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。</block>
-  <block id="294f9af291a855904cc69ccf0e3c306f" category="doc">使用 VMware 移轉顧問快速開始移轉至 Amazon EC2</block>
   <block id="9cd1f8c893219dcc9697141d6585e5d9" category="paragraph"><block ref="ab4df44eb8806514d8649fc0b63ead31" category="inline-link-macro-rx"></block>。</block>
   <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">啟動 VMware 移轉顧問、然後選取您要移轉至 Amazon EC2 基礎架構的 VM 、使用 Amazon FSX for ONTAP 檔案系統做為外部 NFS 資料存放區。您可以在儲存計畫之前進行一些修改。</block>
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>。</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">部署適用於 ONTAP 檔案系統的全新 FSX 、為 Amazon EC2 基礎架構中的虛擬機器提供資料存放區。</block>
-  <block id="d8329106d0f4da40a239ea890e93904c" category="doc">使用 VMware 移轉顧問快速開始移轉至 AWS 上的 VMware Cloud</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">快速入門：移轉至 AWS 上的 VMware Cloud</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">快速入門：移轉至 Amazon EC2</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">移轉至 AWS 上的 VMware Cloud</block>
@@ -511,4 +505,16 @@
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
   <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 9 月 1 日</block>
+  <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">使用 VMware 工作負載移轉至 Amazon EC2 之前，請先擷取您的 VM 組態</block>
+  <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">使用 VMware 工作負載移轉至 VMware Cloud 之前，請先擷取您的 VM 組態</block>
+  <block id="3173329d2df7808ef89c684e36fe95db" category="doc">為 ONTAP 檔案系統部署 VMware 工作負載建議的 FSX</block>
+  <block id="bbdbb1a9bdd5ede393b6116d9f10e1dc" category="doc">取得 VMware BlueXP  工作負載工廠的協助</block>
+  <block id="d426ad1d2770909e76d9ec998753048e" category="doc">使用 VMware 工作負載移轉顧問為 Amazon EC2 建立部署計畫</block>
+  <block id="9aed60fda8e95affae05b540b6cbe03a" category="doc">使用 VMware 工作負載移轉顧問，為 AWS 上的 VMware Cloud 建立部署計畫</block>
+  <block id="9e568012fe6f23b1555756d444007015" category="doc">VMware BlueXP  工作負載工廠的法律聲明</block>
+  <block id="6ea93b9b9da308faf45f55074d8c73cb" category="doc">使用 VMware 的 BlueXP  工作負載工廠，將資料移轉至新的基礎架構</block>
+  <block id="09bf5c9e5640bf75b6e024bb49783cc9" category="doc">使用 VMware 工作負載移轉顧問快速開始移轉至 Amazon EC2</block>
+  <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">使用 VMware 工作負載移轉顧問快速開始移轉至 VMware Cloud on AWS</block>
+  <block id="9db9ff1e14360eb723369155da355a69" category="doc">註冊以取得 VMware BlueXP  工作負載工廠支援</block>
+  <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">適用於 VMware 的 BlueXP  工作負載工廠的新功能</block>
 </blocks>
