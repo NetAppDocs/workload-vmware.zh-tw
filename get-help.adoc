@@ -11,13 +11,13 @@ summary: NetApp 以多種方式支援工作負載工廠。我們全年無休提�
 
 
 [role="lead"]
-NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。
+NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。
 
 
 
 == 取得適用於 ONTAP 的 FSX 支援
 
-如需與適用於 ONTAP 的 FSX 、其基礎架構或使用服務的任何解決方案相關的技術支援、請參閱該產品的工作負載工廠文件中的「取得說明」。
+如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
 
@@ -31,15 +31,15 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 
 * 文件
 +
-您目前正在檢視的 Workload Factory 文件。
+您目前正在檢視的工作負載原廠文件。
 
 * https://kb.netapp.com["知識庫"^]
 +
-搜尋 Workload Factory 知識庫、尋找有助於疑難排解問題的文章。
+搜尋工作負載原廠知識庫，找出有助於疑難排解問題的文章。
 
 * http://community.netapp.com/["社群"^]
 +
-加入 Workload Factory 社群、追蹤後續的討論或建立新的討論。
+加入工作負載工廠社群，追蹤後續討論或建立新討論。
 
 
 
@@ -50,10 +50,10 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。
 
 .開始之前
-若要使用 * 建立案例 * 功能、您必須先註冊以取得支援。 將您的 NetApp 支援網站認證與工作負載工廠登入建立關聯。link:support-registration.html["瞭解如何註冊以取得支援"]。
+若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。link:support-registration.html["瞭解如何註冊以取得支援"]。
 
 .步驟
-. 在 Workload Factory 主控台的右上角、選取 * 說明 > Support* 。
+. 在工作負載原廠主控台的右上角，選取 * 說明 > 支援 * 。
 +
 選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
 
@@ -124,7 +124,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 .步驟
-. 在 Workload Factory 主控台的右上角、選取 * 說明 > Support* 。
+. 在工作負載原廠主控台的右上角，選取 * 說明 > 支援 * 。
 +
 選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
 

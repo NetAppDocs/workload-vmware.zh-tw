@@ -94,28 +94,21 @@
   <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">無論是哪種情況、您都可以監控 CloudForgation 的建立進度。</block>
   <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">已部署適用於 ONTAP 檔案系統的 FSX 。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">如需與適用於 ONTAP 的 FSX 、其基礎架構或使用服務的任何解決方案相關的技術支援、請參閱該產品的工作負載工廠文件中的「取得說明」。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">若要獲得工作負載工廠及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">您目前正在檢視的 Workload Factory 文件。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">搜尋 Workload Factory 知識庫、尋找有助於疑難排解問題的文章。</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">加入 Workload Factory 社群、追蹤後續的討論或建立新的討論。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">若要使用 * 建立案例 * 功能、您必須先註冊以取得支援。 將您的 NetApp 支援網站認證與工作負載工廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">在 Workload Factory 主控台的右上角、選取 * 說明 &gt; Support* 。</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
@@ -312,8 +305,6 @@
   <block id="3638e2726e921646915ead3523420694" category="paragraph">使用 VMware HCX （混合雲延伸）等外部工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP 磁碟區的 FSX 。</block>
   <block id="ed2864ba6212a6975c8039c89029a916" category="paragraph"><block ref="19e3683b716b5e111f0f1f9ccf094dd2" category="inline-link-macro-rx"></block>。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">需要註冊支援、才能獲得工作負載工廠及其儲存解決方案與服務專屬的技術支援。您必須從 BlueXP 主控台註冊以取得支援、該主控台是與 Workload Factory 分開的網路型主控台。</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需有關雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的技術支援、請參閱該產品的 Workload Factory 文件中的「取得說明」。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">註冊您的帳戶 ID 支援訂閱（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP 的「支援資源」頁面）、即為您的單一支援訂閱 ID 。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">註冊可提供開啟支援服務單和自動產生個案等功能。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
@@ -382,7 +373,6 @@
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">使用移轉顧問為 Amazon EC2 建立部署計畫</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">您可以將內部部署 vSphere 環境中目前的虛擬機器組態移轉至 Amazon EC2 中的虛擬機器、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。</block>
   <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">您必須使用移轉顧問 VM 收集器（ .zip 檔案）或使用 RVTools （ .xlsx 檔案）、從現有系統建立清查檔案。</block>
-  <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">「 * VM 摘要 * 」區段會從庫存檔案填入、以反映 VM 數量和總儲存容量。</block>
   <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">在 _ 目標容量與保護考量 _ 區段中、從幾個儲存選項中進行選擇。</block>
   <block id="2371c65768dba03d44190d2797940527" category="list-text">* 平均資料減量比率 * ：從三種常見的資料減量比率中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。</block>
@@ -410,8 +400,6 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">移轉至 AWS 上的 VMware Cloud</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">快速開始移轉至 AWS 上的 VMware Cloud</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">快速開始移轉至 Amazon EC2</block>
-  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">選取 * 下載計畫 &gt; 執行個體儲存部署 * 、以 .csv 格式下載外部資料存放區部署計畫、以便使用它來建立新的雲端型智慧型資料基礎架構。</block>
-  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">選擇 * 下載方案 &gt; 規劃報告 * 、以 .pdf 格式下載部署計畫、以便您散佈計畫以供審查。</block>
   <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware 移轉顧問增強功能</block>
   <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
   <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
@@ -420,8 +408,6 @@
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">頁面頂端會預估 ONTAP 檔案系統和 EBS 磁碟區每月可節省的 FSX 成本。您可以展開每個區段、以檢視建議的檔案系統組態、預估節約明細、假設及技術免責聲明的詳細資料。</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">如果您正在規劃的新部署與過去使用的現有部署計畫類似、您可以匯入該計畫、進行變更、然後將其儲存為新的部署計畫。</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS 原生運算 * 。</block>
-  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
-  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 9 月 19 日</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware 移轉顧問的資料減量比率有助於您</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">此版本的 VMware Workload Factory 提供資料減量比助理。資料減量比率助理可協助您在準備 AWS 雲端上線時、決定哪種比率最適合您的 VMware 庫存和儲存資產。</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不確定要選擇哪種比率、請選取 * 「協助我決定 * 」。此時會顯示 _ 資料減量比助理 _ 對話方塊。請選擇適用於您的 VM 庫存和儲存資產的任何敘述。助理將建議適當的資料減量率。選取 * 套用 * 以使用建議的比率。</block>
@@ -484,7 +470,6 @@
   <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">* 標準到高效能 * ：適用於平均 IO 速率介於 20 到 5000 IOPS 之間的 VM 。</block>
   <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">* 極高效能 * ：適用於平均 IO 速率超過 5000 IOPS 的 VM 。</block>
   <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">* 極低效能 * ：適用於平均 IO 速率低於 20 IOPS 的 VM 。</block>
-  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">在 * 範圍 * 頁面上，從清單中選取您要納入 AWS 雲端移轉的 VM ，然後選取 * 下一步 * 。</block>
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">在 * 分類 * 頁面上，檢閱 VM 資訊， Volume 分類規則， Volume 指派，以及將在部署過程中移轉的磁碟區清單，然後選取 * 下一步 * 。</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">在 * 封裝 * 頁面上，檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區，然後選取 * 下一步 * 。</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">在 * 審查計畫 * 頁面上，檢閱您計畫移轉的所有 VM 的預估每月節約成本和成本預估。</block>
@@ -495,8 +480,6 @@
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">您可以選擇 * 完成 * 返回 VMware 移轉顧問頁面。</block>
   <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">選取 * 匯入計畫 * 。</block>
   <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">選取您要在移轉顧問中匯入的現有 .json 計畫檔案，然後選取 * 開啟 * 。</block>
-  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">此時會顯示 * 檢閱計畫 * 頁面。</block>
-  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁，並依照前一節所述修改計畫的設定。</block>
   <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">VMware 的 BlueXP  工作負載工廠提供工具，可將資料從內部部署系統移至 VMware Cloud on AWS （ VMC ）或 Amazon EC2 。</block>
   <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">瞭解 VMware 的 BlueXP  工作負載工廠</block>
   <block id="878b0838fec14a308c058b697894e8b9" category="section-title">什麼是 VMware 的 BlueXP  工作負載工廠？</block>
@@ -504,7 +487,6 @@
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
-  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 9 月 1 日</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">使用 VMware 工作負載移轉至 Amazon EC2 之前，請先擷取您的 VM 組態</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">使用 VMware 工作負載移轉至 VMware Cloud 之前，請先擷取您的 VM 組態</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">為 ONTAP 檔案系統部署 VMware 工作負載建議的 FSX</block>
@@ -517,4 +499,34 @@
   <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">使用 VMware 工作負載移轉顧問快速開始移轉至 VMware Cloud on AWS</block>
   <block id="9db9ff1e14360eb723369155da355a69" category="doc">註冊以取得 VMware BlueXP  工作負載工廠支援</block>
   <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">適用於 VMware 的 BlueXP  工作負載工廠的新功能</block>
+  <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">* 儲存或下載移轉計畫 * ：您現在可以儲存或下載移轉計畫，並載入移轉計畫以填入移轉顧問。儲存移轉計畫時，計畫會與工作負載原廠帳戶一起儲存。</block>
+  <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">* 改善的 VM 選擇 * ： BlueXP  VMware 工作負載工廠現在支援篩選及搜尋您想要納入移轉部署的 VM 清單。</block>
+  <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。您可以使用以下兩種模式之一的指令碼： * 短期資料收集 * 長期資料收集</block>
+  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">*true* 以 1 小時為間隔，收集自訂時段的 IOPS 與處理量資料。</block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您目前正在檢視的工作負載原廠文件。</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">搜尋工作負載原廠知識庫，找出有助於疑難排解問題的文章。</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
+  <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">「 * 資料收集詳細資料 * 」區段提供使用 Onboarding Advisor 資料收集器收集資料的日期範圍和時數。</block>
+  <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">從庫存檔案中填入 * 虛擬機器庫存摘要 * 區段，以反映虛擬機器數量和總儲存容量。</block>
+  <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">在 * 範圍 * 頁面上，從清單中選取要納入 AWS 移轉的 VM 。您可以根據每個 VM 的電源狀態，以及 VM 所在的資料中心和叢集來篩選清單。</block>
+  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">在 VM 清單中，您可以選取要顯示為欄的 VM 資訊類型。</block>
+  <block id="42f16e28c3177812ada64d38e636ae26" category="list-text">選取 * 管理計畫 &gt; 儲存計畫 * ，將部署計畫資料儲存至您的帳戶，以便日後在部署需求相似的系統時，匯入計畫作為範本。您可以在儲存前命名計畫。</block>
+  <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">選取 * 管理計畫 &gt; 匯出計畫 * ，將移轉計畫儲存為電腦上 .json 格式的範本。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。</block>
+  <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">選擇 * 管理計畫 &gt; 下載報告 * ，以 .pdf 格式下載部署計畫，以便您散佈計畫以供審查。</block>
+  <block id="12b1a213ece510a085b9e12a71432992" category="list-text">選取 * 管理計畫 &gt; 下載執行個體儲存部署 * ，以 .csv 格式下載外部資料存放區部署計畫，以便使用它來建立新的雲端型智慧型資料基礎架構。</block>
+  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
+  <block id="1b0022b023293239665220628da7a16c" category="list-text">選取 * 載入已儲存的計畫 * 。</block>
+  <block id="f3029172ae69383e67245128a26c3e63" category="list-text">從清單中選取您要匯入的計畫。</block>
+  <block id="77e0db0ca8a943ba2d5e456b53ecdf89" category="list-text">選取 * 載入 * 。</block>
+  <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">從我的電腦 * 選取 * 。</block>
+  <block id="1faf4fef6046370079cb5fb1e673a625" category="paragraph">此時會顯示 * 檢閱計畫 * 頁面。。您可以選擇 * 上一頁 * 來存取前一頁，並依照前一節所述修改計畫的設定。。根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
+  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 9 月 19 日</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
 </blocks>
