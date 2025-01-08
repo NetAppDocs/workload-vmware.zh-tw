@@ -34,7 +34,7 @@ summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將�
 
 .步驟
 . 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
+. 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
 +
 此時會顯示 VMware 移轉顧問主頁面。
 
@@ -158,7 +158,7 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 
 .步驟
 . 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-. 從 VMware 工作負載方塊中、選取 * 存取與規劃 * 、然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
+. 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
 . 選取 * 匯入現有的部署計畫 * 。
 . 選取 image:button-upload-file.png["上傳按鈕"] 並選取您要在移轉顧問中匯入的現有計畫檔案。
 . 選擇 * 下一步 * 、隨即顯示「審查計畫」頁面。
