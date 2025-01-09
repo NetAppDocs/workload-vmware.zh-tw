@@ -49,22 +49,31 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 .. 登入您下載資料收集器的系統、並在其中安裝 PowerShell 和 PowerCLI 。
 .. 執行下列命令以連線至 VMware vCenter 伺服器：
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 將 <server_IP> 取代為 VMware 伺服器的 IP 位址或主機名稱。
 
-.. 執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。
+.. 執行您下載的資料收集器指令碼，並指定「每小時」或「每日」 VM 統計資料的資料收集選項。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 其中：
 
 +
-*** *true* 以 1 小時為間隔，收集自訂時段的 IOPS 與處理量資料。
-*** *FALSE* 會收集過去 1 小時的 IOPS 與處理量資料、每隔 20 秒。
+*** 過去 1 小時的 IOPS 與處理量資料會以 20 秒的間隔收集。
+*** *LastDAY* 收集過去 24 小時的 IOPS 和處理量資料，每隔 5 分鐘。
 
 
 
+
++
+您也可以選擇執行資料收集器指令碼，而不指定任何選項；如此可讓您從互動式功能表中選取資料收集期間。
 
 
 

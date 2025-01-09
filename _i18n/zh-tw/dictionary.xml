@@ -496,7 +496,6 @@
   <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">* 儲存或下載移轉計畫 * ：您現在可以儲存或下載移轉計畫，並載入移轉計畫以填入移轉顧問。儲存移轉計畫時，計畫會與工作負載原廠帳戶一起儲存。</block>
   <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">* 改善的 VM 選擇 * ： BlueXP  VMware 工作負載工廠現在支援篩選及搜尋您想要納入移轉部署的 VM 清單。</block>
   <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。您可以使用以下兩種模式之一的指令碼： * 短期資料收集 * 長期資料收集</block>
-  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">*true* 以 1 小時為間隔，收集自訂時段的 IOPS 與處理量資料。</block>
   <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
   <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您目前正在檢視的工作負載原廠文件。</block>
@@ -531,4 +530,8 @@
   <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">您可以選擇 * 上一頁 * 來存取前一頁，並依照前一節所述修改計畫的設定。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根據您的需求自訂計畫之後、您可以儲存計畫或將計畫報告下載為 PDF 檔案。</block>
   <block id="8ee9b2adbe4d5a2c623d823af805b9a0" category="list-text">從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。</block>
+  <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">執行您下載的資料收集器指令碼，並指定「每小時」或「每日」 VM 統計資料的資料收集選項。</block>
+  <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">過去 1 小時的 IOPS 與處理量資料會以 20 秒的間隔收集。</block>
+  <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">*LastDAY* 收集過去 24 小時的 IOPS 和處理量資料，每隔 5 分鐘。</block>
+  <block id="f0cbed8418df3c7702700c7e26a8bca8" category="paragraph">您也可以選擇執行資料收集器指令碼，而不指定任何選項；如此可讓您從互動式功能表中選取資料收集期間。</block>
 </blocks>

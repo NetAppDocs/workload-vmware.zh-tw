@@ -50,13 +50,19 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 .. 登入您下載資料收集器的系統、並在其中安裝 PowerShell 和 PowerCLI 。
 .. 執行下列命令以連線至 VMware vCenter 伺服器：
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 將 <server_IP> 取代為 VMware 伺服器的 IP 位址或主機名稱。
 
 .. 執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+----
 +
 其中：
 
