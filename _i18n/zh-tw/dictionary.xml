@@ -405,7 +405,6 @@
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware 移轉顧問的資料減量比率有助於您</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">此版本的 VMware Workload Factory 提供資料減量比助理。資料減量比率助理可協助您在準備 AWS 雲端上線時、決定哪種比率最適合您的 VMware 庫存和儲存資產。</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不確定要選擇哪種比率、請選取 * 「協助我決定 * 」。此時會顯示 _ 資料減量比助理 _ 對話方塊。請選擇適用於您的 VM 庫存和儲存資產的任何敘述。助理將建議適當的資料減量率。選取 * 套用 * 以使用建議的比率。</block>
-  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
   <block id="0a51c23a9b33a88216f2dbd3a38c1be3" category="doc">VMware 工作負載工廠的初始版本</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">VMware 的工作負載工廠現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。</block>
   <block id="21558f6938275b17b39171353ad95a65" category="paragraph">此 VMware 工作負載工廠版本具備功能與穩定性強化功能，並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。</block>
@@ -442,7 +441,6 @@
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>。</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。</block>
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">瞭解 VMware 移轉顧問工作負載工廠元件的新功能。</block>
-  <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">瞭解 VMware Cloud 移轉顧問工作負載工廠元件的新功能。</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">BlueXP  工作負載工廠 for VMware 文件</block>
   <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Amazon EC2 移轉顧問的改善</block>
   <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善移轉顧問的體驗：</block>
@@ -505,7 +503,6 @@
   <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">「 * 資料收集詳細資料 * 」區段提供使用 Onboarding Advisor 資料收集器收集資料的日期範圍和時數。</block>
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">從庫存檔案中填入 * 虛擬機器庫存摘要 * 區段，以反映虛擬機器數量和總儲存容量。</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">在 * 範圍 * 頁面上，從清單中選取要納入 AWS 移轉的 VM 。您可以根據每個 VM 的電源狀態，以及 VM 所在的資料中心和叢集來篩選清單。</block>
-  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">在 VM 清單中，您可以選取要顯示為欄的 VM 資訊類型。</block>
   <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">選取 * 管理計畫 &gt; 匯出計畫 * ，將移轉計畫儲存為電腦上 .json 格式的範本。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。</block>
   <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">選擇 * 管理計畫 &gt; 下載報告 * ，以 .pdf 格式下載部署計畫，以便您散佈計畫以供審查。</block>
   <block id="12b1a213ece510a085b9e12a71432992" category="list-text">選取 * 管理計畫 &gt; 下載執行個體儲存部署 * ，以 .csv 格式下載外部資料存放區部署計畫，以便使用它來建立新的雲端型智慧型資料基礎架構。</block>
@@ -517,7 +514,6 @@
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
-  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 9 月 19 日</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。</block>
@@ -536,4 +532,17 @@
   <block id="cd37b5cf2c47ed75e8cfcfb7e7f8bb1f" category="paragraph">NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。您可以使用以下兩種模式之一的指令碼：</block>
   <block id="883783e9620901e0ec065bb8ae5613d2" category="list-text">每小時資料收集</block>
   <block id="f90051c528271959eb69e542599c2556" category="list-text">每日資料收集</block>
+  <block id="cec87a8931004e5402a3f18575682723" category="paragraph">此版本的 BlueXP  工作負載工廠適用於 VMware ，對 Amazon EC2 移轉顧問體驗有幾項改善：</block>
+  <block id="13ba1ae4c82947e19de7e94ee0eaab45" category="list-text">* 預估執行個體類型 * ：移轉顧問現在可以檢查您環境的需求，並為每個 VM 提供預估的 Amazon EC2 執行個體類型。您可以選擇在移轉顧問的範圍步驟中，納入每個 VM 的預估執行個體類型。</block>
+  <block id="3006f7737352e976899743eaf6e2b28e" category="list-text">* 推薦 Amazon EBS Volume 的能力 * ：移轉顧問現在可建議將資料 Volume 移轉至 Amazon Elastic Block Store （ EBS ），而非 Amazon FSX for NetApp ONTAP ，因為特定區域的特定容量或效能需求。</block>
+  <block id="b4a4e72af96c527b186a3d8f12952f22" category="list-text">* 增強型檔案系統自動指派 * ： Amazon FSX for NetApp ONTAP 檔案系統指派已改善，可更有效地最佳化成本並將處理量降至最低。</block>
+  <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">在 VM 清單中，您可以選取要顯示為欄的 VM 資訊類型。例如，根據 VM 資源需求，選取 _ 預估執行個體類型 _ 會顯示一欄，其中包含每個 VM 的預估 Amazon EC2 執行個體類型。</block>
+  <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">如果某個 Volume 的容量或效能需求超過 Amazon FSX 在特定地區的 NetApp ONTAP 檔案系統功能，移轉顧問建議將該 Volume 部署在 Amazon EBS 檔案系統上。</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
+  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 11 月 3 日</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 19 月 9 日</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
 </blocks>
