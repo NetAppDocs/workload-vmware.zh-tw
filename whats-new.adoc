@@ -15,6 +15,22 @@ summary: 瞭解 VMware 移轉顧問工作負載工廠元件的新功能。
 
 
 
+== 2025 年 3 月 30 日
+
+
+
+=== Amazon EC2 移轉顧問的改善
+
+此版本的 BlueXP  工作負載工廠適用於 VMware ，對 Amazon EC2 移轉顧問體驗有幾項改善：
+
+* * 增強型 Volume 指派指南 * ： EC2 移轉顧問「分類」和「封裝」步驟中的 Volume 指派資訊，具有增強的易讀性和可用性。系統會顯示每個 Volume 的更多實用資訊，讓您能夠更有效地識別磁碟區，並判斷如何指派磁碟區。
+* * 資料收集器指令碼效率提升 * ： EC2 移轉顧問資料收集器指令碼可在收集資料以進行較小的 VM 部署時，最佳化 CPU 使用率。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
+
+
+
 == 2025 年 3 月 2 日
 
 
@@ -44,11 +60,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 改善的 VM 選擇 * ： BlueXP  VMware 工作負載工廠現在支援篩選及搜尋您想要納入移轉部署的 VM 清單。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
-
-
-
-== 2024 年 12 月 1 日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]= 2024 年 12 月 1 日
 
 
 
@@ -61,7 +73,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * * 快速與進階體驗 * ：當您使用移轉顧問時，您現在可以選擇快速移轉體驗，使用 RVtooles ，或是使用移轉顧問資料收集器的進階體驗。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]= 2024 年 11 月 3 日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
+
+
+
+== 2024 年 11 月 3 日
 
 
 
