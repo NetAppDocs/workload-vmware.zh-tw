@@ -1,0 +1,19 @@
+= Amazon EC2 移轉顧問的改善
+:allow-uri-read: 
+
+
+
+
+=== Amazon EC2 移轉顧問的改善
+
+此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善 Amazon EC2 移轉顧問體驗：
+
+* NetApp 資料基礎架構洞見資料來源 * ：工作負載工廠現在直接與 NetApp 資料基礎架構洞見連結，以便在使用 EC2 移轉顧問資料收集器時收集 VMware 部署資訊。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]
+
+
+
+=== 更新的權限術語
+
+工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。

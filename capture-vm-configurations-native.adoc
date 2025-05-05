@@ -11,11 +11,33 @@ summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目�
 
 
 [role="lead"]
-您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。
+您可以使用移轉顧問 VM 資料收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼或 Data Infrastructure Insights ，因為這些選項會同時收集 VM 組態和效能資料，以獲得最準確的計畫。
 
 [role="tabbed-block"]
 ====
-.使用移轉顧問 VM 收集器指令碼
+.使用 RVTools （快速評估）
+--
+RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。
+
+https://www.robware.net/home["深入瞭解 RVTools"^]
+
+.步驟
+. 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
+. 啟動 RVTools 並登入目標 vCenter Server 。
++
+這會擷取有關 vCenter Server 的資訊。
+
+. 將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。
++
+如 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^]需詳細資訊、請參閱中的「命令列參數」一章。
+
+
+
+.結果
+包含您結果的 xlsx 或 xls 檔案會儲存至您的工作目錄。
+
+--
+.使用移轉顧問 VM 收集器指令碼（詳細規劃）
 --
 NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。您可以使用以下兩種模式之一的指令碼：
 
@@ -85,26 +107,35 @@ Connect-VIServer -server <server_IP>
 指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。
 
 --
-.使用 RVTools 軟體
+.使用 NetApp 資料基礎架構洞見（詳細規劃）
 --
-RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。
+NetApp 資料基礎架構洞見是一種雲端基礎架構監控工具，可讓您清楚掌握完整的基礎架構。您需要啟用移轉顧問與 Data Infrastructure Insights 之間的暫時性 API 通訊，以便移轉顧問收集有關 VMware 基礎架構的資訊。
 
-https://www.robware.net/home["深入瞭解 RVTools"^]
+https://docs.netapp.com/us-en/data-infrastructure-insights/["深入瞭解 Data Infrastructure Insights"^]
 
 .步驟
-. 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
-. 啟動 RVTools 並登入目標 vCenter Server 。
+. 登入您的 Data Infrastructure Insights 帳戶。
+. 在側邊導覽功能表中，選取 * 管理 * 。
+. 在產生的功能表中，選取 * API Access* 。
+. 在 *API 存取權杖 * 索引標籤中，選取 *+ API 存取權杖 * 。
 +
-這會擷取有關 vCenter Server 的資訊。
+此時會出現「建立 API 存取權杖」對話方塊。
 
-. 將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。
+. 提供 API 權杖的名稱和說明。
+. 在 * 此權杖將用於呼叫哪種類型的 API * 下，選取下列其中一項：
 +
-如 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^]需詳細資訊、請參閱中的「命令列參數」一章。
+** 擷取單位
+** 資產
+** 資料收集
 
 
+. 在 * 權限 * 下，選取 * 唯讀 * 。
+. 在 * 權杖過期時間 * 下，選擇您需要 API 權杖有效的時間長度。
+. 取消核取 * 自動旋轉 Kubernetes* 的權杖。
+. 選擇*保存*。
+. 選取 * 複製 API 存取權杖 * 。
+. 請儲存此權杖，以準備搭配工作負載原廠移轉顧問使用。
 
-.結果
-包含您結果的 xlsx 或 xls 檔案會儲存至您的工作目錄。
 
 --
 ====

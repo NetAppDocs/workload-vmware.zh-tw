@@ -412,7 +412,6 @@
   <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">使用其中一項登入工作負載工廠<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
   <block id="d976ce7b00249b4ad474f3d0bbefedbc" category="summary">在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。</block>
   <block id="8d3bf2572336618eb2a21a708a9e620f" category="paragraph">在您確認 ONTAP 檔案系統（或某些情況下的多個檔案系統）所建議的 FSX 符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。</block>
-  <block id="2589791e68019a74d4c1966e01ee9a23" category="paragraph">視您新增至工作負載原廠帳戶的原則和權限而定，您可以使用工作負載原廠（使用自動化模式），完全部署適用於 ONTAP 檔案系統的 FSX 。如果您擁有較少的權限（讀取模式）、或沒有權限（基本模式）、則必須使用 Codebox 的 CloudForformation 資訊、並在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。</block>
   <block id="a17419346eeea7a8b754d54e457aad0b" category="list-text">* AWS 認證 * ：選取或新增認證，以授予工作負載工廠直接為 ONTAP 檔案系統建立 FSX 所需的權限。您也可以從 Codebox 選取 CloudForgation 程式碼、然後在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。</block>
   <block id="894106a56db6962222de989043e29e02" category="summary">NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="b634387d5ccb17a06840d1d9c30bd867" category="summary">登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。</block>
@@ -422,13 +421,6 @@
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">您必須從登入工作負載工廠的系統，存取現有部署計畫的 .json 檔案。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作負載原廠總覽</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">如需工作負載工廠的詳細資訊，請<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>參閱。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
-  <block id="b49621858369606c8835ffee4bc53434" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。</block>
-  <block id="23ae25c2ba38ca6ce35bbc556ab80a83" category="list-text">* REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">* CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
   <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">開始之前，您應該先瞭解<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入工作負載工廠</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">在工作負載工廠設定帳戶</block>
@@ -452,9 +444,6 @@
   <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">在 Codebox 視窗中，選取<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>以將移轉顧問資料收集器指令碼（名為「 list-VMs.ps1 」）儲存至目標系統，或選取<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>以複製指令碼，以便將其貼到適當的系統上。</block>
   <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">在建立部署計畫的過程中，選擇您偏好的詳細程度和方法：</block>
   <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">* 快速評估 * ：此選項使用 RVtools 庫存檔案，在加速程序期間擷取有關 VM 的資訊，進而產生雲端移轉的設計藍圖。</block>
-  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">* 詳細規劃 * ：使用移轉顧問資料收集器庫存檔案來收集詳細資訊，進而實現部署就緒的設計。</block>
-  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">快速評估</block>
-  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">選取 * 快速評估 * 方塊，然後選取 * 下一步 * 。</block>
   <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">隨即顯示「 * 準備 AWS Cloud 就職 * 」頁面。</block>
   <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">在 _VM 組態上傳 _ 區段中，選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取由 RVTools 建立的 .xlsx 檔案。</block>
   <block id="b201be50fb24455e1169e30ba042483c" category="list-text">* 地區 * ：選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的地區。為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。</block>
@@ -465,8 +454,6 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">在 * 分類 * 頁面上，檢閱 VM 資訊， Volume 分類規則， Volume 指派，以及將在部署過程中移轉的磁碟區清單，然後選取 * 下一步 * 。</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">在 * 封裝 * 頁面上，檢閱 EC2 執行個體和指派給 ONTAP 叢集不同 FSX 的磁碟區，然後選取 * 下一步 * 。</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">在 * 審查計畫 * 頁面上，檢閱您計畫移轉的所有 VM 的預估每月節約成本和成本預估。</block>
-  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">詳細規劃</block>
-  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">選取 * 詳細規劃 * 方塊，然後選取 * 下一步 * 。</block>
   <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">在 _VM 組態上傳 _ 區段中，選取<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>並選取由移轉顧問資料收集器所建立的 .zip 檔案。</block>
   <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">在 _ 虛擬機器庫存考量 _ 區段中，選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的區域。為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。</block>
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">您可以選擇 * 完成 * 返回 VMware 移轉顧問頁面。</block>
@@ -512,7 +499,6 @@
   <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">從我的電腦 * 選取 * 。</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
-  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS 原生運算 * 。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。</block>
@@ -546,6 +532,51 @@
   <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">* 增強型 Volume 指派指南 * ： EC2 移轉顧問「分類」和「封裝」步驟中的 Volume 指派資訊，具有增強的易讀性和可用性。系統會顯示每個 Volume 的更多實用資訊，讓您能夠更有效地識別磁碟區，並判斷如何指派磁碟區。</block>
   <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">* 資料收集器指令碼效率提升 * ： EC2 移轉顧問資料收集器指令碼可在收集資料以進行較小的 VM 部署時，最佳化 CPU 使用率。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025 年 3 月 30 日</block>
-  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024 年 12 月 1 日</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
+  <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善 Amazon EC2 移轉顧問體驗：</block>
+  <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* NetApp 資料基礎架構洞見資料來源 * ：工作負載工廠現在直接與 NetApp 資料基礎架構洞見連結，以便在使用 EC2 移轉顧問資料收集器時收集 VMware 部署資訊。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
+  <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">您可以使用移轉顧問 VM 資料收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼或 Data Infrastructure Insights ，因為這些選項會同時收集 VM 組態和效能資料，以獲得最準確的計畫。</block>
+  <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">使用 RVTools （快速評估）</block>
+  <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">使用移轉顧問 VM 收集器指令碼（詳細規劃）</block>
+  <block id="905f3af3e1ec084a67a1b487b9ac6b66" category="open-title">使用 NetApp 資料基礎架構洞見（詳細規劃）</block>
+  <block id="a0e5953d5eb8ffc03d66bca81a0c18e6" category="paragraph">NetApp 資料基礎架構洞見是一種雲端基礎架構監控工具，可讓您清楚掌握完整的基礎架構。您需要啟用移轉顧問與 Data Infrastructure Insights 之間的暫時性 API 通訊，以便移轉顧問收集有關 VMware 基礎架構的資訊。</block>
+  <block id="b5b31d8ce41e2f6be9d862f8948f3dcc" category="inline-link">深入瞭解 Data Infrastructure Insights</block>
+  <block id="70e33e04e2c32f73e731d6c181dfb01f" category="paragraph"><block ref="70e33e04e2c32f73e731d6c181dfb01f" category="inline-link-rx"></block></block>
+  <block id="64f9349e02e421debf3f6d20a5be5ed2" category="list-text">登入您的 Data Infrastructure Insights 帳戶。</block>
+  <block id="58b51871d59c9ea6e3dfb178bf676134" category="list-text">在側邊導覽功能表中，選取 * 管理 * 。</block>
+  <block id="372be835c202d63d8125e0f349ef82e4" category="list-text">在產生的功能表中，選取 * API Access* 。</block>
+  <block id="1691ad67fe5d613f8659e3b1f3dbad92" category="list-text">在 *API 存取權杖 * 索引標籤中，選取 *+ API 存取權杖 * 。</block>
+  <block id="0d9f4e7c4781ab54219dde884e55e7de" category="paragraph">此時會出現「建立 API 存取權杖」對話方塊。</block>
+  <block id="8572681a78798eae07513e43042ec14e" category="list-text">提供 API 權杖的名稱和說明。</block>
+  <block id="25301bbb0bd6feeaa7d0f92041e91809" category="list-text">在 * 此權杖將用於呼叫哪種類型的 API * 下，選取下列其中一項：</block>
+  <block id="7afd7da52e07dd7febdaa6f50c36644d" category="list-text">擷取單位</block>
+  <block id="9aedeaf1f77b8642abe528503b8c5de8" category="list-text">資產</block>
+  <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="list-text">資料收集</block>
+  <block id="1632bcc011087537a13d82cdf7c72e92" category="list-text">在 * 權限 * 下，選取 * 唯讀 * 。</block>
+  <block id="a30491a7247ae579cd45bb891810edc6" category="list-text">在 * 權杖過期時間 * 下，選擇您需要 API 權杖有效的時間長度。</block>
+  <block id="403c7f2f4480b30b6731e3047d4251f3" category="list-text">取消核取 * 自動旋轉 Kubernetes* 的權杖。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
+  <block id="61a464c915eccf6999e7c204f359223d" category="list-text">選取 * 複製 API 存取權杖 * 。</block>
+  <block id="b75df169abd314f574bcc40ea5155622" category="list-text">請儲存此權杖，以準備搭配工作負載原廠移轉顧問使用。</block>
+  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">視您新增至工作負載原廠帳戶的原則和權限而定，您可以使用工作負載原廠（使用讀取 / 寫入模式），完全部署適用於 ONTAP 檔案系統的 FSX 。如果您的權限較少（唯讀模式），或是沒有權限（基本模式），則需要使用 Codebox 的 CloudForformation 資訊，並在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。</block>
+  <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">* 詳細規劃 * ：這些選項使用移轉顧問資料收集器庫存檔案或直接存取 NetApp 資料基礎架構 Insights 的 API 來收集詳細資訊，進而實現部署就緒的設計。</block>
+  <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools （快速評估）</block>
+  <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">選擇 *RVTools* 方塊，然後選擇 * 下一步 * 。</block>
+  <block id="3cc6c29f47170a38b3e6942027d7a69c" category="open-title">移轉顧問資料收集器（詳細規劃）</block>
+  <block id="e996abdfd89eafe08b518bb9c53ffb5c" category="list-text">選取 * 移轉顧問資料收集器 * 方塊，然後選取 * 下一步 * 。</block>
+  <block id="4fdc46a9c04edc23a039525075c001f6" category="open-title">NetApp 資料基礎架構洞見（詳細規劃）</block>
+  <block id="f5cd0ecad07b6d4672d911e9b54865f1" category="list-text">選取 * NetApp 資料基礎架構 Insights * 方塊，然後選取 * 下一步 * 。</block>
+  <block id="947d830ffc5683c6bbe8aa6121603afd" category="list-text">在 _ NetApp 資料基礎架構洞見連線組態 _ 區段中，輸入資料基礎架構洞見的租戶端點。</block>
+  <block id="94d5cfc399e2d5a51a5607471312328b" category="paragraph">這應該是您用來存取 Data Infrastructure Insights 的 URL 。</block>
+  <block id="5085d7cec411dbaca9f86e65ed057ff3" category="list-text">如果您尚未產生 Data Infrastructure Insights 的 API 存取權杖，請依照頁面上的指示建立。否則，請將您的 API 存取權杖貼到 * 輸入 API 存取權杖 * 文字方塊中。</block>
+  <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">選擇*連接*。</block>
+  <block id="5680d40c89174adbe60bc8bed6184bd1" category="paragraph">工作負載工廠會從 Data Infrastructure Insights 收集資訊。</block>
+  <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">從收集的資訊中填入「 * VM 清查摘要 * 」區段，以反映 VM 數量和總儲存容量。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">您可以使用移轉顧問 VM 收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態，然後再建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
+  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2025 年 1 月 5 日</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
 </blocks>

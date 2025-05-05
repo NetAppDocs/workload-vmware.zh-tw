@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 在 vSphere 環境中擷取您目前的 VM 組態
 [role="quick-margin-para"]
-您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態、以建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。
+您可以使用移轉顧問 VM 收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態，然後再建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。
 
 [role="quick-margin-para"]
 link:capture-vm-configurations-native.html["瞭解如何擷取目前的 VM 組態"]。
