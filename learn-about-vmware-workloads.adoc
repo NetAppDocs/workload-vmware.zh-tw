@@ -65,7 +65,20 @@ image:diagram-vmware-fsx-old-new.png["顯示移轉後舊架構和新架構範例
 * 使用 VPC 對等的單一 AZ 組態、無需使用 Transit Gateway 、即可降低成本和延遲
 
 
-https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+
+== 使用工作負載工廠的工具
+
+您可以搭配下列工具使用 BlueXP  工作負載工廠：
+
+* * 工作負載原廠主控台 * ：工作負載原廠主控台可提供應用程式與專案的視覺化整體檢視。
+* * BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。
+* * 詢問我 * ：使用「詢問我 AI 」助理來詢問問題，並深入瞭解工作負載工廠，而無需離開工作負載工廠的網路 UI 。從工作負載原廠說明功能表存取 Ask me 。
+* * CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。
+* * REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
+* * CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。
+* * Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。
+
 
 
 

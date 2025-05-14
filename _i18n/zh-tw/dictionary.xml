@@ -574,9 +574,17 @@
   <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">選擇*連接*。</block>
   <block id="5680d40c89174adbe60bc8bed6184bd1" category="paragraph">工作負載工廠會從 Data Infrastructure Insights 收集資訊。</block>
   <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">從收集的資訊中填入「 * VM 清查摘要 * 」區段，以反映 VM 數量和總儲存容量。</block>
-  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
   <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">您可以使用移轉顧問 VM 收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態，然後再建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
   <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2025 年 1 月 5 日</block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
+  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
+  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
+  <block id="4b50901597179fa075617d96ccf51901" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台可提供應用程式與專案的視覺化整體檢視。</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。</block>
+  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">* 詢問我 * ：使用「詢問我 AI 」助理來詢問問題，並深入瞭解工作負載工廠，而無需離開工作負載工廠的網路 UI 。從工作負載原廠說明功能表存取 Ask me 。</block>
+  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
+  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
+  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
+  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
 </blocks>
