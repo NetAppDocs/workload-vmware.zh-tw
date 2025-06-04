@@ -21,7 +21,7 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶
 [role="quick-margin-para"]
-您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以讀取或自動化模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及在 Amazon EC2 中部署和管理工作負載所需的權限。
+您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 Amazon EC2 中部署和管理工作負載所需的權限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]。

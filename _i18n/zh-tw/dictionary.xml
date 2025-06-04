@@ -425,10 +425,8 @@
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入工作負載工廠</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">在工作負載工廠設定帳戶</block>
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">您需要<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>使用其中一項登入<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
-  <block id="de1e04d3212ed90a1e381e49a4b2d13d" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以讀取或自動化模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及在 Amazon EC2 中部署和管理工作負載所需的權限。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>。</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>。</block>
-  <block id="3157cd9076119066c34a23e78c720d17" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以讀取或自動化模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及在 VMware Cloud 內部署和管理工作負載所需的權限。</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">瞭解如何連接適用於 ONTAP 檔案系統的 FSX</block>
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>。</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。</block>
@@ -536,7 +534,6 @@
   <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善 Amazon EC2 移轉顧問體驗：</block>
   <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* NetApp 資料基礎架構洞見資料來源 * ：工作負載工廠現在直接與 NetApp 資料基礎架構洞見連結，以便在使用 EC2 移轉顧問資料收集器時收集 VMware 部署資訊。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
   <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">您可以使用移轉顧問 VM 資料收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼或 Data Infrastructure Insights ，因為這些選項會同時收集 VM 組態和效能資料，以獲得最準確的計畫。</block>
   <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">使用 RVTools （快速評估）</block>
   <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">使用移轉顧問 VM 收集器指令碼（詳細規劃）</block>
@@ -560,7 +557,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
   <block id="61a464c915eccf6999e7c204f359223d" category="list-text">選取 * 複製 API 存取權杖 * 。</block>
   <block id="b75df169abd314f574bcc40ea5155622" category="list-text">請儲存此權杖，以準備搭配工作負載原廠移轉顧問使用。</block>
-  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">視您新增至工作負載原廠帳戶的原則和權限而定，您可以使用工作負載原廠（使用讀取 / 寫入模式），完全部署適用於 ONTAP 檔案系統的 FSX 。如果您的權限較少（唯讀模式），或是沒有權限（基本模式），則需要使用 Codebox 的 CloudForformation 資訊，並在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。</block>
   <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">* 詳細規劃 * ：這些選項使用移轉顧問資料收集器庫存檔案或直接存取 NetApp 資料基礎架構 Insights 的 API 來收集詳細資訊，進而實現部署就緒的設計。</block>
   <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools （快速評估）</block>
   <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">選擇 *RVTools* 方塊，然後選擇 * 下一步 * 。</block>
@@ -586,5 +582,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
+  <block id="22e3b254750c8ee79058a0cf095f5b60" category="paragraph">根據您新增至工作負載工廠帳戶的政策和權限，您可以完全使用工作負載工廠（使用讀取/寫入模式）部署 FSx for ONTAP 檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 訊息，並在 AWS 中自行部署 FSx for ONTAP 檔案系統。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
+  <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 Amazon EC2 中部署和管理工作負載所需的權限。</block>
+  <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 VMware Cloud 中部署和管理工作負載所需的權限。</block>
 </blocks>
