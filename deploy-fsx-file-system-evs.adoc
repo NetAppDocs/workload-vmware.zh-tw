@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: deploy-fsx-file-system-evs.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
+summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。 
+---
+= 部署 ONTAP 檔案系統的建議 FSX
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在您確認 ONTAP 檔案系統（或某些情況下的多個檔案系統）所建議的 FSX 符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。
+
+根據您新增至工作負載工廠帳戶的政策和權限，您可以完全使用工作負載工廠（使用讀取/寫入模式）部署 FSx for ONTAP 檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 範本並在 AWS 中自行部署 FSx for ONTAP 檔案系統。
+
+.部署到 Amazon Elastic VMware Service 的要求
+* 您必須擁有 Amazon Elastic VMware Service 訂閱。
+* 您必須擁有必要的權限才能在您的 AWS 帳戶中建立 FSx for ONTAP 檔案系統。
+
+
+.步驟
+. 在 * 審查計畫 * 頁面底部、選取 * 部署 * 、隨即顯示建立 ONTAP 檔案系統的 FSX 頁面。
++
+定義適用於 ONTAP 檔案系統的 FSX 的大部分欄位都是根據您提供的資訊來完成、但您需要在此頁面中填寫一些欄位。
+
++
+您可以使用「快速建立」或「進階建立」選項。進階建立提供數個額外的儲存參數、可供您自訂。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解這兩個選項的功能"]
+
+. 在「檔案系統常規配置」部分中，輸入以下資訊：
++
+.. * AWS 認證 * ：選取或新增認證，以授予工作負載工廠直接為 ONTAP 檔案系統建立 FSX 所需的權限。您也可以從 Codebox 選取 CloudForgation 程式碼、然後在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。
+.. * 檔案系統名稱 * ：輸入您要用於此 ONTAP 檔案系統的 FSX 名稱。
+.. *標籤*：您可以選擇新增標籤來對此 FSx for ONTAP 檔案系統進行分類。
+
+
+. 在「網路與安全性」區段中、輸入下列資訊：
++
+.. *區域和 VPC*：選擇將部署 FSx for ONTAP 檔案系統的區域和 VPC。
+.. *安全性群組*（僅限進階建立）：使用「進階建立」選項時，您可以選擇 FSx for ONTAP VPC 的預設安全性群組，以便所有流量都可以存取 FSx for ONTAP 檔案系統。您可以建立新的安全群組，也可以選擇現有的安全性群組。
++
+如果啟用*根據 EVS NFS 資料儲存調整安全群組配置*選項，工作負載工廠將根據 EVS NFS 資料儲存的設定配置安全群組。
+
++
+您可以向安全群組新增入站規則，以限制其他 AWS 服務可以存取 FSx for ONTAP 檔案系統。這將減少打開的服務數量。以下是最低連接埠和通訊協定：
+
++
+[cols="15,10,55"]
+|===
+| 通訊協定 | 連接埠 | 目的 
+
+
+| TCP、udp | 111 | Portmapper （用於協商 NFS 要求中使用的連接埠） 
+
+
+| TCP、udp | 635 | NFS mountd （接收 NFS 掛載要求） 
+
+
+| TCP、udp | 2049 | NFS 網路流量 
+
+
+| TCP、udp | 4045 | 網路鎖定管理員（ NLM 、 lockd ）：處理鎖定要求。 
+
+
+| TCP、udp | 4046 | 網路狀態監視器（ NSM 、 statd ） - 通知 NFS 用戶端伺服器重新開機以進行鎖定管理。 
+|===
+.. *可用區域*：選擇可用區域和子網路。
++
+如果您想要避免因跨 AZ 流量而產生費用、則應選擇與部署 VMware SDDC 相同的可用性區域。
+
+.. *加密*（僅限進階建立）：使用*進階建立*選項時，您可以從下拉清單中選擇 AWS 加密金鑰名稱。
+.. *NFS 資料儲存存取*（僅限進階建立）：使用*進階建立*選項時，您可以選擇所有主機是否可以存取資料存儲，或只有 EVS 管理主機可以存取資料儲存。
+
+
+. 在「檔案系統詳細資料」區段中、輸入下列資訊：
++
+.. *ONTAP 憑證*：輸入 ONTAP 使用者名稱密碼。
+.. * 儲存 VM 認證 * （僅限進階建立）：輸入並確認儲存 VM 密碼。密碼可能是此檔案系統的專屬密碼、您也可以使用為 ONTAP 認證輸入的相同密碼。
+
+
+. 在 * 摘要 * 區段中、您可以檢視 VMware 移轉顧問根據您的資訊所設計的適用於 ONTAP 檔案系統和資料存放區組態的 FSX 。
+. 選取 * 建立 * 來部署 ONTAP 檔案系統的 FSX 。此程序最多可能需要 2 小時。
++
+或者，在 Codebox 視窗中，您可以選擇 *重定向到 CloudFormation* 以使用 CloudFormation 堆疊建立檔案系統和建議的 VM 配置。
+
++
+無論是哪種情況、您都可以監控 CloudForgation 的建立進度。
+
+
+
+.結果
+已部署適用於 ONTAP 檔案系統的 FSX 。現在您可以使用 Codebox 中的 AWS CloudFormation 範本將建議的 VM 配置部署到您的 Amazon Elastic VMware Service 環境。

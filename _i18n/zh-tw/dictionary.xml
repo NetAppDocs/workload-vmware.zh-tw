@@ -521,7 +521,6 @@
   <block id="b4a4e72af96c527b186a3d8f12952f22" category="list-text">* 增強型檔案系統自動指派 * ： Amazon FSX for NetApp ONTAP 檔案系統指派已改善，可更有效地最佳化成本並將處理量降至最低。</block>
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">在 VM 清單中，您可以選取要顯示為欄的 VM 資訊類型。例如，根據 VM 資源需求，選取 _ 預估執行個體類型 _ 會顯示一欄，其中包含每個 VM 的預估 Amazon EC2 執行個體類型。</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">如果某個 Volume 的容量或效能需求超過 Amazon FSX 在特定地區的 NetApp ONTAP 檔案系統功能，移轉顧問建議將該 Volume 部署在 Amazon EBS 檔案系統上。</block>
-  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024 年 19 月 9 日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
@@ -572,7 +571,6 @@
   <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">從收集的資訊中填入「 * VM 清查摘要 * 」區段，以反映 VM 數量和總儲存容量。</block>
   <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">您可以使用移轉顧問 VM 收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態，然後再建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
-  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2025 年 1 月 5 日</block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024 年 12 月 1 日</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
@@ -587,4 +585,52 @@
   <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
   <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 Amazon EC2 中部署和管理工作負載所需的權限。</block>
   <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 VMware Cloud 中部署和管理工作負載所需的權限。</block>
+  <block id="1832a7f4d2abf297aa0cee87f4c043e3" category="doc">引入對 Amazon Elastic VMWare Service 的遷移顧問支持</block>
+  <block id="0a2319b536912bd5824ac0880375783c" category="paragraph">BlueXP VMware 工作負載工廠現已支援 Amazon Elastic VMware Service。您可以使用遷移顧問快速將本機 VMware 工作負載移轉到 Amazon Elastic VMware Service，從而優化成本並更好地控制您的 VMware 環境，而無需重構或重新建置應用程式平台。</block>
+  <block id="e64998710319712d47612cc187a1dc35" category="inline-link">使用遷移顧問為 Amazon EVS 建立部署計劃</block>
+  <block id="e38866fbf1fd8067b38b878041582246" category="paragraph"><block ref="e38866fbf1fd8067b38b878041582246" category="inline-link-rx"></block></block>
+  <block id="89caae77acbaec9919d3c71c10e004de" category="paragraph">根據您新增至工作負載工廠帳戶的政策和權限，您可以完全使用工作負載工廠（使用讀取/寫入模式）部署 FSx for ONTAP 檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 範本並在 AWS 中自行部署 FSx for ONTAP 檔案系統。</block>
+  <block id="802df5af335904750107954ab3a8ed46" category="list-title">部署到 Amazon Elastic VMware Service 的要求</block>
+  <block id="af3e8ed9d9207dad8af46833f2eb0ab7" category="list-text">您必須擁有 Amazon Elastic VMware Service 訂閱。</block>
+  <block id="ae7ebbe17e3811730276beadb335d6dd" category="list-text">您必須擁有必要的權限才能在您的 AWS 帳戶中建立 FSx for ONTAP 檔案系統。</block>
+  <block id="24fc36f7e1c73cab9f76bb8ee2f25d79" category="list-text">在「檔案系統常規配置」部分中，輸入以下資訊：</block>
+  <block id="87597408c5356ee95acfb6204cb27959" category="list-text">*標籤*：您可以選擇新增標籤來對此 FSx for ONTAP 檔案系統進行分類。</block>
+  <block id="878b8332f582e3c39ba8b0c5141a2bc9" category="list-text">*區域和 VPC*：選擇將部署 FSx for ONTAP 檔案系統的區域和 VPC。</block>
+  <block id="68da56496686d2dc164a51d6f90f1d12" category="list-text">*安全性群組*（僅限進階建立）：使用「進階建立」選項時，您可以選擇 FSx for ONTAP VPC 的預設安全性群組，以便所有流量都可以存取 FSx for ONTAP 檔案系統。您可以建立新的安全群組，也可以選擇現有的安全性群組。</block>
+  <block id="a73a1c93ad165ac5c17c82603fc3a576" category="paragraph">如果啟用*根據 EVS NFS 資料儲存調整安全群組配置*選項，工作負載工廠將根據 EVS NFS 資料儲存的設定配置安全群組。</block>
+  <block id="d1ccf69487a52a741a6bfb38f901c5b1" category="paragraph">您可以向安全群組新增入站規則，以限制其他 AWS 服務可以存取 FSx for ONTAP 檔案系統。這將減少打開的服務數量。以下是最低連接埠和通訊協定：</block>
+  <block id="657cb66ece3451d22c97bdb6e58d16e0" category="list-text">*可用區域*：選擇可用區域和子網路。</block>
+  <block id="dd53429e7a462cab042d43fcc9e6fd5b" category="list-text">*加密*（僅限進階建立）：使用*進階建立*選項時，您可以從下拉清單中選擇 AWS 加密金鑰名稱。</block>
+  <block id="313b56cb7d0011cb0629e69df54b8e27" category="list-text">*NFS 資料儲存存取*（僅限進階建立）：使用*進階建立*選項時，您可以選擇所有主機是否可以存取資料存儲，或只有 EVS 管理主機可以存取資料儲存。</block>
+  <block id="7d87cf8c2865afef739dfc772b6aabc3" category="list-text">*ONTAP 憑證*：輸入 ONTAP 使用者名稱密碼。</block>
+  <block id="2240ad2300512b80bcff2fc7b3eadb2e" category="paragraph">或者，在 Codebox 視窗中，您可以選擇 *重定向到 CloudFormation* 以使用 CloudFormation 堆疊建立檔案系統和建議的 VM 配置。</block>
+  <block id="f49f5d0e3a47bf2d077d9b5cb9387559" category="paragraph">已部署適用於 ONTAP 檔案系統的 FSX 。現在您可以使用 Codebox 中的 AWS CloudFormation 範本將建議的 VM 配置部署到您的 Amazon Elastic VMware Service 環境。</block>
+  <block id="18558d28d08811f4ec25bd5acef85498" category="doc">使用 VMware 工作負載遷移顧問為 Amazon EVS 建立部署計劃</block>
+  <block id="afae2006111ac3752aa6ac921a1174d1" category="section-title">透過手動指定環境要求來建立部署計劃</block>
+  <block id="3693b6808c8591ae14d0989957294e8c" category="paragraph">您可以手動指定 Amazon Elastic VMware Service 中虛擬機器的要求，並使用自訂的 Amazon FSx for NetApp ONTAP 檔案系統作為外部資料儲存。</block>
+  <block id="8d4edb94cbb86591a03f23fc0d653003" category="list-text">或者，如果您從 Workload Factory 控制台存取工作負載工廠，請從 VMware 工作負載磁貼中選擇 *規劃和建立*，然後選擇 *Amazon Elastic VMware 服務*。此時會顯示 VMware 移轉顧問的啟動畫面。</block>
+  <block id="79f480b47159732c8b7d2aafd18e060e" category="list-text">選擇“Amazon Elastic VMware 服務”圖塊。</block>
+  <block id="1b7c012ca7da212cb6ec387367494316" category="list-text">輸入您的 VM 環境的要求。</block>
+  <block id="330b61387619b0f8b4b8895b1ec8613f" category="paragraph">請記住以下虛擬機器遷移效能要求和建議：</block>
+  <block id="4188b01aa6e6bb6ccb7125b23b28fafd" category="list-text">出於效能原因，建議 VM 庫存的最小儲存容量為 10TiB。</block>
+  <block id="5b5460403cef0ea7685b6011079155e0" category="list-text">Amazon Elastic VMware Service 資料儲存區需要最小吞吐量，具體取決於您為此部署指定所需的 IOPS 數量。</block>
+  <block id="b5caa85d8d4f88117041949b5799396b" category="list-text">根據 FSx for ONTAP 檔案系統配置，Amazon Elastic VMware Service 環境需要最少數量的外部資料儲存才能達到最佳效能。</block>
+  <block id="3355e631d51b295b53f6446e8fdf4cd7" category="list-text">準備好後，選擇「*下一步*」來查看遷移計畫。</block>
+  <block id="024245b5e6c75ae114dc398c5ca73ae7" category="list-text">檢閱計畫。展開每個部分以查看計劃詳細資訊。</block>
+  <block id="a224105b72eaa33fd15b06abcd653ede" category="list-text">或者，當您對遷移計劃滿意時，您可以將其儲存為範本或 PDF：</block>
+  <block id="5668e73ddaaf1b152f3748d30b45e020" category="list-text">選擇“匯出計劃”將遷移計劃儲存為模板<block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block>在您的電腦上格式化。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。</block>
+  <block id="df5e6fa59277519d17b0cce829cf0807" category="list-text">選擇「下載計劃」下載部署計劃<block ref="abdf095626d4a4ab2bcd4167b128c1f1" prefix=" " category="inline-code"></block>格式，以便您可以分發計劃以供審查。</block>
+  <block id="a081cf5b640f454f47679c388f6530d7" category="list-text"><block ref="844d6e67804ecd2d3cf898790362c9e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0c3ffedc4190adc07720bcef4541cf4" category="summary">開始使用 VMware 遷移顧問將您目前的基礎架構移轉到 Amazon EVS，並使用 Amazon FSx for ONTAP 作為外部 NFS 資料儲存。</block>
+  <block id="97735cf08bc8cd1817cf2dbadd06154d" category="doc">使用 VMware 工作負載遷移顧問快速開始遷移到 Amazon EVS</block>
+  <block id="10fb6b3cc2639a71681659d3fc652b8a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 使用 VMware 移轉顧問建立部署計畫</block>
+  <block id="78522cc7fdf910d1c768be65dab81580" category="paragraph">啟動 VMware 遷移顧問並手動設定您想要在 Amazon Elastic VMWare Service 基礎架構上建立的 VM 環境，使用 Amazon FSx for ONTAP 檔案系統作為外部 NFS 資料儲存。</block>
+  <block id="252d7e7931c94880fe6fc1eac69d09f2" category="paragraph"><block ref="dc198a09c8e48764d8b3153d8454731b" category="inline-link-macro-rx"></block>。</block>
+  <block id="d245f7ce84d001c84c5d15b65c1e1f82" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 部署 ONTAP 檔案系統的建議 FSX</block>
+  <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>。</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025 年 6 月 29 日</block>
+  <block id="b86dc1705dea7f37874d95dc0b3ecb5d" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2025年3月2日</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
+  <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">遷移到 Amazon EVS 的快速入門</block>
+  <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">移轉到 Amazon Elastic VMware Service</block>
 </blocks>

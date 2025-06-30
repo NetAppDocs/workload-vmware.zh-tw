@@ -23,12 +23,20 @@ sidebar:
     entries:
     - title: 瞭解 VMware 的 BlueXP  工作負載工廠
       url: "/learn-about-vmware-workloads.html"
-    - title: 快速開始移轉至 AWS 上的 VMware Cloud
-      url: "/quick-start.html"
+    - title: 遷移到 Amazon EVS 的快速入門
+      url: "/quick-start-evs.html"
     - title: 快速開始移轉至 Amazon EC2
       url: "/quick-start-native.html"
+    - title: 快速開始移轉至 AWS 上的 VMware Cloud
+      url: "/quick-start.html"
   - title: 使用 VMware 移轉顧問
     entries:
+    - title: 移轉到 Amazon Elastic VMware Service
+      entries:
+      - title: 使用移轉顧問建立部署計畫
+        url: "/launch-migration-advisor-evs-manual.html"
+      - title: 部署 ONTAP 檔案系統的建議 FSX
+        url: "/deploy-fsx-file-system-evs.html"
     - title: 移轉至 Amazon EC2
       entries:
       - title: 擷取您目前的 VM 組態

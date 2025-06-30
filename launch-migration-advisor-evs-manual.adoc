@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-evs-manual.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
+summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
+---
+= 使用 VMware 工作負載遷移顧問為 Amazon EVS 建立部署計劃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。
+
+請注意，您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您沒有存取權、請立即建立帳戶。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
+
+
+
+== 透過手動指定環境要求來建立部署計劃
+
+您可以手動指定 Amazon Elastic VMware Service 中虛擬機器的要求，並使用自訂的 Amazon FSx for NetApp ONTAP 檔案系統作為外部資料儲存。
+
+.需求
+* 您必須擁有 Amazon Elastic VMware Service 訂閱。
+
+
+.步驟
+. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 或者，如果您從 Workload Factory 控制台存取工作負載工廠，請從 VMware 工作負載磁貼中選擇 *規劃和建立*，然後選擇 *Amazon Elastic VMware 服務*。此時會顯示 VMware 移轉顧問的啟動畫面。
+. 選擇“Amazon Elastic VMware 服務”圖塊。
+. 準備好後、請選取 * 開始 * 。
+. 輸入您的 VM 環境的要求。
++
+[NOTE]
+====
+請記住以下虛擬機器遷移效能要求和建議：
+
+** 出於效能原因，建議 VM 庫存的最小儲存容量為 10TiB。
+** Amazon Elastic VMware Service 資料儲存區需要最小吞吐量，具體取決於您為此部署指定所需的 IOPS 數量。
+** 根據 FSx for ONTAP 檔案系統配置，Amazon Elastic VMware Service 環境需要最少數量的外部資料儲存才能達到最佳效能。
+
+
+====
+. 準備好後，選擇「*下一步*」來查看遷移計畫。
+. 檢閱計畫。展開每個部分以查看計劃詳細資訊。
+. 或者，當您對遷移計劃滿意時，您可以將其儲存為範本或 PDF：
++
+** 選擇“匯出計劃”將遷移計劃儲存為模板 `.json`在您的電腦上格式化。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。
+** 選擇「下載計劃」下載部署計劃 `.pdf`格式，以便您可以分發計劃以供審查。
+
+
+. link:deploy-fsx-file-system-evs.html["為 ONTAP 檔案系統部署 VMware 工作負載建議的 FSX"]。
+
