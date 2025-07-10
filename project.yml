@@ -1,7 +1,6 @@
 ---
 settings:
   name: VMware workloads
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
