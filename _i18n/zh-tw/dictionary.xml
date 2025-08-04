@@ -629,8 +629,38 @@
   <block id="d245f7ce84d001c84c5d15b65c1e1f82" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 部署 ONTAP 檔案系統的建議 FSX</block>
   <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>。</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025 年 6 月 29 日</block>
-  <block id="b86dc1705dea7f37874d95dc0b3ecb5d" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2025年3月2日</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
   <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">遷移到 Amazon EVS 的快速入門</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">移轉到 Amazon Elastic VMware Service</block>
+  <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">改進了對 Amazon Elastic VMWare Service 的遷移顧問支持</block>
+  <block id="37ac2db5bb5bc7f50e3b58bbb706b64b" category="paragraph">Amazon Elastic VMware Service 移轉顧問現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。</block>
+  <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">計算遷移到 Amazon Elastic VMware Service 節省的成本</block>
+  <block id="b1da4fce8da5117e3a9e1041d1749074" category="paragraph">現在您可以探索將 VMware 工作負載移轉到 Amazon Elastic VMware Service (EVS) 的潛在節省。節省計算器可讓您比較使用 Amazon EVS 與Amazon FSx for NetApp ONTAP作為底層儲存和不使用 Amazon FSx for NetApp ONTAP 作為底層儲存的成本。當您調整環境特徵時，計算器會即時顯示潛在的節省。</block>
+  <block id="b5ddf28fa6b1419129cc60c87384d5f3" category="inline-link">探索使用BlueXP workload factory節省 Amazon Elastic VMware Service 成本的方法</block>
+  <block id="e5201134512b46a1979954f15ddb8c25" category="paragraph"><block ref="e5201134512b46a1979954f15ddb8c25" category="inline-link-rx"></block></block>
+  <block id="89737fdc47d2ffa6f11712bb340e2a19" category="summary">計算將 Amazon EVS 與 FSx for ONTAP結合使用可以節省多少。</block>
+  <block id="c99c39a5824ae2c9be487d0de19febcd" category="paragraph">探索將 VMware 工作負載移轉到 Amazon Elastic VMware Service (EVS) 的潛在節省空間。此計算機可讓您比較使用 Amazon EVS 和不使用Amazon FSx for NetApp ONTAP作為儲存的成本。</block>
+  <block id="85f9ebcaf90aa1d0aea8e19f23446085" category="paragraph">如果節省計算器確定最具成本效益的儲存是 FSx for ONTAP，您可以建立詳細的評估，該評估提供了您可以在使用前查看的遷移計劃。然後，您可以使用 Codebox 產生 Infrastructure-as-Code 範本。</block>
+  <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">探索 EVS 環境的節省</block>
+  <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">請依照以下步驟探索計劃遷移到 Amazon EVS 環境的潛在節省。</block>
+  <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">在繼續之前，請查看儲蓄計算器底部的免責聲明，以了解有關如何計算價格估算的更多資訊。</block>
+  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">從 VMware 工作負載圖塊中，選擇 *探索節省*，然後選擇 *Amazon Elastic VMware Service (EVS)*。顯示儲蓄計算器。</block>
+  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">*環境偏好設定*窗格提供了滑桿，您可以根據環境需求進行調整。</block>
+  <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">根據需要調整以下滑區塊以查看您所選值的即時節省計算。如果使用鍵盤，您可以使用箭頭鍵進行微調：</block>
+  <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*所需實體 CPU（數量）*</block>
+  <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*所需實體記憶體 (GiB)*</block>
+  <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*所需虛擬機器儲存 (TiB)*</block>
+  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*EVS 計費計劃*</block>
+  <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">建立部署計劃</block>
+  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">使用遷移顧問<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block>對於 Amazon EVS 環境，選擇*建立詳細評估*。</block>
+  <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">選擇“*關閉*”以關閉 TCO 計算器。</block>
+  <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">在「EVS 叢集附件」部分中，輸入以下資訊：</block>
+  <block id="2e06075a8c3ccf8cb8ba301a238ce6f3" category="list-text">*資料儲存區掛載選項*：可選地，啟用*將資料儲存區掛載到 EVS 叢集*選項以自動將資料儲存區連接到 Amazon EVS 叢集。此選項還會導致工作負載工廠配置 VMware ESXi 主機設置，以便它們符合ONTAP最佳實務建議。在部署文件系統之前，您可以查看“*摘要*”部分中的計劃詳細信息，以查看已更改的設定。</block>
+  <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*EVS 叢集 vSphere 控制台詳細資料*：輸入應連接 Amazon EVS 的 VMware vCenter 伺服器的 IP 位址或 FQDN。</block>
+  <block id="8216b024615cc78b62369ac15275d617" category="list-text">*vSphere 管理員憑證金鑰 ARN*：選擇 vSphere 管理員憑證金鑰 ARN。這些憑證用於掛載資料儲存區並配置建議的 VMware 設定。</block>
+  <block id="83fcfa0f731c9eadc58dd7b0bbe13131" category="paragraph">如果 Amazon EVS 在該區域不可用，或者您的帳戶沒有權限檢索可用密鑰 ARN 的列表，您可以手動輸入密鑰 ARN 值。</block>
+  <block id="a2e98ef8c2ce2e5671fe4097dbf5f4ce" category="section-title">2025年8月3日</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
+  <block id="bb0d319ea44614c003c0a5e9c6e4f1a6" category="sidebar">快速入門：移轉到 Amazon Elastic VMware Service</block>
+  <block id="cf48d7891f28d92c4308fb5debb574b0" category="sidebar">探索儲蓄</block>
 </blocks>

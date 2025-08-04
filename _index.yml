@@ -9,10 +9,28 @@ indexpage:
     links:
     - title: 瞭解 VMware 的 BlueXP  工作負載工廠
       url: learn-about-vmware-workloads.html
+    - title: 快速入門：移轉到 Amazon Elastic VMware Service
+      url: quick-start-evs.html
     - title: 快速入門：移轉至 AWS 上的 VMware Cloud
       url: quick-start.html
     - title: 快速入門：移轉至 Amazon EC2
       url: quick-start-native.html
+  - title: 移轉到 Amazon Elastic VMware Service
+    links:
+    - title: 探索儲蓄
+      url: calculate-evs-savings.html
+    - title: 使用移轉顧問建立部署計畫
+      url: launch-migration-advisor-evs-manual.html
+    - title: 部署 ONTAP 檔案系統的建議 FSX
+      url: deploy-fsx-file-system.html
+  - title: 移轉至 Amazon EC2
+    links:
+    - title: 擷取您目前的 VM 組態
+      url: capture-vm-configurations-native.html
+    - title: 使用移轉顧問建立部署計畫
+      url: launch-onboarding-advisor-native.html
+    - title: 部署 ONTAP 檔案系統的建議 FSX
+      url: deploy-fsx-file-system.html
   - title: 移轉至 AWS 上的 VMware Cloud
     links:
     - title: 擷取您目前的 VM 組態
@@ -25,14 +43,6 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: 將資料移轉至新的基礎架構
       url: migrate-data.html
-  - title: 移轉至 Amazon EC2
-    links:
-    - title: 擷取您目前的 VM 組態
-      url: capture-vm-configurations-native.html
-    - title: 使用移轉顧問建立部署計畫
-      url: launch-onboarding-advisor-native.html
-    - title: 部署 ONTAP 檔案系統的建議 FSX
-      url: deploy-fsx-file-system.html
   - title: 部落格與社群
     links:
     - title: NetApp社群
