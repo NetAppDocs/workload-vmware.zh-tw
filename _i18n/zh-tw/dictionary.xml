@@ -474,7 +474,6 @@
   <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">遷移到 Amazon EVS 的快速入門</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">移轉到 Amazon Elastic VMware Service</block>
   <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">改進了對 Amazon Elastic VMWare Service 的遷移顧問支持</block>
-  <block id="37ac2db5bb5bc7f50e3b58bbb706b64b" category="paragraph">Amazon Elastic VMware Service 移轉顧問現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。</block>
   <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">計算遷移到 Amazon Elastic VMware Service 節省的成本</block>
   <block id="b1da4fce8da5117e3a9e1041d1749074" category="paragraph">現在您可以探索將 VMware 工作負載移轉到 Amazon Elastic VMware Service (EVS) 的潛在節省。節省計算器可讓您比較使用 Amazon EVS 與Amazon FSx for NetApp ONTAP作為底層儲存和不使用 Amazon FSx for NetApp ONTAP 作為底層儲存的成本。當您調整環境特徵時，計算器會即時顯示潛在的節省。</block>
   <block id="89737fdc47d2ffa6f11712bb340e2a19" category="summary">計算將 Amazon EVS 與 FSx for ONTAP結合使用可以節省多少。</block>
@@ -512,12 +511,10 @@
   <block id="9d310bdb300e7bb1ef7cd5e2fc08e57b" category="paragraph">此版本的BlueXP Workload Factory for VMware 對 Amazon EC2 遷移顧問體驗進行了多項改進：</block>
   <block id="28ac5ecdafc5d6be71f28783b5d53cc6" category="paragraph">此版本的BlueXP Workload Factory for VMware 對 Amazon EC2 遷移顧問體驗進行了以下改進：</block>
   <block id="962abee1b74c5d5ab5f9bd0c47cbb068" category="paragraph">Workload Factory 使用者介面和文件現在使用「只讀」來指涉讀取權限，使用「讀取/寫入」來指稱自動化權限。</block>
-  <block id="50d3ff7077038387799b7b34d964df08" category="paragraph">BlueXP Workload Factory for VMware 現在支援 Amazon Elastic VMware Service。您可以使用遷移顧問將本地 VMware 工作負載快速遷移到 Amazon Elastic VMware Service，從而優化成本並更好地控制您的 VMware 環境，而無需重構或重新平台化您的應用程式。</block>
   <block id="041a7335d4bfbe01ea8a2d2f780732b6" category="inline-link">探索使用BlueXP Workload Factory 節省 Amazon Elastic VMware Service 成本的方法</block>
   <block id="1a1b8cfea3181a2937851fe76b4862d4" category="paragraph"><block ref="1a1b8cfea3181a2937851fe76b4862d4" category="inline-link-rx"></block></block>
   <block id="2bbead322f2dd5c4a40fbd66537e304f" category="doc">BlueXP workload factory現為NetApp工作負載工廠</block>
   <block id="9c80606adc6065bc48c6d99fbb8c3f1d" category="paragraph">BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp工作負載工廠。</block>
-  <block id="b77ed2f5662201a26b98b92e98329049" category="section-title">VMware 工作負載規劃中心簡介</block>
   <block id="2dd03fc740a72e1c5fc0daf9be122249" category="paragraph">VMware 工作負載規劃中心可讓您從一個地方檢視和管理您的 VM 庫存和遷移計畫。您可以從不同的環境上傳和儲存多個 VM 清單，並開始規劃將其中任何一個遷移到 AWS EC2 或 Amazon Elastic VMware 服務。您也可以建立並儲存 AWS EC2 或 EVS 遷移計畫。</block>
   <block id="420ac911d98022d5289d3f00ff38ea84" category="inline-link">探索 VMware 工作負載規劃中心</block>
   <block id="81ee9955f68100a5e460b3f794e65e9b" category="paragraph"><block ref="81ee9955f68100a5e460b3f794e65e9b" category="inline-link-rx"></block></block>
@@ -733,4 +730,9 @@
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
   <block id="93ba13882942e9f41461a4867481e012" category="sidebar">使用 VMware 規劃中心</block>
+  <block id="98d4c7385c3e640287a91e3032b576c3" category="paragraph">BlueXP Workload Factory for VMware 現在支援 Amazon Elastic VMware Service。您可以手動將本機 VMware 工作負載移轉到 Amazon Elastic VMware Service，從而優化成本並更好地控制您的 VMware 環境，而無需重構或重新平台化您的應用程式。</block>
+  <block id="dcf522fe0928ea448e17a8ccb7b14d76" category="paragraph">NetApp Workload Factory 現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。</block>
+  <block id="74f9db7fefcf8c24332761c003d46a02" category="section-title">VMware 工作負載規劃中心簡介</block>
+  <block id="c1ed477ef5d58aa5d9931821badda717" category="paragraph">BlueXP Workload Factory for VMware 現在允許您使用 Amazon Elastic VMware Service 移轉顧問將本機 VMware 工作負載快速移轉到 Amazon Elastic VMware Service。使用遷移顧問建立遷移計畫後，計畫會自動儲存在規劃中心的遷移計畫清單中。</block>
+  <block id="c2ec0e17d82dd73344c2ef80a6de22f1" category="paragraph"><block ref="c2ec0e17d82dd73344c2ef80a6de22f1" category="inline-link-rx"></block></block>
 </blocks>

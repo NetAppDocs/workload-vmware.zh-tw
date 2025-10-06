@@ -6,7 +6,7 @@
 
 === 改進了對 Amazon Elastic VMWare Service 的遷移顧問支持
 
-Amazon Elastic VMware Service 移轉顧問現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。
+NetApp Workload Factory 現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["使用遷移顧問為 Amazon EVS 建立部署計劃"]
 

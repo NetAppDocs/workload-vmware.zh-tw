@@ -33,13 +33,21 @@ https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["探�
 
 
 
+=== 引入對 Amazon Elastic VMWare Service 的遷移顧問支持
+
+BlueXP Workload Factory for VMware 現在允許您使用 Amazon Elastic VMware Service 移轉顧問將本機 VMware 工作負載快速移轉到 Amazon Elastic VMware Service。使用遷移顧問建立遷移計畫後，計畫會自動儲存在規劃中心的遷移計畫清單中。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["使用遷移顧問為 Amazon EVS 建立部署計劃"]
+
+
+
 == 2025年8月3日
 
 
 
 === 改進了對 Amazon Elastic VMWare Service 的遷移顧問支持
 
-Amazon Elastic VMware Service 移轉顧問現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。
+NetApp Workload Factory 現在支援自動部署和安裝Amazon FSx for NetApp ONTAP檔案系統。這樣，當遷移到 Amazon EVS 環境完成後，您就可以開始在 FSx for ONTAP檔案系統上部署虛擬機器。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["使用遷移顧問為 Amazon EVS 建立部署計劃"]
 
@@ -59,7 +67,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索
 
 === 引入對 Amazon Elastic VMWare Service 的遷移顧問支持
 
-BlueXP Workload Factory for VMware 現在支援 Amazon Elastic VMware Service。您可以使用遷移顧問將本地 VMware 工作負載快速遷移到 Amazon Elastic VMware Service，從而優化成本並更好地控制您的 VMware 環境，而無需重構或重新平台化您的應用程式。
+BlueXP Workload Factory for VMware 現在支援 Amazon Elastic VMware Service。您可以手動將本機 VMware 工作負載移轉到 Amazon Elastic VMware Service，從而優化成本並更好地控制您的 VMware 環境，而無需重構或重新平台化您的應用程式。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["使用遷移顧問為 Amazon EVS 建立部署計劃"]
 
