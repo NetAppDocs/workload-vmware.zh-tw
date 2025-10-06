@@ -6,7 +6,7 @@
 
 === Amazon EC2 移轉顧問的改善
 
-此版本的 BlueXP  工作負載工廠適用於 VMware ，對 Amazon EC2 移轉顧問體驗有幾項改善：
+此版本的BlueXP Workload Factory for VMware 對 Amazon EC2 遷移顧問體驗進行了多項改進：
 
 * * 預估執行個體類型 * ：移轉顧問現在可以檢查您環境的需求，並為每個 VM 提供預估的 Amazon EC2 執行個體類型。您可以選擇在移轉顧問的範圍步驟中，納入每個 VM 的預估執行個體類型。
 * * 推薦 Amazon EBS Volume 的能力 * ：移轉顧問現在可建議將資料 Volume 移轉至 Amazon Elastic Block Store （ EBS ），而非 Amazon FSX for NetApp ONTAP ，因為特定區域的特定容量或效能需求。

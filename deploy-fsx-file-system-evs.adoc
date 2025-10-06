@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-evs.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
-summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。 
+summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下的檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。 
 ---
 = 部署 ONTAP 檔案系統的建議 FSX
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 
 [role="lead"]
-在您確認 ONTAP 檔案系統（或某些情況下的多個檔案系統）所建議的 FSX 符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。
+在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下為多個檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。
 
-根據您新增至工作負載工廠帳戶的政策和權限，您可以完全使用工作負載工廠（使用讀取/寫入模式）部署 FSx for ONTAP 檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 範本並在 AWS 中自行部署 FSx for ONTAP 檔案系統。
+根據您新增至 Workload Factory 帳戶的政策和權限，您可以使用 Workload Factory（使用讀取/寫入模式）完全部署 FSx for ONTAP檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 範本並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 
 .部署到 Amazon Elastic VMware Service 的要求
 * 您必須擁有 Amazon Elastic VMware Service 訂閱。
@@ -30,7 +30,7 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 . 在「檔案系統常規配置」部分中，輸入以下資訊：
 +
-.. * AWS 認證 * ：選取或新增認證，以授予工作負載工廠直接為 ONTAP 檔案系統建立 FSX 所需的權限。您也可以從 Codebox 選取 CloudForgation 程式碼、然後在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。
+.. *AWS 憑證*：選擇或新增憑證，為 Workload Factory 提供直接建立 FSx for ONTAP檔案系統所需的權限。您也可以從 Codebox 選擇 CloudFormation 程式碼並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 .. * 檔案系統名稱 * ：輸入您要用於此 ONTAP 檔案系統的 FSX 名稱。
 .. *標籤*：您可以選擇新增標籤來對此 FSx for ONTAP 檔案系統進行分類。
 
@@ -40,7 +40,7 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 .. *區域和 VPC*：選擇將部署 FSx for ONTAP 檔案系統的區域和 VPC。
 .. *安全性群組*（僅限進階建立）：使用「進階建立」選項時，您可以選擇 FSx for ONTAP VPC 的預設安全性群組，以便所有流量都可以存取 FSx for ONTAP 檔案系統。您可以建立新的安全群組，也可以選擇現有的安全性群組。
 +
-如果啟用*根據 EVS NFS 資料儲存調整安全群組配置*選項，工作負載工廠將根據 EVS NFS 資料儲存的設定配置安全群組。
+如果啟用*根據 EVS NFS 資料儲存調整安全群組配置*選項，Workload Factory 將根據 EVS NFS 資料儲存的設定配置安全群組。
 
 +
 您可以向安全群組新增入站規則，以限制其他 AWS 服務可以存取 FSx for ONTAP 檔案系統。這將減少打開的服務數量。以下是最低連接埠和通訊協定：
@@ -81,7 +81,7 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 . 在「EVS 叢集附件」部分中，輸入以下資訊：
 +
-.. *資料儲存區掛載選項*：可選地，啟用*將資料儲存區掛載到 EVS 叢集*選項以自動將資料儲存區連接到 Amazon EVS 叢集。此選項還會導致工作負載工廠配置 VMware ESXi 主機設置，以便它們符合ONTAP最佳實務建議。在部署文件系統之前，您可以查看“*摘要*”部分中的計劃詳細信息，以查看已更改的設定。
+.. *資料儲存區掛載選項*：可選地，啟用*將資料儲存區掛載到 EVS 叢集*選項以自動將資料儲存區連接到 Amazon EVS 叢集。此選項也會導致 Workload Factory 配置 VMware ESXi 主機設置，以便它們符合ONTAP最佳實踐建議。在部署文件系統之前，您可以查看“*摘要*”部分中的計劃詳細信息，以查看已更改的設定。
 .. *EVS 叢集 vSphere 控制台詳細資料*：輸入應連接 Amazon EVS 的 VMware vCenter 伺服器的 IP 位址或 FQDN。
 .. *vSphere 管理員憑證金鑰 ARN*：選擇 vSphere 管理員憑證金鑰 ARN。這些憑證用於掛載資料儲存區並配置建議的 VMware 設定。
 +

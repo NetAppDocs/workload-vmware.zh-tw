@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-evs.html 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: 從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協助建立根據您的需求量身定制的遷移計劃。 
+---
+= 使用遷移顧問為 Amazon EVS 建立部署計劃
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協助建立根據您的需求量身定制的遷移計劃。
+
+請注意，您必須擁有使用者名稱和密碼才能存取 Workload Factory。如果您沒有存取權限，請立即建立帳戶。查看說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
+
+
+
+== 使用移轉顧問建立部署計畫
+
+您可以建立部署計劃，將虛擬機器移轉到 Amazon Elastic VMware Service，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。遷移顧問中的選項可能會根據用於收集虛擬機器庫存資料的工具而有所不同。
+
+.需求
+* 您必須擁有 Amazon Elastic VMware Service 訂閱。
+
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 或者，如果您從 Workload Factory 控制台存取 Workload Factory，請從 VMware 工作負載磁貼中選擇 *VMware 規劃中心*，然後選擇 *VMware 規劃中心*。顯示 VMware 規劃中心。
+. 從清單中選擇要用於制定部署計劃的 VM 清單，然後在該行中選擇 *開始計劃*。
+. 從出現的下拉式選單中選擇 *EVS*。
++
+出現「準備 AWS Cloud 加入」精靈。
+
+. 輸入所需資訊。
+
+
+[discrete]
+===== 指定
+
+. 在「虛擬機器配置上傳」部分中，查看有關用於建立遷移計劃的資料集的資訊。  *VM 庫存摘要*部分由庫存檔案填充，以反映 VM 的數量和總儲存容量。
+. 在「虛擬機器清單注意事項」部分中，選擇選項來篩選要移轉的虛擬機器清單：
++
+.. * 地區 * ：選取要部署 Amazon FSX for NetApp ONTAP 檔案系統的地區。為了達到最佳效能和成本效益、這通常與您現有的 Amazon EC2 SDDC 部署所在的區域相同。
+.. 為此區域中的虛擬機器選擇預測的效能等級。我們建議您先使用較小的 IOPS 設定。在移轉或部署工作負載時建立檔案系統之後，您可以增加已配置的 SSD IOPS ：
++
+*** * 標準到高效能 * ：適用於平均 IO 速率介於 20 到 5000 IOPS 之間的 VM 。
+*** * 極高效能 * ：適用於平均 IO 速率超過 5000 IOPS 的 VM 。
+*** * 極低效能 * ：適用於平均 IO 速率低於 20 IOPS 的 VM 。
+
+
+
+
+. 在「目標容量和保護注意事項」部分中，從幾個儲存選項中進行選擇：
++
+.. * 要考慮的 VM 儲存設備 * ：選擇為每個已建立虛擬機器建立的資料存放區、是根據其目前使用的大小（建議）或其已配置的大小來調整大小。
++
+外部資料存放區將使用 Amazon FSX 實作 NetApp ONTAP 檔案系統磁碟區。
+
+.. * 平均資料減量比率 * ：從三種常見的資料減量比率中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。
++
+如果您不確定要選擇哪種比率、請選取 * 「協助我決定 * 」。此時會顯示 _ 資料減量比助理 _ 對話方塊。請選擇適用於您的 VM 庫存和儲存資產的任何敘述。助理將建議適當的資料減量率。選取 * 套用 * 以使用建議的比率。
+
+.. * 保留空間百分比 * ：輸入新增至 ONTAP 檔案系統 FSX 容量的容量成長百分比。
++
+請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。
+
+.. * VM 快照保護 * ：啟用此選項以使用快照保護 VM 。
+
+
+. 選擇*下一步*。
+
+
+[discrete]
+===== 選擇
+
+. 在「選擇虛擬機器」頁面上，從清單中選擇要包含在 AWS 遷移中的虛擬機器。您可以根據每個虛擬機器的電源狀態以及虛擬機器所在的資料中心和叢集來過濾清單。
++
+在虛擬機器清單中，您可以選擇將哪些類型的虛擬機器資訊顯示為列。例如，選擇「峰值讀取 IOPS」將顯示一列，其中包含每個虛擬機器的峰值讀取 IOPS。
+
+. 或者，您可以選擇優化部署的成本或可復原性。
++
+** *成本*：工作負載工廠從清單中選擇具有較低 I/O 密度的虛擬機器。這有助於減少資源需求。
+** *可恢復性*：工作負載工廠從清單中選擇最容易在本地快速複製的虛擬機器。一旦發生中斷，這可以提供快速的恢復時間。
+
+
+. 選擇*下一步*。
+
+
+[discrete]
+===== 設計
+
+. 在「ClassReview 實例儲存分配」頁面上，查看虛擬機器資訊、磁碟區分類規則、磁碟區分配以及將作為部署的一部分遷移的磁碟區列表，然後選擇「下一步」。
+
+
+[discrete]
+===== 審查計劃
+
+. 在 * 審查計畫 * 頁面上，檢閱您計畫移轉的所有 VM 的預估每月節約成本和成本預估。
++
+頁面頂端會預估 ONTAP 檔案系統和 EBS 磁碟區每月可節省的 FSX 成本。您可以展開每個區段、以檢視建議的檔案系統組態、預估節約明細、假設及技術免責聲明的詳細資料。
+
++
+遷移計劃預設自動儲存在計劃中心的計劃清單中。
+
+. 當您準備好繼續執行計劃時，請選擇*Provision*開始部署建議的Amazon FSx for NetApp ONTAP檔案系統。
+
+
+link:deploy-fsx-file-system-evs.html["為 ONTAP 檔案系統部署 VMware 工作負載建議的 FSX"]。

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: BlueXP  工作負載工廠 for VMware 文件
+  title: NetApp Workload Factory for VMware 文檔
   summary: 簡化從內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud 、並將 ONTAP 檔案系統的自訂 FSX 作為外部資料存放區。
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
   lead: 簡化從內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud 、並將 ONTAP 檔案系統的自訂 FSX 作為外部資料存放區。
   tiles:
   - title: 開始使用
     links:
-    - title: 瞭解 VMware 的 BlueXP  工作負載工廠
+    - title: 了解NetApp Workload Factory for VMware
       url: learn-about-vmware-workloads.html
     - title: 快速入門：移轉到 Amazon Elastic VMware Service
       url: quick-start-evs.html
@@ -15,26 +15,26 @@ indexpage:
       url: quick-start.html
     - title: 快速入門：移轉至 Amazon EC2
       url: quick-start-native.html
+    - title: 探索 VMware 規劃中心
+      url: explore-planning-center.html
   - title: 移轉到 Amazon Elastic VMware Service
     links:
     - title: 探索儲蓄
       url: calculate-evs-savings.html
-    - title: 使用移轉顧問建立部署計畫
+    - title: 手動建立部署計劃
       url: launch-migration-advisor-evs-manual.html
+    - title: 使用移轉顧問建立部署計畫
+      url: launch-migration-advisor-evs.html
     - title: 部署 ONTAP 檔案系統的建議 FSX
       url: deploy-fsx-file-system.html
   - title: 移轉至 Amazon EC2
     links:
-    - title: 擷取您目前的 VM 組態
-      url: capture-vm-configurations-native.html
     - title: 使用移轉顧問建立部署計畫
       url: launch-onboarding-advisor-native.html
     - title: 部署 ONTAP 檔案系統的建議 FSX
       url: deploy-fsx-file-system.html
   - title: 移轉至 AWS 上的 VMware Cloud
     links:
-    - title: 擷取您目前的 VM 組態
-      url: capture-vm-configurations.html
     - title: 使用移轉顧問建立部署計畫
       url: launch-onboarding-advisor.html
     - title: 部署 ONTAP 檔案系統的建議 FSX
@@ -45,9 +45,9 @@ indexpage:
       url: migrate-data.html
   - title: 部落格與社群
     links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp資料服務
+      url: https://www.netapp.com/data-services/
     - title: NetApp社群
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP部落格
-      url: https://bluexp.netapp.com/blog
-    - title: 雲端網路研討會
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/

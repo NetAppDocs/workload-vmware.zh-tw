@@ -35,7 +35,7 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 請注意、如果您計畫從虛擬機器擷取長期統計資料（每日統計資料）、則必須在 vSphere 管理主控台（ VMware 管理環境）中啟用第 3 級或更高層級的統計資料。
 
 .步驟
-. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
 . 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
 +
 此時會顯示 VMware 移轉顧問主頁面。

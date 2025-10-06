@@ -6,7 +6,7 @@
 
 === Amazon EC2 移轉顧問的改善
 
-此版本的 BlueXP  工作負載工廠適用於 VMware ，對 Amazon EC2 移轉顧問體驗有幾項改善：
+此版本的BlueXP Workload Factory for VMware 對 Amazon EC2 遷移顧問體驗進行了多項改進：
 
 * * 增強型 Volume 指派指南 * ： EC2 移轉顧問「分類」和「封裝」步驟中的 Volume 指派資訊，具有增強的易讀性和可用性。系統會顯示每個 Volume 的更多實用資訊，讓您能夠更有效地識別磁碟區，並判斷如何指派磁碟區。
 * * 資料收集器指令碼效率提升 * ： EC2 移轉顧問資料收集器指令碼可在收集資料以進行較小的 VM 部署時，最佳化 CPU 使用率。

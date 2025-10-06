@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: 您可以使用 VMware 規劃中心來管理已上傳的庫存資料和您建立的遷移計劃。 
+---
+= 探索 VMware 規劃中心
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計劃，以及管理已使用NetApp Workload Factory 儲存的 VM 庫存資料和遷移計劃。
+
+
+
+== 管理虛擬機器庫存數據
+
+使用規劃中心建立和管理 VM 庫存資料。
+
+
+
+=== 上傳虛擬機器清單數據
+
+當您準備好使用 Workload Factory 探索遷移到 Amazon AWS 環境的選項時，您可以上傳 VM 庫存資料。參考link:upload-vm-inventory.html["上傳虛擬機器清單數據"]以取得說明。
+
+
+
+=== 重新命名資料集
+
+您可以變更已儲存資料集的名稱。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇要重新命名的資料集的操作選單（...），然後選擇*重新命名*。
+. 輸入資料集的新名稱並選擇*儲存*。
+
+
+
+
+=== 刪除資料集
+
+當不再需要資料集時，您可以隨時刪除它。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇要刪除的資料集的操作選單（...），然後選擇*刪除*。
+. 選擇*刪除*以確認操作。
+
+
+
+
+== 管理遷移計劃
+
+使用遷移中心建立和管理遷移計劃。
+
+
+
+=== 制定遷移計劃
+
+您可以選擇一個遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇*遷移計劃*選單。
+. 選擇您要設定的遷移計畫的操作選單 (...)，然後選擇 *配置*。
+. 根據遷移計劃，參考以下說明部署檔案系統：
++
+** link:deploy-fsx-file-system.html["為 Amazon VMware Cloud 計畫部署檔案系統"]
+** link:deploy-fsx-file-system-native.html["為 Amazon EC2 計畫部署檔案系統"]
+** link:deploy-fsx-file-system-evs.html["為 Amazon Elastic VMware Service 規劃部署檔案系統"]
+
+
+
+
+
+
+=== 編輯遷移計劃的註釋
+
+如果您需要更改遷移計劃的註釋詳細信息，請在規劃中心內編輯註釋。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇*遷移計劃*。
+. 選擇要編輯的遷移計劃的操作選單 (...)，然後選擇*編輯註釋*。
+. 輸入評論並選擇*儲存*。
+
+
+
+
+=== 建立遷移計劃的 PDF 報告
+
+建立遷移計劃詳細資訊的 PDF 報告。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇*遷移計劃*。
+. 選擇要建立 PDF 報告的遷移計畫的操作選單 (...)，然後選擇 *建立報告*。
+. 輸入報告 PDF 的名稱並選擇*儲存*。
+
+
+
+
+=== 刪除遷移計劃
+
+當不再需要遷移計劃時，您可以隨時刪除它。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇*遷移計劃*。
+. 選擇要刪除的遷移計劃的操作選單 (...)，然後選擇*刪除*。
+. 選擇“*刪除*”確認操作。
+

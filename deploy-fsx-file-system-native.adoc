@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。 
+summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下的檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。 
 ---
 = 部署 ONTAP 檔案系統的建議 FSX
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 
 [role="lead"]
-在您確認 ONTAP 檔案系統（或某些情況下的多個檔案系統）所建議的 FSX 符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。
+在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下為多個檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。
 
-請遵循中的指示link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["在 BlueXP  工作負載工廠中為 ONTAP 檔案系統建立 FSX"^]，根據工作負載工廠建議的組態來部署適用於 ONTAP 檔案系統的 FSX 。您可以使用說明中的 * 進階建立 * 步驟，完全自訂檔案系統。
+按照link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["在NetApp Workload Factory 中建立 FSx for ONTAP檔案系統"^]根據 Workload Factory 建議的設定部署 FSx for ONTAP檔案系統。您可以使用說明中的*進階建立*步驟來完全自訂檔案系統。

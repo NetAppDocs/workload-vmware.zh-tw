@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: 登入NetApp Workload Factory 以存取 VMware 遷移顧問。您將按照精靈中的步驟建立根據您的需求自訂的部署計畫或遷移計畫。 
 ---
 = 使用 VMware 工作負載移轉顧問，為 AWS 上的 VMware Cloud 建立部署計畫
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將�
 
 
 [role="lead"]
-登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將依照精靈中的步驟、建立符合您需求的自訂部署計畫或移轉計畫。
+登入NetApp Workload Factory 以存取 VMware 遷移顧問。您將按照精靈中的步驟建立根據您的需求自訂的部署計畫或遷移計畫。
 
 移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：
 
 * <<根據內部部署 vSphere 環境建立部署計畫,將您目前的內部部署 vSphere 環境移轉至 VMware 雲端。>>
-* <<根據現有計畫建立部署計畫,根據具有類似需求的現有部署計畫、在雲端部署系統。>>
+* <<Create a deployment plan based on an existing plan,根據具有類似需求的現有部署計畫、在雲端部署系統。>>
 
 
-請注意，您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您沒有存取權、請立即建立帳戶。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
+請注意，您必須擁有使用者名稱和密碼才能存取 Workload Factory。如果您沒有存取權限，請立即建立帳戶。查看說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
 
 
 
@@ -29,17 +29,17 @@ summary: 登入 NetApp 工作負載工廠，存取 VMware 移轉顧問。您將�
 
 .需求
 * 您必須使用移轉顧問 VM 收集器（ .csv 檔案）或使用 RVTools （ .xlsx 檔案）、從現有系統建立清查檔案。
-* 您必須能夠從登入工作負載工廠的系統存取庫存檔案。
+* 您必須能夠從登入 Workload Factory 的系統存取庫存檔案。
 
 
 .步驟
-. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-. 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。
 +
-此時會顯示 VMware 移轉顧問主頁面。
+顯示規劃中心。
 
-. 選取 * 建立新的部署計畫 * 。
-. 選取您要用來將工作負載工廠填入目前虛擬機器組態的庫存檔案類型，然後選取 * 下一步 * 。
+. 選擇*計劃並建立 VMC*。
+. 選擇您將使用的庫存檔案類型，以使用目前 VM 配置填入 Workload Factory，然後選擇 *下一步*。
 +
 ** 選取 * 使用移轉顧問 VMware 資料收集器 * 來使用您使用 VMware 資料收集器所建立的 .csv 檔案。
 ** 選取 * 使用 RVTools* 來使用您使用 RVTools 建立的 .xlsx 檔案。
@@ -145,23 +145,4 @@ VM 摘要區段會從庫存檔案填入、以反映 VM 數量和總儲存容量�
 ** 選取 * 匯出計畫 * 、將移轉計畫儲存為 .json 格式的範本。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。
 
 
-
-
-
-
-== 根據現有計畫建立部署計畫
-
-如果您正在規劃的新部署與過去使用的現有部署計畫類似、您可以匯入該計畫、進行編輯、然後將其儲存為新的部署計畫。
-
-.需求
-您必須從登入工作負載工廠的系統，存取現有部署計畫的 .json 檔案。
-
-.步驟
-. 使用其中一項登入工作負載工廠 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
-. 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。此時會顯示 VMware 移轉顧問主頁面。
-. 選取 * 匯入現有的部署計畫 * 。
-. 選取 image:button-upload-file.png["上傳按鈕"] 並選取您要在移轉顧問中匯入的現有計畫檔案。
-. 選擇 * 下一步 * 、隨即顯示「審查計畫」頁面。
-. 您可以選取 * 上一個 * 頁面、存取 _ 準備 VMware Cloud 上線 _ 頁面、以及 _ 選取 VM_ 頁面、以修改計畫的設定、如前一節所述。
-. 根據需求自訂計畫之後、您可以儲存計畫、或開始在適用於 ONTAP 檔案系統的 FSX 上部署資料存放區的程序。
 

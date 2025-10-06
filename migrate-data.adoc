@@ -4,7 +4,7 @@ permalink: migrate-data.html
 keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
 summary: 使用 VMware 混合雲延伸等工具、將資料從舊的虛擬機器儲存設備移至連接至新虛擬機器的 NetApp ONTAP Volume 的 FSX 。VMware HCX 核心功能可讓您以透明方式將工作負載從內部部署資料中心移轉至 SDDC 。 
 ---
-= 使用 VMware 的 BlueXP  工作負載工廠，將資料移轉至新的基礎架構
+= 使用NetApp Workload Factory for VMware 將資料遷移到新基礎架構
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

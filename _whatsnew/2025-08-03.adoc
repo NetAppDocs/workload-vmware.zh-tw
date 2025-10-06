@@ -16,4 +16,4 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 現在您可以探索將 VMware 工作負載移轉到 Amazon Elastic VMware Service (EVS) 的潛在節省。節省計算器可讓您比較使用 Amazon EVS 與Amazon FSx for NetApp ONTAP作為底層儲存和不使用 Amazon FSx for NetApp ONTAP 作為底層儲存的成本。當您調整環境特徵時，計算器會即時顯示潛在的節省。
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索使用BlueXP workload factory節省 Amazon Elastic VMware Service 成本的方法"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索使用BlueXP Workload Factory 節省 Amazon Elastic VMware Service 成本的方法"]

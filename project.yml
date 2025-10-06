@@ -20,7 +20,7 @@ sidebar:
       url: "/whats-new.html"
   - title: 開始使用
     entries:
-    - title: 瞭解 VMware 的 BlueXP  工作負載工廠
+    - title: 了解NetApp Workload Factory for VMware
       url: "/learn-about-vmware-workloads.html"
     - title: 遷移到 Amazon EVS 的快速入門
       url: "/quick-start-evs.html"
@@ -28,28 +28,30 @@ sidebar:
       url: "/quick-start-native.html"
     - title: 快速開始移轉至 AWS 上的 VMware Cloud
       url: "/quick-start.html"
-  - title: 使用 VMware 移轉顧問
+    - title: 探索 VMware 規劃中心
+      url: "/explore-planning-center.html"
+  - title: 使用 VMware 規劃中心
     entries:
+    - title: 上傳虛擬機器清單數據
+      url: "/upload-vm-inventory.html"
     - title: 移轉到 Amazon Elastic VMware Service
       entries:
       - title: 探索儲蓄
         url: "/calculate-evs-savings.html"
-      - title: 使用移轉顧問建立部署計畫
+      - title: 手動建立部署計劃
         url: "/launch-migration-advisor-evs-manual.html"
+      - title: 使用移轉顧問建立部署計畫
+        url: "/launch-migration-advisor-evs.html"
       - title: 部署 ONTAP 檔案系統的建議 FSX
         url: "/deploy-fsx-file-system-evs.html"
     - title: 移轉至 Amazon EC2
       entries:
-      - title: 擷取您目前的 VM 組態
-        url: "/capture-vm-configurations-native.html"
       - title: 使用移轉顧問建立部署計畫
         url: "/launch-onboarding-advisor-native.html"
       - title: 部署 ONTAP 檔案系統的建議 FSX
         url: "/deploy-fsx-file-system-native.html"
     - title: 移轉至 AWS 上的 VMware Cloud
       entries:
-      - title: 擷取您目前的 VM 組態
-        url: "/capture-vm-configurations.html"
       - title: 使用移轉顧問建立部署計畫
         url: "/launch-onboarding-advisor.html"
       - title: 部署 ONTAP 檔案系統的建議 FSX
@@ -67,5 +69,5 @@ sidebar:
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family

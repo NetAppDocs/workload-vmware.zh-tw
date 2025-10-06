@@ -17,21 +17,21 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
 [role="quick-margin-para"]
-您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上建立帳戶"^]並使用以下任一方式登入 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證和權限新增至您的帳戶
 [role="quick-margin-para"]
-您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至工作負載工廠，可為您的工作負載工廠帳戶提供建立和管理 FSx for ONTAP 檔案系統以及在 VMware Cloud 中部署和管理工作負載所需的權限。
+您可以在_基本_模式下使用 Workload Factory，而無需新增憑證來存取您的 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至 Workload Factory，可為您的 Workload Factory 帳戶提供建立和管理 FSx for ONTAP檔案系統以及在 VMware Cloud 中部署和管理工作負載所需的權限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 在 vSphere 環境中擷取您目前的 VM 組態
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]上傳虛擬機器清單數據
 [role="quick-margin-para"]
-您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態、以建立部署計畫。您也可以將現有的部署計畫匯入為範本、然後修改任何必要的屬性。
+您可以使用規劃中心上傳有關目前 VM 環境的庫存詳細資訊。使用資料收集器腳本、RVTools 或NetApp Data Infrastructure Insights擷取目前的 VM 配置並將資料上傳到規劃中心。
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["瞭解如何擷取目前的 VM 組態"]。
+link:upload-vm-inventory.html["了解如何上傳虛擬機器清單數據"^] 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 使用 VMware 移轉顧問建立部署計畫
 [role="quick-margin-para"]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些情況下符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。 
+summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下的檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。 
 ---
 = 部署 ONTAP 檔案系統的建議 FSX
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 
 
 [role="lead"]
-在您確認 ONTAP 檔案系統（或某些情況下的多個檔案系統）所建議的 FSX 符合您的確切需求之後，您可以使用工作負載工廠在 AWS 環境中部署系統。
+在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下為多個檔案系統）符合您的確切要求後，您可以使用 Workload Factory 在您的 AWS 環境中部署系統。
 
-根據您新增至工作負載工廠帳戶的政策和權限，您可以完全使用工作負載工廠（使用讀取/寫入模式）部署 FSx for ONTAP 檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 訊息，並在 AWS 中自行部署 FSx for ONTAP 檔案系統。
+根據您新增至 Workload Factory 帳戶的政策和權限，您可以使用 Workload Factory（使用讀取/寫入模式）完全部署 FSx for ONTAP檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 資訊並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 
 .在 AWS 上部署至 VMware Cloud 的需求
 * 您必須在 AWS 軟體定義資料中心（ SDDC ）版本 1.20 或更新版本上使用 VMware Cloud 、才能為 ONTAP 檔案系統部署 FSX 。
@@ -29,7 +29,7 @@ summary: 在您確認 ONTAP 檔案系統或檔案系統的建議 FSX 在某些�
 +
 您可以使用「快速建立」或「進階建立」選項。進階建立提供數個額外的儲存參數、可供您自訂。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解這兩個選項的功能"]
 
-. * AWS 認證 * ：選取或新增認證，以授予工作負載工廠直接為 ONTAP 檔案系統建立 FSX 所需的權限。您也可以從 Codebox 選取 CloudForgation 程式碼、然後在 AWS 中自行部署適用於 ONTAP 檔案系統的 FSX 。
+. *AWS 憑證*：選擇或新增憑證，為 Workload Factory 提供直接建立 FSx for ONTAP檔案系統所需的權限。您也可以從 Codebox 選擇 CloudFormation 程式碼並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 . * 檔案系統名稱 * ：輸入您要用於此 ONTAP 檔案系統的 FSX 名稱。
 . * 標記 * ：您也可以新增標記、將此 FSX 分類為 ONTAP 檔案系統。
 . 在「網路與安全性」區段中、輸入下列資訊：

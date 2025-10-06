@@ -6,7 +6,7 @@
 
 === Amazon EC2 移轉顧問的改善
 
-此版本的 BlueXP  工作負載工廠適用於 VMware ，可改善 Amazon EC2 移轉顧問體驗：
+此版本的BlueXP Workload Factory for VMware 對 Amazon EC2 遷移顧問體驗進行了以下改進：
 
 * NetApp 資料基礎架構洞見資料來源 * ：工作負載工廠現在直接與 NetApp 資料基礎架構洞見連結，以便在使用 EC2 移轉顧問資料收集器時收集 VMware 部署資訊。
 
@@ -16,4 +16,4 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 更新的權限術語
 
-工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。
+Workload Factory 使用者介面和文件現在使用「只讀」來指涉讀取權限，使用「讀取/寫入」來指稱自動化權限。

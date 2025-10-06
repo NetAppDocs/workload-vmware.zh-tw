@@ -2,47 +2,47 @@
 sidebar: sidebar 
 permalink: support-registration.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。 
+summary: 在向NetApp技術支援部門提交支援案例之前，您需要在 Workload Factory 新增一個NetApp支援網站帳戶，然後註冊以獲得支援。 
 ---
-= 註冊以取得 VMware BlueXP  工作負載工廠支援
+= 註冊以取得NetApp Workload Factory for VMware 的支持
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。
+需要註冊支援才能獲得針對NetApp Workload Factory 及其儲存解決方案和服務的技術支援。您必須註冊NetApp Console 的支持，它是獨立於 Workload Factory 的基於 Web 的控制台。
 
-註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。
+註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得協助」。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
 
 
 
 == 支援登錄總覽
 
-註冊您的帳戶 ID 支援訂閱（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP 的「支援資源」頁面）、即為您的單一支援訂閱 ID 。每個BlueXP帳戶層級的支援訂閱都必須註冊。
+註冊您的帳戶 ID 支援訂閱（位於NetApp控制台中的「支援資源」頁面上的 20 位 960xxxxxxxxx 序號）作為您的單一支援訂閱 ID。每個NetApp帳號級支援訂閱都必須註冊。
 
-註冊可提供開啟支援服務單和自動產生個案等功能。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。
+註冊後即可實現開立支援票和自動產生案例等功能。透過將NetApp支援網站 (NSS) 帳戶新增至NetApp控制台即可完成註冊，如下所述。
 
 
 
 == 註冊您的帳戶以取得 NetApp 支援
 
-若要註冊以取得支援並啟動支援授權、您帳戶中的一位使用者必須將 NetApp 支援網站帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。
+若要註冊支援並啟動支援權利，您帳戶中的使用者必須將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。
 
 
 
 === 現有的客戶、擁有一個新服務客戶帳戶
 
-如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。
+如果您是擁有 NSS 帳戶的NetApp客戶，只需透過NetApp控制台註冊即可獲得支援。
 
 .步驟
-. 在工作負載原廠主控台的右上角，選取 * 說明 > 支援 * 。
+. 在 Workload Factory 控制台的右上角，選擇 *幫助 > 支援*。
 +
-選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
+選擇此選項將在新瀏覽器標籤中開啟NetApp控制台並載入支援儀表板。
 
-. 在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。
+. 從NetApp控制台選單中，選擇 *管理*，然後選擇 *憑證*。
 . 選取 * 使用者認證 * 。
 . 選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。
 . 若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。
@@ -53,7 +53,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。"]
 
 +
-請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP 帳戶尚未註冊支援。只要帳戶中有一位使用者已遵循這些步驟、您的帳戶就已登錄。
+請注意，如果其他NetApp控制台使用者尚未將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯，則他們將看不到相同的支援註冊狀態。但是，這並不意味著您的NetApp帳戶未註冊支援。只要帳戶中有一位使用者遵循了這些步驟，那麼您的帳戶就註冊成功了。
 
 
 
@@ -61,16 +61,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 === 現有客戶、但無NSS.帳戶
 
-如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。
+如果您是現有NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的NetApp控制台登入關聯。
 
 .步驟
 . 完成建立 NetApp 支援網站帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
 +
 .. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
-.. 請務必複製上述序號欄位使用的BlueXP帳戶序號（960xxxx）。這將加速帳戶處理。
+.. 請務必複製上面用於序號欄位的NetApp帳號序號 (960xxxx)。這將加快帳戶處理速度。
 
 
-. 完成下的步驟、將新的 NSS 帳戶與 BlueXP 登入建立關聯 <<現有的客戶、擁有一個新服務客戶帳戶>>。
+. 完成以下步驟，將您的新 NSS 帳戶與您的NetApp控制台登入關聯<<現有的客戶、擁有一個新服務客戶帳戶>>。
 
 
 
@@ -80,9 +80,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。
 
 .步驟
-. 在工作負載原廠主控台的右上角，選取 * 說明 > 支援 * 。
+. 在 Workload Factory 控制台的右上角，選擇 *幫助 > 支援*。
 +
-選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。
+選擇此選項將在新瀏覽器標籤中開啟NetApp控制台並載入支援儀表板。
 
 . 從「支援資源」頁面找到您的帳戶 ID 序號。
 +
@@ -110,4 +110,4 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 .完成後
 在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。
 
-擁有 NetApp 支援網站帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <<現有的客戶、擁有一個新服務客戶帳戶>>。
+擁有NetApp支援網站帳號後，請依照下列步驟將帳號與您的NetApp控制台登入關聯<<現有的客戶、擁有一個新服務客戶帳戶>>。

@@ -6,6 +6,6 @@
 
 === VMware 移轉顧問增強功能
 
-此 VMware 工作負載工廠版本具備功能與穩定性強化功能，並可在使用 VMware 移轉顧問時匯入及匯出移轉計畫。
+此版本的 VMware Workload Factory 具有功能和穩定性增強功能，以及在使用 VMware 遷移顧問時匯入和匯出遷移計劃的功能。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用移轉顧問為 Amazon EC2 建立部署計畫"]

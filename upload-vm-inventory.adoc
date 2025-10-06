@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。 
+summary: 您可以使用規劃中心上傳有關目前 VMware 環境的資訊。 
 ---
-= 使用 VMware 工作負載移轉至 Amazon EC2 之前，請先擷取您的 VM 組態
+= 將虛擬機器庫存資料上傳至NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-您可以使用移轉顧問 VM 資料收集器指令碼， RVTools 或 NetApp Data Infrastructure Insights 來擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼或 Data Infrastructure Insights ，因為這些選項會同時收集 VM 組態和效能資料，以獲得最準確的計畫。
+在建立遷移計劃之前，您需要上傳虛擬機器庫存資料。
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。
++
+從規劃中心，您可以上傳虛擬機器庫存數據，查看先前的庫存資料上傳，並使用任何虛擬機器庫存資料集規劃遷移。
+
+. 選擇*上傳虛擬機器清單*。
+. 選擇要使用的資料收集方法：
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應�
 https://www.robware.net/home["深入瞭解 RVTools"^]
 
 .步驟
+. 選擇 *RVTools* 圖塊，然後選擇 *Next*。
++
+隨即顯示「 * 準備 AWS Cloud 就職 * 」頁面。
+
+. 輸入您將建立的 VM 清單資料集的名稱。
 . 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
 . 啟動 RVTools 並登入目標 vCenter Server 。
 +
@@ -31,13 +46,13 @@ https://www.robware.net/home["深入瞭解 RVTools"^]
 +
 如 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^]需詳細資訊、請參閱中的「命令列參數」一章。
 
+. 選擇image:button-upload-file.png["上傳按鈕"]並選擇您匯出的 RVTools 檔案。
+. 選擇*上傳*。
+. 選擇*完成*。
 
-
-.結果
-包含您結果的 xlsx 或 xls 檔案會儲存至您的工作目錄。
 
 --
-.使用移轉顧問 VM 收集器指令碼（詳細規劃）
+.使用資料收集器（詳細規劃）
 --
 NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。您可以使用以下兩種模式之一的指令碼：
 
@@ -59,16 +74,7 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 請注意、如果您計畫從虛擬機器擷取長期統計資料（每日統計資料）、則必須在 vSphere 管理主控台（ VMware 管理環境）中啟用第 3 級或更高層級的統計資料。
 
 .步驟
-. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。
-+
-從規劃中心，您可以上傳您的虛擬機器庫存數據，查看先前的庫存資料上傳，並使用任何虛擬機器庫存資料集規劃遷移。然後選擇*遷移到 AWS 本機計算*。將顯示 VMware 遷移顧問啟動畫面。
-
-+
-檢閱相關資訊、瞭解移轉顧問的優點。
-
-. 準備好後、請選取 * 開始 * 。
-. 選取 * 詳細規劃 * 方塊，然後選取 * 下一步 * 。
+. 選擇“*資料收集器*”圖塊，然後選擇“*下一步*”。
 +
 代碼方塊視窗會出現在頁面右側。
 
@@ -104,10 +110,11 @@ Connect-VIServer -server <server_IP>
 +
 您也可以選擇執行資料收集器指令碼，而不指定任何選項；如此可讓您從互動式功能表中選取資料收集期間。
 
++
++ 腳本在目前工作目錄中輸出名稱中帶有時間戳記的壓縮檔案。  .zip 檔案包含所有虛擬機器及其屬性的列表，以及它們的 IOPS 和吞吐量資料。
 
+. 選擇*上傳*。
 
-.結果
-指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。
 
 --
 .使用 NetApp 資料基礎架構洞見（詳細規劃）
@@ -117,30 +124,29 @@ NetApp 資料基礎架構洞見是一種雲端基礎架構監控工具，可讓�
 https://docs.netapp.com/us-en/data-infrastructure-insights/["深入瞭解 Data Infrastructure Insights"^]
 
 .步驟
-. 登入您的 Data Infrastructure Insights 帳戶。
-. 在側邊導覽功能表中，選取 * 管理 * 。
-. 在產生的功能表中，選取 * API Access* 。
-. 在 *API 存取權杖 * 索引標籤中，選取 *+ API 存取權杖 * 。
+. 選擇「*Data Infrastructure Insights*」圖塊並選擇「*下一步*」。
 +
-此時會出現「建立 API 存取權杖」對話方塊。
+隨即顯示「 * 準備 AWS Cloud 就職 * 」頁面。
 
-. 提供 API 權杖的名稱和說明。
-. 在 * 此權杖將用於呼叫哪種類型的 API * 下，選取下列其中一項：
+. 輸入您將建立的 VM 清單資料集的名稱。
+. 輸入Data Infrastructure Insights的租戶端點。
 +
-** 擷取單位
-** 資產
-** 資料收集
+這應該是您用來存取 Data Infrastructure Insights 的 URL 。
 
+. 如果您尚未產生 Data Infrastructure Insights 的 API 存取權杖，請依照頁面上的指示建立。否則，請將您的 API 存取權杖貼到 * 輸入 API 存取權杖 * 文字方塊中。
+. 選擇*上傳*。
++
+工作負載工廠從Data Infrastructure Insights收集資訊。
 
-. 在 * 權限 * 下，選取 * 唯讀 * 。
-. 在 * 權杖過期時間 * 下，選擇您需要 API 權杖有效的時間長度。
-. 取消核取 * 自動旋轉 Kubernetes* 的權杖。
-. 選擇*保存*。
-. 選取 * 複製 API 存取權杖 * 。
-. 儲存此令牌以準備與 Workload Factory 遷移顧問一起使用。
 
 
 --
 ====
 .接下來呢？
-link:launch-onboarding-advisor-native.html["使用移轉顧問建立 Amazon EC2 部署計畫"]。
+從規劃中心管理您上傳的虛擬機器庫存數據，或建立部署計畫。
+
+* link:explore-planning-center.html["探索 VMware 工作負載規劃中心"]
+* link:launch-onboarding-advisor.html["建立 Amazon VMware Cloud 部署計劃"]
+* link:launch-migration-advisor-evs.html["建立 Amazon Elastic VMware Service 部署計劃"]
+* link:launch-onboarding-advisor-native.html["建立 Amazon EC2 部署計劃"]
+
