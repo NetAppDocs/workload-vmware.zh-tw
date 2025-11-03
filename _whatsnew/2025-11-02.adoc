@@ -1,0 +1,34 @@
+= 在 FSx for ONTAP檔案系統部署精靈中引入 Amazon Elastic VMware Service 首選項
+:allow-uri-read: 
+
+
+
+
+=== 在 FSx for ONTAP檔案系統部署精靈中引入 Amazon Elastic VMware Service 首選項
+
+當您部署 FSx for ONTAP檔案系統以用作 Amazon Elastic VMware Service 的外部 NFS 資料儲存時，現在可以選擇資料儲存將連接到的 EVS 環境。此功能會自動填入部署精靈中的多個字段，以簡化部署過程。
+
+https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["部署 ONTAP 檔案系統的建議 FSX"]
+
+
+
+=== VMware 工作負載的權限變更
+
+VMware 工作負載能夠更清楚地說明特定操作所需的權限，並允許您精細地選擇所需的權限。新增憑證時，您將有兩個權限選項可供選擇，而不是先前的權限模型（_唯讀_和_讀/寫_）。新的權限模型將權限策略分解如下：
+
+* 檢視、規劃與分析：檢視 EVS 虛擬化環境的清單，取得系統架構完善的分析，並探索節省成本的方法。
+* 資料儲存部署與連線：將建議的 VM 佈局部署至 Amazon EVS、Amazon EC2 或 VMware Cloud on AWS vSphere 叢集，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。
+
+
+新增憑證時，您可以根據要向 VMware 工作負載提供的存取級別，選擇一個或多個權限策略。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Workload Factory 權限參考"^]
+
+
+
+=== Amazon EC2 移轉顧問的改善
+
+此版本的NetApp Workload Factory for VMware 對遷移顧問體驗進行了多項改進：
+
+* *儲存或下載遷移計劃*：您現在可以將遷移計劃儲存或下載為 PDF 或 CSV 檔案。儲存遷移計劃時，該計劃將儲存到您的 Workload Factory 帳戶中。
+

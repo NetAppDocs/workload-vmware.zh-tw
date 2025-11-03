@@ -15,24 +15,47 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 
 根據您新增至 Workload Factory 帳戶的政策和權限，您可以使用 Workload Factory（使用讀取/寫入模式）完全部署 FSx for ONTAP檔案系統。如果您擁有的權限較少（唯讀模式）或沒有權限（基本模式），則需要使用 Codebox 中的 CloudFormation 範本並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 
-.部署到 Amazon Elastic VMware Service 的要求
+
+
+== 需求
+
 * 您必須擁有 Amazon Elastic VMware Service 訂閱。
 * 您必須擁有必要的權限才能在您的 AWS 帳戶中建立 FSx for ONTAP 檔案系統。
 
 
-.步驟
+
+
+== 注意事項
+
+* 您可以使用「快速建立」或「進階建立」選項。進階建立提供數個額外的儲存參數、可供您自訂。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解這兩個選項的功能"]
+* 在「Amazon Elastic VMware Service 首選項」部分，您可以選擇 EVS 虛擬化環境以連接到外部資料儲存。這樣會自動填入一些字段，提供部署的最佳實務選項。您可以根據需要更改這些選項。
+
+
+
+
+== 步驟
+
 . 在 * 審查計畫 * 頁面底部、選取 * 部署 * 、隨即顯示建立 ONTAP 檔案系統的 FSX 頁面。
 +
 定義適用於 ONTAP 檔案系統的 FSX 的大部分欄位都是根據您提供的資訊來完成、但您需要在此頁面中填寫一些欄位。
-
-+
-您可以使用「快速建立」或「進階建立」選項。進階建立提供數個額外的儲存參數、可供您自訂。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解這兩個選項的功能"]
 
 . 在「檔案系統常規配置」部分中，輸入以下資訊：
 +
 .. *AWS 憑證*：選擇或新增憑證，為 Workload Factory 提供直接建立 FSx for ONTAP檔案系統所需的權限。您也可以從 Codebox 選擇 CloudFormation 程式碼並在 AWS 中自行部署 FSx for ONTAP檔案系統。
 .. * 檔案系統名稱 * ：輸入您要用於此 ONTAP 檔案系統的 FSX 名稱。
 .. *標籤*：您可以選擇新增標籤來對此 FSx for ONTAP 檔案系統進行分類。
+
+
+. 在「Amazon Elastic VMware Service 首選項」部分，從「環境 ID」清單中選擇資料儲存將連接的 EVS 環境。
++
+此功能會自動填入以下欄位：
+
++
+** *VPC*
+** *可用區域*
+** 子網
+** 在「NFS 資料儲存存取」部分，如果您選擇了「僅 EVS 主機管理」選項，「EVS 主機管理 (CIDR)」欄位將自動填入。
+** 在「資料儲存掛載選項」部分，如果您選擇將資料儲存掛載到 EVS 集群，則「EVS 集群 VMware vCenter 位址」和「vSphere 管理員憑證金鑰 ARN」欄位將自動填入。
 
 
 . 在「網路與安全性」區段中、輸入下列資訊：
@@ -95,9 +118,12 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 或者，在 Codebox 視窗中，您可以選擇 *重定向到 CloudFormation* 以使用 CloudFormation 堆疊建立檔案系統和建議的 VM 配置。
 
 +
-無論是哪種情況、您都可以監控 CloudForgation 的建立進度。
+無論哪種情況，您都可以在 CloudFormation 中監控建立進度。
 
 
 
-.結果
+
+
+== 結果
+
 已部署適用於 ONTAP 檔案系統的 FSX 。現在您可以使用 Codebox 中的 AWS CloudFormation 範本將建議的 VM 配置部署到您的 Amazon Elastic VMware Service 環境。

@@ -61,7 +61,7 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 === 制定遷移計劃
 
-您可以選擇一個遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。
+您可以選擇遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
@@ -93,16 +93,16 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
-=== 建立遷移計劃的 PDF 報告
+=== 建立遷移計劃的 PDF 或 CSV 報告
 
-建立遷移計劃詳細資訊的 PDF 報告。
+產生一份包含遷移計劃詳細資訊的 PDF 或 CSV 報告。
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
 . 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
 . 選擇*遷移計劃*。
-. 選擇要建立 PDF 報告的遷移計畫的操作選單 (...)，然後選擇 *建立報告*。
-. 輸入報告 PDF 的名稱並選擇*儲存*。
+. 選擇要建立 PDF 或 CSV 報告的遷移計畫的「操作」功能表 (...)，然後選擇「下載計畫 (PDF)」或「下載 VM 報告 (CSV)」。
+. 輸入報表名稱，然後選擇「儲存」。
 
 
 

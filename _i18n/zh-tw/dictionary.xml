@@ -253,7 +253,6 @@
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">作業模式</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 將 AWS 認證和權限新增至您的帳戶</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">瞭解如何新增認證和權限</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
@@ -442,7 +441,6 @@
   <block id="1832a7f4d2abf297aa0cee87f4c043e3" category="doc">引入對 Amazon Elastic VMWare Service 的遷移顧問支持</block>
   <block id="e64998710319712d47612cc187a1dc35" category="inline-link">使用遷移顧問為 Amazon EVS 建立部署計劃</block>
   <block id="e38866fbf1fd8067b38b878041582246" category="paragraph"><block ref="e38866fbf1fd8067b38b878041582246" category="inline-link-rx"></block></block>
-  <block id="802df5af335904750107954ab3a8ed46" category="list-title">部署到 Amazon Elastic VMware Service 的要求</block>
   <block id="af3e8ed9d9207dad8af46833f2eb0ab7" category="list-text">您必須擁有 Amazon Elastic VMware Service 訂閱。</block>
   <block id="ae7ebbe17e3811730276beadb335d6dd" category="list-text">您必須擁有必要的權限才能在您的 AWS 帳戶中建立 FSx for ONTAP 檔案系統。</block>
   <block id="24fc36f7e1c73cab9f76bb8ee2f25d79" category="list-text">在「檔案系統常規配置」部分中，輸入以下資訊：</block>
@@ -456,7 +454,6 @@
   <block id="7d87cf8c2865afef739dfc772b6aabc3" category="list-text">*ONTAP 憑證*：輸入 ONTAP 使用者名稱密碼。</block>
   <block id="2240ad2300512b80bcff2fc7b3eadb2e" category="paragraph">或者，在 Codebox 視窗中，您可以選擇 *重定向到 CloudFormation* 以使用 CloudFormation 堆疊建立檔案系統和建議的 VM 配置。</block>
   <block id="f49f5d0e3a47bf2d077d9b5cb9387559" category="paragraph">已部署適用於 ONTAP 檔案系統的 FSX 。現在您可以使用 Codebox 中的 AWS CloudFormation 範本將建議的 VM 配置部署到您的 Amazon Elastic VMware Service 環境。</block>
-  <block id="afae2006111ac3752aa6ac921a1174d1" category="section-title">透過手動指定環境要求來建立部署計劃</block>
   <block id="3693b6808c8591ae14d0989957294e8c" category="paragraph">您可以手動指定 Amazon Elastic VMware Service 中虛擬機器的要求，並使用自訂的 Amazon FSx for NetApp ONTAP 檔案系統作為外部資料儲存。</block>
   <block id="1b7c012ca7da212cb6ec387367494316" category="list-text">輸入您的 VM 環境的要求。</block>
   <block id="330b61387619b0f8b4b8895b1ec8613f" category="paragraph">請記住以下虛擬機器遷移效能要求和建議：</block>
@@ -551,7 +548,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">管理遷移計劃</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">使用遷移中心建立和管理遷移計劃。</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">制定遷移計劃</block>
-  <block id="79365fd6156503549c858f6fef6f4384" category="paragraph">您可以選擇一個遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。</block>
   <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">選擇*遷移計劃*選單。</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">選擇您要設定的遷移計畫的操作選單 (...)，然後選擇 *配置*。</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">根據遷移計劃，參考以下說明部署檔案系統：</block>
@@ -566,10 +562,6 @@
   <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">選擇*遷移計劃*。</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">選擇要編輯的遷移計劃的操作選單 (...)，然後選擇*編輯註釋*。</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">輸入評論並選擇*儲存*。</block>
-  <block id="af848be5e478317315a7456f2b750f85" category="section-title">建立遷移計劃的 PDF 報告</block>
-  <block id="ab8d3711b0c3a5626489fe2bfe17f05f" category="paragraph">建立遷移計劃詳細資訊的 PDF 報告。</block>
-  <block id="90ef9f5b382625493541f79cb73c95bc" category="list-text">選擇要建立 PDF 報告的遷移計畫的操作選單 (...)，然後選擇 *建立報告*。</block>
-  <block id="95ccbdc12e94d757840a1d49067a3a22" category="list-text">輸入報告 PDF 的名稱並選擇*儲存*。</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">刪除遷移計劃</block>
   <block id="39f6a04761fcf20bcf673a41a6ab8f37" category="paragraph">當不再需要遷移計劃時，您可以隨時刪除它。</block>
   <block id="dc38ae40a3dd847f4277194b9bdb3492" category="list-text">選擇要刪除的遷移計劃的操作選單 (...)，然後選擇*刪除*。</block>
@@ -598,7 +590,6 @@
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">選擇*手動建立 EVS 計劃*。</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">準備好後，選擇*審查計劃*來審查遷移計劃。</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">預設情況下，Workload Factory 將遷移計劃儲存到規劃中心。您可以在頁面頂部附近取消選擇此選項。</block>
-  <block id="554a7544eaaf7039cc0b201a4eb1c0a0" category="list-text">或者，當您對遷移計劃滿意時，您可以透過選擇*匯出計劃（PDF）*將計劃詳細資訊下載為 PDF 文件。</block>
   <block id="4147fd67220c420eb852e2c99f9ef614" category="list-text">當您準備好配置部署計劃時，請選擇*配置*。</block>
   <block id="c3e8b1987aa88fc22cc3f9a3da7214be" category="summary">從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協助建立根據您的需求量身定制的遷移計劃。</block>
   <block id="8cf6f9434ff2a0ab859f112105dcf308" category="paragraph">您可以建立部署計劃，將虛擬機器移轉到 Amazon Elastic VMware Service，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。遷移顧問中的選項可能會根據用於收集虛擬機器庫存資料的工具而有所不同。</block>
@@ -676,13 +667,11 @@
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入工作負載工廠</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">在 Workload Factory 上建立帳戶</block>
   <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">你需要<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block>並使用以下任一方式登入<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
-  <block id="dd4f9edabeb37ece9735b049d7a1c633" category="paragraph">您可以在_基本_模式下使用 Workload Factory，而無需新增憑證來存取您的 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至 Workload Factory，可為您的 Workload Factory 帳戶提供建立和管理 FSx for ONTAP檔案系統以及在 Amazon EC2 中部署和管理工作負載所需的權限。</block>
   <block id="3f35f21ffef11e779800fd22d15e4ca8" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>上傳虛擬機器清單數據</block>
   <block id="e1705a2c0f8c2dd8d94e67c86291e62a" category="paragraph">您可以使用規劃中心上傳有關目前 VM 環境的庫存詳細資訊。使用資料收集器腳本、RVTools 或NetApp Data Infrastructure Insights擷取目前的 VM 配置並將資料上傳到規劃中心。</block>
   <block id="10ebd16f18f5f5f9fac69ef4c933c75f" category="inline-link-macro">了解如何上傳虛擬機器清單數據</block>
   <block id="527322d1ebf3079ca1f474c5e3c8d4dc" category="paragraph"><block ref="3f004e021dfd1da14c955ee4e1d0ba17" category="inline-link-macro-rx"></block> 。</block>
   <block id="465e05b02c4091132dffd8661fead178" category="paragraph"><block ref="3aea27ccdadee3f33be0c6643a1fec67" category="inline-link-macro-rx"></block> 。</block>
-  <block id="ed3181ef696298ce4f112b70f615add4" category="paragraph">您可以在_基本_模式下使用 Workload Factory，而無需新增憑證來存取您的 AWS 帳戶。以_唯讀_或_讀/寫_模式將 AWS 憑證新增至 Workload Factory，可為您的 Workload Factory 帳戶提供建立和管理 FSx for ONTAP檔案系統以及在 VMware Cloud 中部署和管理工作負載所需的權限。</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">在向NetApp技術支援部門提交支援案例之前，您需要在 Workload Factory 新增一個NetApp支援網站帳戶，然後註冊以獲得支援。</block>
   <block id="321b853ccb62a088abe07117978e5b31" category="doc">註冊以取得NetApp Workload Factory for VMware 的支持</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">需要註冊支援才能獲得針對NetApp Workload Factory 及其儲存解決方案和服務的技術支援。您必須註冊NetApp Console 的支持，它是獨立於 Workload Factory 的基於 Web 的控制台。</block>
@@ -735,4 +724,41 @@
   <block id="74f9db7fefcf8c24332761c003d46a02" category="section-title">VMware 工作負載規劃中心簡介</block>
   <block id="c1ed477ef5d58aa5d9931821badda717" category="paragraph">BlueXP Workload Factory for VMware 現在允許您使用 Amazon Elastic VMware Service 移轉顧問將本機 VMware 工作負載快速移轉到 Amazon Elastic VMware Service。使用遷移顧問建立遷移計畫後，計畫會自動儲存在規劃中心的遷移計畫清單中。</block>
   <block id="c2ec0e17d82dd73344c2ef80a6de22f1" category="paragraph"><block ref="c2ec0e17d82dd73344c2ef80a6de22f1" category="inline-link-rx"></block></block>
+  <block id="24469e003440641648ff205b984a0ac7" category="doc">在 FSx for ONTAP檔案系統部署精靈中引入 Amazon Elastic VMware Service 首選項</block>
+  <block id="0e8989988334c8827a95bf9733f5311e" category="paragraph">當您部署 FSx for ONTAP檔案系統以用作 Amazon Elastic VMware Service 的外部 NFS 資料儲存時，現在可以選擇資料儲存將連接到的 EVS 環境。此功能會自動填入部署精靈中的多個字段，以簡化部署過程。</block>
+  <block id="876ee64bc6b6627784cd32512c519f60" category="paragraph"><block ref="876ee64bc6b6627784cd32512c519f60" category="inline-link-rx"></block></block>
+  <block id="8bf32647108c4a28e744e9ba5a1683bf" category="section-title">VMware 工作負載的權限變更</block>
+  <block id="18a162715dca6df2cf24f0158d03bddd" category="paragraph">VMware 工作負載能夠更清楚地說明特定操作所需的權限，並允許您精細地選擇所需的權限。新增憑證時，您將有兩個權限選項可供選擇，而不是先前的權限模型（_唯讀_和_讀/寫_）。新的權限模型將權限策略分解如下：</block>
+  <block id="0a015f0bd274c5e6c7a774ac18592871" category="list-text">檢視、規劃與分析：檢視 EVS 虛擬化環境的清單，取得系統架構完善的分析，並探索節省成本的方法。</block>
+  <block id="56522cb8a8b15eeca3868896cb875225" category="list-text">資料儲存部署與連線：將建議的 VM 佈局部署至 Amazon EVS、Amazon EC2 或 VMware Cloud on AWS vSphere 叢集，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。</block>
+  <block id="59371e7e2c46a6e1dae0e4d3224dd7ef" category="paragraph">新增憑證時，您可以根據要向 VMware 工作負載提供的存取級別，選擇一個或多個權限策略。</block>
+  <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">Workload Factory 權限參考</block>
+  <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
+  <block id="62057df0ae6e346379f483246f31203b" category="list-text">*儲存或下載遷移計劃*：您現在可以將遷移計劃儲存或下載為 PDF 或 CSV 檔案。儲存遷移計劃時，該計劃將儲存到您的 Workload Factory 帳戶中。</block>
+  <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">注意事項</block>
+  <block id="8eea8cbef155daad5f0336e67b106d2f" category="list-text">在「Amazon Elastic VMware Service 首選項」部分，您可以選擇 EVS 虛擬化環境以連接到外部資料儲存。這樣會自動填入一些字段，提供部署的最佳實務選項。您可以根據需要更改這些選項。</block>
+  <block id="4356903392007c85f8e73efe4347e2ff" category="list-text">在「Amazon Elastic VMware Service 首選項」部分，從「環境 ID」清單中選擇資料儲存將連接的 EVS 環境。</block>
+  <block id="61f5a1ca1bc96422fa16bce675cee6a1" category="paragraph">此功能會自動填入以下欄位：</block>
+  <block id="5a27c4fb594c9f679329c31622b59a04" category="list-text">*VPC*</block>
+  <block id="9fec24e9bf3c3f6b25e4def96d0b31cb" category="list-text">*可用區域*</block>
+  <block id="a5ede60043f381fbec4810d49c62a7e7" category="list-text">子網</block>
+  <block id="864acc0e479b0f497d42b56fec813833" category="list-text">在「NFS 資料儲存存取」部分，如果您選擇了「僅 EVS 主機管理」選項，「EVS 主機管理 (CIDR)」欄位將自動填入。</block>
+  <block id="c2c2f4e306bee7cddb73a93d88e8f835" category="list-text">在「資料儲存掛載選項」部分，如果您選擇將資料儲存掛載到 EVS 集群，則「EVS 集群 VMware vCenter 位址」和「vSphere 管理員憑證金鑰 ARN」欄位將自動填入。</block>
+  <block id="7af379a5a0b7c9925c9cc49a5fe4102b" category="paragraph">無論哪種情況，您都可以在 CloudFormation 中監控建立進度。</block>
+  <block id="640e753affbc0ed23602125bd47cf1a0" category="paragraph">您可以選擇遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。</block>
+  <block id="0c47e3b364699e732be74fcfcd5fcb76" category="section-title">建立遷移計劃的 PDF 或 CSV 報告</block>
+  <block id="feb07457ab16b08e6759f9a102b74915" category="paragraph">產生一份包含遷移計劃詳細資訊的 PDF 或 CSV 報告。</block>
+  <block id="ce7492243f67024ea27281293ef49ad2" category="list-text">選擇*遷移計劃*。</block>
+  <block id="ad4c2b0bf62cfb791914800c139d480c" category="list-text">選擇要建立 PDF 或 CSV 報告的遷移計畫的「操作」功能表 (...)，然後選擇「下載計畫 (PDF)」或「下載 VM 報告 (CSV)」。</block>
+  <block id="fae19c44f57cb307c986fe8aed636a86" category="list-text">輸入報表名稱，然後選擇「儲存」。</block>
+  <block id="71d503717b6e0e8fdefc91ea29f61bc2" category="list-text">您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您還沒有帳號，請立即建立帳號。請參閱說明<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>。</block>
+  <block id="6b220aa78c1cc96ebbf1f4b5bb3682d6" category="list-text">您也可以選擇將遷移計劃匯出為 PDF 或 CSV 文件，方法是選擇頁面右上角的“管理計劃”，然後選擇“下載報告 (.pdf)”或“下載 VM 儲存部署 (.csv)”。</block>
+  <block id="aedb7e102d3632d427ea9e76ff06651a" category="paragraph">.csv 檔案會產生一個對應表，其中包含遷移計畫中的所有虛擬機器及其指派的儲存磁碟區。</block>
+  <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>新增憑證和權限</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link">權限策略</block>
+  <block id="936d666f131176683c1d6c00130dafc9" category="paragraph">選擇<block ref="58aaeb1e36f031336cc27639db355451" category="inline-link-rx"></block>滿足您的需求。</block>
+  <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。</block>
+  <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">手動向帳戶新增憑證</block>
+  <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">如果您選擇授予權限，您需要…<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。</block>
+  <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025年11月2日</block>
 </blocks>

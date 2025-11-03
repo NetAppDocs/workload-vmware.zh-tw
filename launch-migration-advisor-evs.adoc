@@ -13,19 +13,20 @@ summary: 從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協
 [role="lead"]
 從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協助建立根據您的需求量身定制的遷移計劃。
 
-請注意，您必須擁有使用者名稱和密碼才能存取 Workload Factory。如果您沒有存取權限，請立即建立帳戶。查看說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
-
-
-
-== 使用移轉顧問建立部署計畫
-
 您可以建立部署計劃，將虛擬機器移轉到 Amazon Elastic VMware Service，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。遷移顧問中的選項可能會根據用於收集虛擬機器庫存資料的工具而有所不同。
 
-.需求
+
+
+== 需求
+
+* 您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您還沒有帳號，請立即建立帳號。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
 * 您必須擁有 Amazon Elastic VMware Service 訂閱。
 
 
-.步驟
+
+
+== 步驟
+
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
 . 或者，如果您從 Workload Factory 控制台存取 Workload Factory，請從 VMware 工作負載磁貼中選擇 *VMware 規劃中心*，然後選擇 *VMware 規劃中心*。顯示 VMware 規劃中心。
 . 從清單中選擇要用於制定部署計劃的 VM 清單，然後在該行中選擇 *開始計劃*。
@@ -91,7 +92,7 @@ summary: 從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協
 [discrete]
 ===== 設計
 
-. 在「ClassReview 實例儲存分配」頁面上，查看虛擬機器資訊、磁碟區分類規則、磁碟區分配以及將作為部署的一部分遷移的磁碟區列表，然後選擇「下一步」。
+* 在「ClassReview 實例儲存分配」頁面上，查看虛擬機器資訊、磁碟區分類規則、磁碟區分配以及將作為部署的一部分遷移的磁碟區列表，然後選擇「下一步」。
 
 
 [discrete]
@@ -103,6 +104,10 @@ summary: 從 VMware 規劃中心，您可以啟動 Amazon EVS 遷移顧問來協
 
 +
 遷移計劃預設自動儲存在計劃中心的計劃清單中。
+
+. 您也可以選擇將遷移計劃匯出為 PDF 或 CSV 文件，方法是選擇頁面右上角的“管理計劃”，然後選擇“下載報告 (.pdf)”或“下載 VM 儲存部署 (.csv)”。
++
+.csv 檔案會產生一個對應表，其中包含遷移計畫中的所有虛擬機器及其指派的儲存磁碟區。
 
 . 當您準備好繼續執行計劃時，請選擇*Provision*開始部署建議的Amazon FSx for NetApp ONTAP檔案系統。
 
