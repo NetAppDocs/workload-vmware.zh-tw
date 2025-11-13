@@ -83,17 +83,17 @@ Connect-VIServer -server <server_IP>
 --
 RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。
 
-https://www.robware.net/home["深入瞭解 RVTools"^]
+https://www.dell.com/en-us/shop/vmware/sl/rvtools["深入瞭解 RVTools"^]
 
 .步驟
-. 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
+. 下載並安裝 RVTools 4.4.2 或更高版本 https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools 網站"^]
 . 啟動 RVTools 並登入目標 vCenter Server 。
 +
 這會擷取有關 vCenter Server 的資訊。
 
 . 將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。
 +
-如 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^]需詳細資訊、請參閱中的「命令列參數」一章。
+請參閱「命令列參數」章節。 https://www.dell.com/en-us/shop/vmware/sl/rvtools["資源部分的 RVTools 文檔"^] 詳情請見下文。
 
 
 

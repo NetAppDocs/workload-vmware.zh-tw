@@ -29,7 +29,7 @@ summary: 您可以使用規劃中心上傳有關目前 VMware 環境的資訊。
 --
 RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。
 
-https://www.robware.net/home["深入瞭解 RVTools"^]
+在 https://www.dell.com/en-us/shop/vmware/sl/rvtools["深入瞭解 RVTools"^]
 
 .步驟
 . 選擇 *RVTools* 圖塊，然後選擇 *Next*。
@@ -37,14 +37,14 @@ https://www.robware.net/home["深入瞭解 RVTools"^]
 隨即顯示「 * 準備 AWS Cloud 就職 * 」頁面。
 
 . 輸入您將建立的 VM 清單資料集的名稱。
-. 從下載並安裝 RVTools 4.4.2 或更新版本 https://www.robware.net/download["RVTools 網站"^]
+. 從以下位置下載並安裝 RVTools 4.4.2 或更高版本： https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools 網站"^]
 . 啟動 RVTools 並登入目標 vCenter Server 。
 +
 這會擷取有關 vCenter Server 的資訊。
 
 . 將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。
 +
-如 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools 文件"^]需詳細資訊、請參閱中的「命令列參數」一章。
+請參閱「命令列參數」章節。 https://www.dell.com/en-us/shop/vmware/sl/rvtools["RVTools 文件位於「資源」部分"^] 詳情請見下文。
 
 . 選擇image:button-upload-file.png["上傳按鈕"]並選擇您匯出的 RVTools 檔案。
 . 選擇*上傳*。

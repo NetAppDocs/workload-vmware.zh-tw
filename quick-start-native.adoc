@@ -13,7 +13,7 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 [role="lead"]
 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。
 
-開始之前，您應該先瞭解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["作業模式"^]。
+在開始之前，您應該了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的權限 ^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入工作負載工廠
 [role="quick-margin-para"]

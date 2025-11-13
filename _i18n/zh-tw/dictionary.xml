@@ -33,9 +33,7 @@
   <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">使用 RVTools 軟體</block>
   <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVTools 是與 vCenter 和 ESX Server （ 5.x 至 8.0 ）互動的 Windows 應用程式、可擷取有關 VMware 虛擬環境的資訊。它會收集有關 VM 、 CPU 、記憶體、磁碟、叢集、 ESX 主機、資料存放區等。您可以將此資訊匯出至 xlsx 檔案、以便與移轉顧問搭配使用。</block>
   <block id="344899ab535d99090285d73527e8b852" category="inline-link">深入瞭解 RVTools</block>
-  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
   <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools 網站</block>
-  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">從下載並安裝 RVTools 4.4.2 或更新版本<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
   <block id="93768280696f91c787d919221b25e927" category="list-text">啟動 RVTools 並登入目標 vCenter Server 。</block>
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">這會擷取有關 vCenter Server 的資訊。</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">將您的 VMware 資訊匯出至 xlsx 或 xls 檔案。</block>
@@ -250,7 +248,6 @@
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP 的支援文件</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">如需管理適用於 ONTAP 檔案系統的 FSX 的相關資訊、請移至<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 以檢視您可以使用的備份與保護功能。</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 AWS 上的 VMware Cloud 、使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">作業模式</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">瞭解如何新增認證和權限</block>
@@ -316,7 +313,6 @@
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">移轉至 Amazon EC2</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">執行您下載的資料收集器指令碼、並指定「每日」或「每小時」 VM 統計資料的資料收集選項。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">指令碼會在目前工作目錄的名稱中輸出一個壓縮檔案、其中有時間戳記。zip 檔案包含所有 VM 及其內容的清單、以及其 IOPS 和處理量資料。</block>
-  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph">如<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>需詳細資訊、請參閱中的「命令列參數」一章。</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">使用移轉顧問建立 Amazon EC2 部署計畫</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>。</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">此時會顯示 VMware 移轉顧問主頁面。</block>
@@ -358,7 +354,6 @@
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不確定要選擇哪種比率、請選取 * 「協助我決定 * 」。此時會顯示 _ 資料減量比助理 _ 對話方塊。請選擇適用於您的 VM 庫存和儲存資產的任何敘述。助理將建議適當的資料減量率。選取 * 套用 * 以使用建議的比率。</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">VMware 的工作負載工廠現在支援使用 VMware 移轉顧問移轉至 Amazon EC2 。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link">主控台體驗</block>
-  <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">開始之前，您應該先瞭解<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>。</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>。</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">瞭解如何連接適用於 ONTAP 檔案系統的 FSX</block>
@@ -761,4 +756,15 @@
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">手動向帳戶新增憑證</block>
   <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">如果您選擇授予權限，您需要…<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。</block>
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025年11月2日</block>
+  <block id="50d2e9de63b2a2c16916c2f1b6818a38" category="paragraph"><block ref="50d2e9de63b2a2c16916c2f1b6818a38" category="inline-link-rx"></block></block>
+  <block id="a64a69c3508f33cfd62281ba53751057" category="list-text">從以下位置下載並安裝 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="862ba35dfdf3a7836d71ed579dfca3ec" category="paragraph">請參閱「命令列參數」章節。<block ref="cb13b358aa71a504b38a0472274f8ec0" category="inline-link-rx"></block> 詳情請見下文。</block>
+  <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">下載並安裝 RVTools 4.4.2 或更高版本<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">資源部分的 RVTools 文檔</block>
+  <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">請參閱「命令列參數」章節。<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> 詳情請見下文。</block>
+  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">在開始之前，您應該了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的權限 ^]。</block>
+  <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">在<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
+  <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">從以下位置下載並安裝 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文件位於「資源」部分</block>
+  <block id="aab95159d263780315dd964c73eaae67" category="paragraph">請參閱「命令列參數」章節。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳情請見下文。</block>
 </blocks>
