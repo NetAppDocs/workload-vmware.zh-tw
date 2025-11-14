@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">瞭解如何使用現有計畫來建立新計畫</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">如果您計畫根據先前儲存在本機的現有部署計畫來部署新系統、您可以跳過此步驟、然後選取現有的部署計畫。<block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>。</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">使用移轉顧問 VM 收集器指令碼</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 所收集的類似的 VM 組態資訊、但它會擷取目前的 VM 效能資料、以提供實際的讀寫 IOPS 和處理量統計資料。</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">您必須啟動移轉顧問、才能從 Codebox 視窗複製移轉顧問 VM 收集器指令碼。</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 結案案例 * ：提供結案原因的詳細資料、並選取 * 結案案例 * 。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">根據具有類似需求的現有部署計畫、在雲端部署系統。</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">請按這裡</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">根據內部部署 vSphere 環境建立部署計畫</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">您可以將內部部署 vSphere 環境中目前的虛擬機器組態移轉至 VMware Cloud on AWS 中的虛擬機器、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">請注意、如果您選取的數量少於 20% 、就無法建立磁碟區快照來保護和長期備份。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VM 快照保護 * ：啟用此選項以使用快照保護 VM 。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和技術「免責聲明」的詳細資料。</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">移轉至 VMware Cloud 時、您可以使用移轉顧問為下列案例建立部署計畫：</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">將您目前的內部部署 vSphere 環境移轉至 VMware 雲端。</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">* 平均資料減量比率 * ：從三個常見的資料減量選擇值中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">* vSAN 容錯 * ：選取 VM 所需的容錯等級。您可以選擇「 Auto 」（自動）（建議使用）、或從各種 RAID 層級中選擇。</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區、將目前基礎架構的部分移轉至 Amazon EC2 或 VMware Cloud on AWS 、可提供下列優點：</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">從以下位置下載並安裝 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文件位於「資源」部分</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">請參閱「命令列參數」章節。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳情請見下文。</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">遷移到 VMware 雲端時，您可以使用遷移顧問將您目前的本機 vSphere 環境遷移到 VMware 雲端。</block>
 </blocks>

@@ -13,8 +13,6 @@ summary: 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目�
 [role="lead"]
 您可以使用移轉顧問 VM 收集器指令碼或 RVTools 擷取目前的 VM 組態。我們建議您使用移轉顧問 VM 收集器指令碼、因為它會收集 VM 組態和效能資料、以取得最準確的計畫。
 
-如果您計畫根據先前儲存在本機的現有部署計畫來部署新系統、您可以跳過此步驟、然後選取現有的部署計畫。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["瞭解如何使用現有計畫來建立新計畫"]。
-
 [role="tabbed-block"]
 ====
 .使用移轉顧問 VM 收集器指令碼
