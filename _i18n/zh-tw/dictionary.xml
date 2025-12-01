@@ -468,14 +468,11 @@
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">請依照以下步驟探索計劃遷移到 Amazon EVS 環境的潛在節省。</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">在繼續之前，請查看儲蓄計算器底部的免責聲明，以了解有關如何計算價格估算的更多資訊。</block>
   <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">從 VMware 工作負載圖塊中，選擇 *探索節省*，然後選擇 *Amazon Elastic VMware Service (EVS)*。顯示儲蓄計算器。</block>
-  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">*環境偏好設定*窗格提供了滑桿，您可以根據環境需求進行調整。</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">根據需要調整以下滑區塊以查看您所選值的即時節省計算。如果使用鍵盤，您可以使用箭頭鍵進行微調：</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*所需實體 CPU（數量）*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*所需實體記憶體 (GiB)*</block>
   <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*所需虛擬機器儲存 (TiB)*</block>
-  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*EVS 計費計劃*</block>
   <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">建立部署計劃</block>
-  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">使用遷移顧問<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block>對於 Amazon EVS 環境，選擇*建立詳細評估*。</block>
   <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">選擇“*關閉*”以關閉 TCO 計算器。</block>
   <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">在「EVS 叢集附件」部分中，輸入以下資訊：</block>
   <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*EVS 叢集 vSphere 控制台詳細資料*：輸入應連接 Amazon EVS 的 VMware vCenter 伺服器的 IP 位址或 FQDN。</block>
@@ -761,4 +758,13 @@
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文件位於「資源」部分</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">請參閱「命令列參數」章節。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳情請見下文。</block>
   <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">遷移到 VMware 雲端時，您可以使用遷移顧問將您目前的本機 vSphere 環境遷移到 VMware 雲端。</block>
+  <block id="e738192b7a8dc90f6d5e566ceb909da3" category="doc">計算遷移到 Amazon Elastic VMware Service 為特定區域節省的成本</block>
+  <block id="d4a40d01192a627963ffd40503ef4713" category="paragraph">現在，您可以探索不同雲端遷移部署選項的價值，優化解決方案評估的投入，並深入了解有可能在雲端帶來價值和節省的解決方案。</block>
+  <block id="de480346f69aff69cc4e4e1e5d52ea98" category="paragraph">您也可以查看使用 FSx for ONTAP進行 EVS 部署可以節省的 vCPU 核心數。</block>
+  <block id="389870bd93c88ff4cb5e7f6216054ce2" category="paragraph"><block ref="389870bd93c88ff4cb5e7f6216054ce2" category="inline-link-rx"></block></block>
+  <block id="0031d357ae0128729164b1d7b297533b" category="paragraph">在「環境首選項」面板中，您可以選擇 EVS 部署區域，並相應地調整 TCO 和節省預測。</block>
+  <block id="66171c1365145e2d4c36586982cac308" category="list-text">從「*區域*」下拉清單中，選擇 EVS 部署區域以計算節省金額。</block>
+  <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">在「EVS計費方案」下，選擇您正在使用的方案。</block>
+  <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">使用遷移顧問 <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> 對於 Amazon EVS 環境，請選擇「規劃 EVS 遷移」。</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
 </blocks>
