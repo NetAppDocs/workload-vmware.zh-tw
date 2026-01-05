@@ -767,4 +767,7 @@
   <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">在「EVS計費方案」下，選擇您正在使用的方案。</block>
   <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">使用遷移顧問 <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> 對於 Amazon EVS 環境，請選擇「規劃 EVS 遷移」。</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">問我關於人工智慧助理首頁整合的問題</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
 </blocks>
