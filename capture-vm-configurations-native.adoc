@@ -60,9 +60,9 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
 +
-從規劃中心，您可以上傳您的虛擬機器庫存數據，查看先前的庫存資料上傳，並使用任何虛擬機器庫存資料集規劃遷移。然後選擇*遷移到 AWS 本機計算*。將顯示 VMware 遷移顧問啟動畫面。
+規劃中心已顯示。在規劃中心，您可以上傳虛擬機器清單數據，查看先前的清單資料上傳記錄，並使用任何虛擬機器清單資料集規劃遷移，然後選擇「遷移到 AWS 原生運算」。顯示 VMware 遷移顧問啟動畫面。
 
 +
 檢閱相關資訊、瞭解移轉顧問的優點。

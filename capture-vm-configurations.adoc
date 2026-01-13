@@ -34,10 +34,16 @@ NetApp 移轉顧問 VM 收集器指令碼會從您的 vCenter 收集與 RVTools 
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從「 VMware 工作負載」方塊中，選取 * 評估和規劃 * ，然後選取 * 移轉至 AWS * 上的 VMware Cloud 。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
+. 從 VMware 選單中選擇“評估和規劃”，然後選擇“遷移到 VMware Cloud on AWS”。
 +
 此時會顯示 VMware 移轉顧問主頁面。
 
+. 選擇*計劃並建立 VMC*。
+. 選擇“開始！”。您可以透過選取核取方塊來選擇不再顯示此頁面。
 . 選取 * 建立新的部署計畫 * 、選取 * 使用移轉顧問 VMware 資料收集器 * 選項、然後選取 * 下一步 * 。
 +
 隨即顯示 * 準備 VMware Cloud on AWS 移轉 * 頁面。

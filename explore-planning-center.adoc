@@ -33,7 +33,10 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇要重新命名的資料集的操作選單（...），然後選擇*重新命名*。
 . 輸入資料集的新名稱並選擇*儲存*。
 
@@ -46,7 +49,10 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇要刪除的資料集的操作選單（...），然後選擇*刪除*。
 . 選擇*刪除*以確認操作。
 
@@ -65,8 +71,11 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
-. 選擇*遷移計劃*選單。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
+. 選擇*遷移計劃*。
 . 選擇您要設定的遷移計畫的操作選單 (...)，然後選擇 *配置*。
 . 根據遷移計劃，參考以下說明部署檔案系統：
 +
@@ -85,7 +94,10 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇*遷移計劃*。
 . 選擇要編輯的遷移計劃的操作選單 (...)，然後選擇*編輯註釋*。
 . 輸入評論並選擇*儲存*。
@@ -99,7 +111,10 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇*遷移計劃*。
 . 選擇要建立 PDF 或 CSV 報告的遷移計畫的「操作」功能表 (...)，然後選擇「下載計畫 (PDF)」或「下載 VM 報告 (CSV)」。
 . 輸入報表名稱，然後選擇「儲存」。
@@ -113,7 +128,10 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 .步驟
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 從 VMware 工作負載圖塊中，選擇 *VMware 規劃中心*。出現規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇*遷移計劃*。
 . 選擇要刪除的遷移計劃的操作選單 (...)，然後選擇*刪除*。
 . 選擇“*刪除*”確認操作。

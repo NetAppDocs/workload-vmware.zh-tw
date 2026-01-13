@@ -28,7 +28,10 @@ summary: 登入NetApp Workload Factory 以存取 VMware 規劃中心。您可以
 == 步驟
 
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
-. 或者，如果您從 Workload Factory 控制台存取 Workload Factory，請從 VMware 工作負載磁貼中選擇 *VMware 規劃中心*，然後選擇 *VMware 規劃中心*。顯示 VMware 規劃中心。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
 . 選擇*手動建立 EVS 計劃*。
 . 輸入您的 VM 環境的要求。
 +
