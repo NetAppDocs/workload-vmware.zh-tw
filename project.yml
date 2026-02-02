@@ -60,6 +60,12 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: 將資料移轉至新的基礎架構
         url: "/migrate-data.html"
+  - title: 管理和監控
+    entries:
+    - title: EVS 組態的組態分析
+      url: "/configuration-analysis.html"
+    - title: 實作架構良好的 EVS 配置
+      url: "/view-evs-well-architected.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援

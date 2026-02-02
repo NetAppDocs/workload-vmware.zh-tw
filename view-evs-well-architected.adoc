@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: view-evs-well-architected.html 
+keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+summary: 檢視 Workload Factory 中 EVS 組態的架構良好狀態，並根據 AWS 和 NetApp 最佳實務遵循補救指南。 
+---
+= 實作架構良好的 EVS 配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 Workload Factory 設定分析來審查 Amazon Elastic VMware Service (EVS) 配置的良好架構狀態，並修復影響可靠性、安全性和成本的問題。
+
+
+
+== 關於此任務
+
+使用 AWS API 對所有已發現的 EVS 環境進行每日自動掃描，分析您的 EVS 配置，並識別可能影響可用性、彈性、安全性或成本優化的潛在問題。掃描結果按配置區域進行分類，每項結果都包含狀態、嚴重程度、受影響資源的詳細資訊以及逐步修復程序。
+
+主要特點包括：
+
+* *每日自動掃描*：所有已發現的 EVS 環境每天都會自動掃描一次，以確保洞察結果保持最新。
+* *基於 AWS API 的掃描*：掃描使用 AWS API，不需要 vSphere 憑證或與您的 vCenter 連線。
+* *問題解決的詳細指導*：每個已識別的問題都包含清晰的解釋、嚴重程度等級和逐步解決程序。
+* *僅供檢視的深入解析*：提供詳細的調查結果和建議，但不提供自動化問題解決選項。
+
+
+
+
+=== 瞭解架構完善的洞察
+
+Well-architected 選項卡顯示以下內容：
+
+* *配置名稱*：正在評估的配置區域。
+* *標籤*：指示影響領域的標籤 （例如可用性、彈性、安全性）。
+* *狀態*：「已優化」（未發現問題）或「未優化」（發現問題）。
+* *嚴重性*：發現結果的重要性等級（例如，Warning）。
+* *資源類型*：正在評估的 AWS 資源類型。
+* *受影響資源數量*：受此問題影響的資源數量。
+
+
+
+
+=== 掃描頻率
+
+系統會自動對所有已發現的 EVS 配置執行架構完善的掃描。掃描調度方面的關鍵細節如下：
+
+* 每個 EVS 配置每天進行一次掃描。
+* 不同配置的掃描可以在不同的時間進行。
+* 如果對某個配置的掃描失敗，仍會嘗試對同一帳戶中的其他配置進行掃描。
+* Well-architected 狀態標籤上的時間戳卡片顯示了目前配置的上次掃描完成時間。
+
+
+
+NOTE: 目前不支援按需執行 well-architected 掃描。所有掃描均按每日計劃自動執行。
+
+
+
+== 開始之前
+
+* 您必須擁有 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["已新增 AWS 憑證"^]VMware 工作負載的 _檢視、規劃和分析_ 權限。
+* 您的 AWS 帳戶中必須至少有一個已發現的 Amazon Elastic VMware Service 環境。
+
+
+
+
+== 存取 Well-Architected 狀態選項卡
+
+.步驟
+. 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇 *VMware*。
++
+顯示規劃中心。
+
+. 從 VMware 選單中，選擇 *Inventory*。
+. 從「虛擬化環境」清單中，選擇您要檢視架構完善見解的已探索 EVS 環境。
+. 選擇 *Well-architected status* 標籤。
++
+顯示以下元素：
+
++
+** *每日自動分析時間戳記*：顯示上次對此環境執行掃描的時間。
+** *配置*：按配置區域整理調查結果，並顯示其狀態和詳細資訊。
+
+
+
+
+
+
+== 檢視架構完善的評估
+
+
+
+=== 叢集節點管理
+
+此操作會評估您的 EVS 叢集節點是否配置了適當的 EC2 停止和終止保護。
+
+*狀態*：
+
+* *已最佳化*：所有 EVS 節點已配置 EC2 停止保護和終止保護。
+* *未最佳化*：至少有一個 EVS 節點未配置 EC2 停止保護或終止保護。
+
+
+*為什麼這很重要*：
+
+EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管理。如果沒有適當的 EC2 層級保護措施，節點可能會意外地從 EC2 控制台停止或終止，這可能導致虛擬機器資料無法使用或資料遺失。
+
+*若要檢視詳細調查結果*：
+
+. 在 Well-architected 狀態標籤中，找到 *Cluster node management*。
+. 選擇 *View* 以開啟結果對話框。
+
+
+對話方塊顯示：
+
+* *調查結果摘要*：對您環境中發現的問題的詳細說明。
+* *資源網格*：一張表格，顯示所有 EVS 節點及其保護狀態，包括：
++
+** 節點標識符
+** EC2 停止保護狀態
+** EC2 終止保護狀態
+
+
+* *需要採取的行動*：逐步解決問題的流程。
+* *建議*：最佳實務指南。
+
+
+*補救措施*：
+
+若要解決此問題，請為您的 EVS 節點啟用停止和終止保護：
+
+* 請按照  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protection.html["AWS 文件中介紹如何啟用停止保護"^] 中指定的程序進行操作。
+* 請按照 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html["AWS 文件中關於啟用終止保護的說明"^]中指定的程序進行操作。
+
+
+
+
+=== EVS 環境彈性
+
+此操作會評估您的 EVS 叢集節點是否已正確分佈在分割區放置群組中。
+
+*狀態*：
+
+* *最佳化*：所有節點都是配置了四個或更多分割區的單一分割區放置群組的成員。
+* 若滿足以下任何一項條件，則 *未進行最佳化*：
++
+** 節點屬於多個放置群組。
+** 至少有一個節點是未分區放置群組的成員。
+** 所有節點都是分區放置組的成員，該放置組的分區數少於四個。
+
+
+
+
+*為什麼這很重要*：
+
+正確的分割區部署可確保您的 EVS 叢集節點分佈在 AWS 可用區內多個故障隔離的硬體分割區上。如果分割區部署不當，一旦某個分割區發生故障，可能會導致處理能力大幅下降或服務中斷。
+
+*若要檢視詳細調查結果*：
+
+. 在 Well-architected 狀態標籤中，找到 *EVS environment resiliency*。
+. 選擇 *View* 以開啟結果對話框。
+
+
+對話方塊顯示：
+
+* *調查結果總結*：對分割區錯位的詳細解釋。
+* *資源網格*：顯示 EVS 環境節點的表格，包含：
++
+** 節點標識符
+** 放置群組名稱
+** 放置群組類型
+** 放置群組分割區計數
+
+
+* *需採取的行動*：逐步修復程序
+* *建議*：最佳實務指南
+
+
+*補救措施*：
+
+若要修正分區放置問題：
+
+* 在 EVS 環境中新增節點時，請使用至少包含四個分割區的分區放置群組來佈建新節點。
+* 如果要替換叢集節點，請確保使用至少包含四個分割區的分割區放置群組來佈建替換節點。
+* 嘗試將所有 EVS 節點整合到單一放置群組中，並遵循上述建議。
+
+
+*最佳實務建議*：
+
+建立或擴展 EVS 環境時，使用配置有四個或更多分區的單一分區放置群組來佈建所有叢集節點。
+
+
+
+== 接下來
+
+在審閱您的 Well-Architected 洞察並實施建議的變更後：
+
+* 每天監控架構完善狀態選項卡，以隨時了解您的環境狀態。
+* 對於任何「未優化」的結果，請按照補救程序進行操作。
+* 請查看 AWS 和 NetApp 相關文檔，以了解更多最佳實務。
+* 在擴展 EVS 環境之前，請考慮實施這些建議。
+
+
+.相關連結
+* https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["使用遷移顧問為 Amazon EVS 建立部署計劃"]
+* https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["部署 ONTAP 檔案系統的建議 FSX"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 放置群組文件"^]
+

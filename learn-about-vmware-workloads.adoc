@@ -78,7 +78,13 @@ Amazon FSx for NetApp ONTAP是基於 NetApp 的ONTAP檔案系統建構的外部 
 
 
 
-== 成本
+== 針對 EVS 環境的架構完善分析
+
+「架構完善」標籤可對您的 Amazon Elastic VMware Service (EVS) 環境進行每日自動分析，以確保其符合 AWS 和 NetApp 最佳實務。此標籤可識別配置問題，並提供詳細的修復指南，幫助您維持最佳的運作、安全性和成本效益。
+
+自動掃描使用 AWS API 執行，無需 vSphere 憑證。掃描結果按配置區域進行組織，每項結果都包括狀態、嚴重程度、受影響資源的詳細資訊以及逐步修復程序。
+
+link:view-evs-well-architected.html["在 Workload Factory 中實施架構良好的 EVS 配置"].== 成本
 
 使用 Workload Factory for VMware 是免費的。
 

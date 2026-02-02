@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: configuration-analysis.html 
+keywords: evs, well-architected, configuration analysis, best practices, recommendations 
+summary: 了解 Workload Factory 如何分析 Amazon Elastic VMware Service 配置，以識別問題並提供最佳實務建議。 
+---
+= EVS 組態的組態分析
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory 會定期分析 Amazon Elastic VMware Service (EVS) 配置，以識別與最佳實務不符之處。使用結果來改善效能、成本效益和合規性。
+
+主要功能包括：
+
+* 每日配置分析
+* 自動最佳實務驗證
+* 主動可觀測性
+* 洞察化為行動
+
+
+
+
+== 架構良好的狀態
+
+在 Workload Factory 控制台中，所有已發現的 EVS 虛擬化環境都會顯示架構良好狀態。架構良好狀態分為「已最佳化」或「未最佳化」。選擇 *Inventory* 會將您引導至該環境內的架構良好狀態標籤，您可以在其中找到該環境的所有組態。
+
+
+
+== 組態類別
+
+Workload Factory 會從多個類別評估 EVS 配置，以確保其符合 AWS 和 NetApp 最佳實踐。每個類別都專注於 EVS 環境的特定方面：
+
+可用性:: EVS 配置預計有多易於存取和操作。
+安全性:: EVS 配置對資料保護和存取控制的有效性如何（例如，EC2 停止和終止保護）。
+彈性:: EVS 配置從故障或中斷中恢復的能力。
+
+
+.接下來
+link:view-evs-well-architected.html["實作架構良好的配置"]

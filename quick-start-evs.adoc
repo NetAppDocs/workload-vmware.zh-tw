@@ -52,3 +52,10 @@ link:launch-migration-advisor-evs.html["瞭解如何使用 VMware 移轉顧問�
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system-evs.html["瞭解如何部署適用於 ONTAP 檔案系統的全新 FSX"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 審查針對您 EVS 環境的精心設計見解
+[role="quick-margin-para"]
+當您的 EVS 環境被發現時，Workload Factory 會自動執行每日 Well-Architected 掃描，以識別組態問題並提供修復建議。
+
+[role="quick-margin-para"]
+link:view-evs-well-architected.html["瞭解如何實作架構良好的組態"^]。
