@@ -1,0 +1,18 @@
+= 為 Google Cloud VMware Engine 引入遷移顧問支援
+:allow-uri-read: 
+
+
+
+
+=== 為 Google Cloud VMware Engine 引入遷移顧問支援
+
+NetApp Workload Factory 現在支援 Google Cloud VMware Engine。您可以將本地 VMware 工作負載遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料存儲，從而優化成本並更好地控制 VMware 環境，而無需重構或重新平台化應用程式。
+
+Google Cloud VMware Engine 遷移顧問提供：
+
+* 支援 VE1 和 VE2 節點類型的 Google Cloud VMware Engine 叢集自動化容量規劃和設計
+* vSAN 內部資料儲存與 Google Cloud NetApp Volumes 外部 NFS 資料儲存之間的 VM 佈局最佳化。
+* 對僅使用 vSAN 的配置和使用 Google Cloud NetApp Volumes 增強的配置進行詳細的成本比較和 TCO 分析。
+* 支援標準版、進階版和至尊版 Google Cloud NetApp Volumes 服務等級。
+* 使用 Terraform 進行基礎架構即程式碼部署，實現自動化配置。
+

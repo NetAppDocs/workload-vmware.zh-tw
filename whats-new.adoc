@@ -15,6 +15,39 @@ summary: 了解 Workload Factory 的 VMware 遷移顧問元件的新功能。
 
 
 
+== 2026 年 3 月 09 日
+
+
+
+=== 為 Google Cloud VMware Engine 引入遷移顧問支援
+
+NetApp Workload Factory 現在支援 Google Cloud VMware Engine。您可以將本地 VMware 工作負載遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料存儲，從而優化成本並更好地控制 VMware 環境，而無需重構或重新平台化應用程式。
+
+Google Cloud VMware Engine 遷移顧問提供：
+
+* 支援 VE1 和 VE2 節點類型的 Google Cloud VMware Engine 叢集自動化容量規劃和設計
+* vSAN 內部資料儲存與 Google Cloud NetApp Volumes 外部 NFS 資料儲存之間的 VM 佈局最佳化。
+* 對僅使用 vSAN 的配置和使用 Google Cloud NetApp Volumes 增強的配置進行詳細的成本比較和 TCO 分析。
+* 支援標準版、進階版和至尊版 Google Cloud NetApp Volumes 服務等級。
+* 使用 Terraform 進行基礎架構即程式碼部署，實現自動化配置。
+
+
+
+
+== 2026 年 3 月 1 日
+
+
+
+=== Workload Factory 中新增了「問我」書籤
+
+我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。
+
+您可以點擊新增的書籤，從任何頁面開啟 Ask Me。它會在側邊面板中啟動 Ask Me，不會中斷您目前的工作，並提供與您目前操作相關的快速說明和建議。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["深入瞭解 Ask Me"^]
+
+
+
 == 2026 年 2 月 1 日
 
 

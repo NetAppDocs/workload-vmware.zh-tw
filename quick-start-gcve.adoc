@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start-native.html 
-keywords: quick start 
-summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。 
+permalink: quick-start-gcve.html 
+keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
+summary: 使用 VMware 遷移顧問，將您目前的基礎架構遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料儲存。 
 ---
-= 使用 VMware 工作負載移轉顧問快速開始移轉至 Amazon EC2
+= 使用 VMware 工作負載遷移顧問快速入門遷移至 Google Cloud VMware Engine
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。
+使用 VMware 遷移顧問，將您目前的基礎架構遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料儲存。
 
 在開始之前、您應該先了解 https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["NetApp Workload Factory 的權限"^]。
 
@@ -24,10 +24,10 @@ summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至
 選擇 https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["權限策略"]滿足您的需求。
 
 [role="quick-margin-para"]
-如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。
+如果您選擇不授予權限，則可以開始使用 Workload Factory for VMware 來複製部分完成的程式碼範例。
 
 [role="quick-margin-para"]
-如果您選擇授予權限，您需要… https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動向帳戶新增憑證"]這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。
+如果您選擇授予權限，則需要 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動向帳戶新增憑證"]提供具有檢視和管理 Google Cloud NetApp Volumes 資源、VPC 配置以及 Google Cloud VMware Engine 資料儲存區連線所需權限的 GCP 服務帳戶。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["瞭解如何新增認證和權限"^]。
@@ -41,14 +41,7 @@ link:upload-vm-inventory.html["了解如何上傳虛擬機器清單數據"^] 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 使用 VMware 移轉顧問建立部署計畫
 [role="quick-margin-para"]
-啟動 VMware 移轉顧問、然後選取您要移轉至 Amazon EC2 基礎架構的 VM 、使用 Amazon FSX for ONTAP 檔案系統做為外部 NFS 資料存放區。您可以在儲存計畫之前進行一些修改。
+啟動 VMware migration advisor，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料存放區，配置您想要在 Google Cloud VMware Engine 基礎架構上建立的 VM 環境。
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor-native.html["瞭解如何使用 VMware 移轉顧問來建立部署計畫"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 部署 ONTAP 檔案系統的建議 FSX
-[role="quick-margin-para"]
-部署適用於 ONTAP 檔案系統的全新 FSX 、為 Amazon EC2 基礎架構中的虛擬機器提供資料存放區。
-
-[role="quick-margin-para"]
-link:deploy-fsx-file-system-native.html["瞭解如何部署適用於 ONTAP 檔案系統的全新 FSX"]。
+link:launch-migration-advisor-gcve.html["瞭解如何使用 VMware 移轉顧問來建立部署計畫"].

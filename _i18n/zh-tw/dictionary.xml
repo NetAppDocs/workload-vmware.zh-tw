@@ -207,9 +207,7 @@
   <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">選取 * 匯出計畫 * 、將移轉計畫儲存為 .json 格式的範本。您可以稍後匯入計畫、以作為部署需求相似系統時的範本。</block>
   <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">請注意、您最多可以將四（ 4 ）個適用於 ONTAP 磁碟區的 FSX 連接至 VMware Cloud 上 AWS 上的單一 vSphere 叢集。</block>
   <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">分析目前的內部部署 VM 組態</block>
-  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">識別在 FSX 上所需的空間、以將 ONTAP 磁碟區用作 VM 外部資料存放區</block>
   <block id="feb18d16cfa710c71684233bc628e803" category="list-text">檢閱結果報告以瞭解部署步驟</block>
-  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">執行實際部署</block>
   <block id="633d759efd4c2199d984faea480082ad" category="list-text">由於主機和儲存設備分離、以及進階資料效率、因此能達到成本最佳化</block>
   <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">可視需要擴充儲存容量、無需購買額外的主機執行個體</block>
   <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">雲端中的 NetApp ONTAP 資料管理功能、例如節省空間的快照、複製、壓縮、重複資料刪除、壓縮、 和複寫</block>
@@ -324,7 +322,6 @@
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">頁面頂端說明所有已部署 VM 和 ONTAP 檔案系統的 FSX 的每月成本。您可以展開每個區段、以檢視「 ONTAP 檔案系統組態建議的 Amazon FSX 」、「預估成本明細」、「 Volume 組態」、「規模假設」和技術「免責聲明」的詳細資料。</block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">* 平均資料減量比率 * ：從三個常見的資料減量選擇值中選擇。選擇「 1 ： 1 - 無減量」、「 1 ： 1.25 - 20% 減量」或「 1 ： 1.5 - 33% 減量」。</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">* vSAN 容錯 * ：選取 VM 所需的容錯等級。您可以選擇「 Auto 」（自動）（建議使用）、或從各種 RAID 層級中選擇。</block>
-  <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區、將目前基礎架構的部分移轉至 Amazon EC2 或 VMware Cloud on AWS 、可提供下列優點：</block>
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">檢閱 VMware HCX 文件</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> 以取得詳細資訊。</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。</block>
@@ -601,20 +598,13 @@
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">您必須能夠從登入 Workload Factory 的系統存取庫存檔案。</block>
   <block id="472a898c43ee1ea13ac33b7eed565504" category="list-text">選擇*計劃並建立 VMC*。</block>
   <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">選擇您將使用的庫存檔案類型，以使用目前 VM 配置填入 Workload Factory，然後選擇 *下一步*。</block>
-  <block id="48037044ca3e2f933dc421a829d69076" category="summary">NetApp Workload Factory for VMware 提供了一些工具，可將您的資料從本機系統移轉到 Amazon EVS、VMware Cloud on AWS (VMC) 或 Amazon EC2。</block>
   <block id="ce96debe53114e32c50b0d98712aa377" category="doc">了解NetApp Workload Factory for VMware</block>
-  <block id="f9e0f742f36854af5e8be72632368d6f" category="paragraph">NetApp Workload Factory for VMware 提供了將資料從本機系統移轉到 Amazon Elastic VMware Service (EVS)、VMware Cloud on AWS (VMC) 或 Amazon EC2 的工具。</block>
   <block id="53b7ad6af2aa1fdb5fb978cb41ca68cf" category="section-title">什麼是NetApp Workload Factory for VMware？</block>
-  <block id="bd5e98676a4adce7cc532d7cbc872a35" category="paragraph">NetApp Workload Factory for VMware 提供規劃中心和遷移顧問，讓您能夠分析本機 vSphere 環境中的目前虛擬機器配置。然後，遷移顧問會產生一個計劃，將建議的 VM 佈局部署到 AWS vSphere 叢集上的 Amazon EVS、Amazon EC2 或 VMware Cloud，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。規劃中心可作為 VMware 儀表板的工作負載工廠，可讓您管理已儲存的 VM 庫存資料集和已儲存的遷移計劃並提供已儲存的任何遷移計劃。</block>
-  <block id="51c42327475a517ed8042ac208d5bc52" category="paragraph">Amazon FSx for NetApp ONTAP是基於 NetApp 的ONTAP檔案系統建構的外部 NFS 資料存儲，可連接至 Amazon EVS 或 Amazon EC2 執行個體或 VMware Cloud on AWS vSphere 叢集。無需添加更多主機來增加可用儲存；相反，只需使用 FSx for ONTAP磁碟區作為外部資料儲存來補充 vSAN 資料儲存。這為您提供了靈活、高效能、虛擬化的儲存基礎架構，可獨立於運算資源進行擴充。</block>
   <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link">工作負載工廠概述</block>
   <block id="b5b60d536e6e0460769e5ad0ac34a2d7" category="paragraph">有關 Workload Factory 的更多信息，請參閱<block ref="3b764dfed54c8d9154794adb30144dfb" category="inline-link-rx"></block>。</block>
   <block id="02550f8dfa494f45cbf71ecbab4158bc" category="section-title">VMware 遷移顧問的工作原理</block>
-  <block id="682906bdd5e082664c7d3f28fd071b49" category="paragraph">遷移顧問可以協助您將在任何 VMware 支援的資料儲存體上執行的本機虛擬機 (VM) 及其資料移至 Amazon EVS、Amazon EC2 或 VMware Cloud 資料存儲，其中包括 FSx for ONTAP檔案系統上的補充 NFS 資料儲存。</block>
   <block id="2dcc23cafa7d96e8f966cdf717cc41a5" category="section-title">移民顧問能為您做些什麼</block>
   <block id="5b5a947ec2b974eb0e23579b4db2a817" category="paragraph">遷移顧問提供以下功能：</block>
-  <block id="ff6f49d240259199aeaf90f6d4d03f81" category="list-text">確定要移轉到 Amazon EC2、Amazon EVS 或 VMware Cloud on AWS 的虛擬機</block>
-  <block id="90bc9a2e58ddbf4a5adafdb3a190041f" category="paragraph">遷移顧問支援針對連接到單一 FSx for ONTAP檔案系統的單一 Amazon EVS 或 Amazon EC2 執行個體或 VMware Cloud on AWS 叢集進行設定規劃。</block>
   <block id="67c1d6f7e45ca1a7c63174da6d5a6af9" category="section-title">使用移民顧問的好處</block>
   <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">使用NetApp Workload Factory 的工具</block>
   <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">您可以將NetApp Workload Factory 與以下工具一起使用：</block>
@@ -742,7 +732,6 @@
   <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">下載並安裝 RVTools 4.4.2 或更高版本<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">資源部分的 RVTools 文檔</block>
   <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">請參閱「命令列參數」章節。<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> 詳情請見下文。</block>
-  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">在開始之前，您應該了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的權限 ^]。</block>
   <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">在<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">從以下位置下載並安裝 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文件位於「資源」部分</block>
@@ -895,4 +884,171 @@
   <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026 年 2 月 1 日</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理和監控</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="doc">Workload Factory 中新增了「問我」書籤</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。</block>
+  <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">您可以點擊新增的書籤，從任何頁面開啟 Ask Me。它會在側邊面板中啟動 Ask Me，不會中斷您目前的工作，並提供與您目前操作相關的快速說明和建議。</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">深入瞭解 Ask Me</block>
+  <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
+  <block id="d9a614ba22162f87467dc9820cb657d0" category="doc">為 Google Cloud VMware Engine 引入遷移顧問支援</block>
+  <block id="9ed9d229ad690b47d132eb6206cba909" category="paragraph">NetApp Workload Factory 現在支援 Google Cloud VMware Engine。您可以將本地 VMware 工作負載遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料存儲，從而優化成本並更好地控制 VMware 環境，而無需重構或重新平台化應用程式。</block>
+  <block id="42fbc3a98a8196c1e84ea7586967c06f" category="paragraph">Google Cloud VMware Engine 遷移顧問提供：</block>
+  <block id="6e784cfbe98c0f6a070e3304420a9971" category="list-text">支援 VE1 和 VE2 節點類型的 Google Cloud VMware Engine 叢集自動化容量規劃和設計</block>
+  <block id="f6879c882f4384c5ca30017d48dafe42" category="list-text">vSAN 內部資料儲存與 Google Cloud NetApp Volumes 外部 NFS 資料儲存之間的 VM 佈局最佳化。</block>
+  <block id="a29465f74d83dc4ead73643e19ed4387" category="list-text">對僅使用 vSAN 的配置和使用 Google Cloud NetApp Volumes 增強的配置進行詳細的成本比較和 TCO 分析。</block>
+  <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">支援標準版、進階版和至尊版 Google Cloud NetApp Volumes 服務等級。</block>
+  <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">使用 Terraform 進行基礎架構即程式碼部署，實現自動化配置。</block>
+  <block id="6edf666a8e66c338ed987a8170473fc1" category="inline-link-macro">為 Google Cloud VMware Engine 計畫部署 Google Cloud NetApp Volumes 資料存放區</block>
+  <block id="c6fdbf6f595f7c0ad6e578b92f3bc742" category="list-text"><block ref="c6fdbf6f595f7c0ad6e578b92f3bc742" category="inline-link-macro-rx"></block></block>
+  <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">從 VMware 規劃中心，您可以啟動 Google Cloud VMware Engine 遷移顧問，以協助建立符合您需求的客製化遷移計畫。</block>
+  <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">使用遷移顧問為 Google Cloud VMware Engine 建立部署計畫</block>
+  <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">您可以建立部署計劃，將虛擬機器遷移到 Google Cloud VMware Engine，並使用自訂的 Google Cloud NetApp Volumes 作為外部 NFS 資料儲存。遷移顧問中的選項可能會因用於收集虛擬機器清單資料的工具而異。</block>
+  <block id="68da13bad217e0063074ca65ab1746c6" category="list-text">您必須擁有使用者名稱和密碼才能存取 Workload Factory。如果您沒有存取權限，請立即建立帳戶。請參閱相關說明<block ref="8199fecf84297ce97d3f6270595de419" category="inline-link-rx"></block>。</block>
+  <block id="5a4d83a02bb188eb7ca1f7e786e22e1d" category="list-text">您必須在同時提供 Google Cloud VMware Engine 和 Google Cloud NetApp Volumes 服務的區域擁有 Google Cloud VMware Engine 訂閱。</block>
+  <block id="dc45aa090e1645baa98c11a108029ce0" category="list-text">從下拉式選單中選擇 *Google Cloud* 。</block>
+  <block id="73baed54ed8ca7d7f90fe730c7b59b88" category="list-text">從 VM 清單表中，選取您要用來制定部署計畫的清單旁的 *開始規劃*。</block>
+  <block id="db7c743cb66453373682261b413adad9" category="paragraph">*Prepare for Google Cloud onboarding* 精靈隨即出現。</block>
+  <block id="e6f8994ed2b1b810094dfb26fa18e8e2" category="section-title">設定遷移偏好設定</block>
+  <block id="318057dd05b246b46dcbf62fa92fe315" category="list-text">在 _VM inventory considerations_ 部分中，選擇用於篩選 VM 清單並配置遷移計畫設計方式的選項：</block>
+  <block id="bc7c3c1171be78801f06d1a8be1b33da" category="list-text">*VM 清單注意事項*：根據 VM 的電源狀態選擇要包含的 VM：</block>
+  <block id="418498649001645bfbeb014ffb28f3a5" category="list-text">*已開機* （預設選取）</block>
+  <block id="0fbcd3243d3f686c466384887bd6de4d" category="list-text">*已關機*</block>
+  <block id="b127b7c444e5c26d1316aeff5d18b6c0" category="list-text">*已暫停*</block>
+  <block id="8358d69538590d55579dfed09c42a3dc" category="list-text">*需要考慮的虛擬機器儲存*：選擇如何調整 Google Cloud NetApp Volumes 資料儲存的大小：</block>
+  <block id="e0b155b26280cf35363da155123ba80b" category="list-text">*已利用*：根據 VM 的實際使用容量調整資料存放區大小。</block>
+  <block id="ff354babfdeb77e7b4389011d1c1a96b" category="list-text">*已配置* （預設）：根據虛擬機器的總配置容量調整資料存放區大小。</block>
+  <block id="9dcb56404cf9e3954f908118420777c5" category="list-text">*需要考慮的虛擬機器記憶體*：選擇如何計算所需的 Google Cloud VMware Engine 叢集運算資源：</block>
+  <block id="1a554f30ae6e06a3369acf61e5598b64" category="list-text">*已使用*：根據 VM 的實際記憶體使用情況計算。</block>
+  <block id="e8017897774b4bf2495c82f404444684" category="list-text">*已配置* （預設）：根據分配給 VM 的總記憶體進行計算。</block>
+  <block id="6f3b7fbb308b5cd5ad0d69af3189d9a4" category="list-text">*虛擬機器效能評估*：僅當使用 RVTools 作為資料來源時，此選項才會顯示。選擇預期的效能等級：</block>
+  <block id="1525decaa8624824a33b6bc992f4d864" category="list-text">*低*：平均每個 VM 50 IOPS。</block>
+  <block id="38270b49f9e67488cb71ff02a55f42ea" category="list-text">*標準*：每個 VM 平均 200 IOPS（預設選取）。</block>
+  <block id="15ed638a0e72bf4a2607c046aeb81864" category="list-text">*高*：平均每個 VM 800 IOPS。</block>
+  <block id="b449916fc58f92ffcaa6f3ffb72ceeb6" category="list-text">在 _Google Cloud VMware Engine 部署區域_ 部分：</block>
+  <block id="2942a3017cfae2123d920cc47cc8652d" category="list-text">*區域*：選擇要部署 Google Cloud VMware Engine 和 Google Cloud NetApp Volumes 的 Google Cloud 區域。清單中僅顯示同時提供這兩項服務的區域。</block>
+  <block id="2ec7c0d92d77fe03c018d7625788f776" category="list-text">在 _VM storage capacity and protection considerations_ 部分：</block>
+  <block id="7ad31a1f794d93192d2fcf7fe57c3521" category="list-text">*容量預留百分比*：輸入為因應成長而增加的額外容量百分比。預設值為 20% ，這也是建議的最小值。</block>
+  <block id="d4f03c9c6377b773ec4201e2d11cefc4" category="admonition">如果選擇的餘裕小於 20% ，快照保護功能將自動停用。</block>
+  <block id="c154c1c66b585ace39c0fe25c1bc81ea" category="list-text">*VM 快照保護*：啟用此選項（預設啟用）可使用 ONTAP 預設快照原則保護具有快照的 VM。</block>
+  <block id="1e078659568f45142ad6ff83c2958dd0" category="section-title">選擇叢集組態</block>
+  <block id="d6d4f2913ba9aec17bc7133710233a62" category="list-text">在「選擇首選的 Google Cloud VMware Engine 叢集組態」頁面上，設定您的 Google Cloud VMware Engine 叢集偏好設定並檢閱建議的組態。</block>
+  <block id="d2cde9f9a429ad5350e8aa204fd2241d" category="list-text">在_架構偏好設定_部分：</block>
+  <block id="2d58b16a43cdd4543d48af2a2a465cb8" category="list-text">*允許 Google Cloud VMware Engine VE2 節點類型*：啟用（預設）時，會同時考慮 VE1 和 VE2 節點類型。停用此選項可將組態限制為僅 VE1 節點。</block>
+  <block id="c99dbd22517a9e786f961b2df74010f9" category="list-text">*允許使用 Google Cloud NetApp Volumes 標準卷*：停用此選項（預設）後，配置設計中僅使用高級和卓越服務級別，這是建議的最佳實踐。高級和卓越卷提供區域可用性，使其能夠抵禦可用區故障。標準卷僅提供區域可用性，無法抵禦可用區故障。啟用此選項可包含標準服務等級卷，這可以降低對效能較低、不需要可用區級彈性的工作負載的成本。</block>
+  <block id="c24061201d4aac62423f361124cd2ea9" category="list-text">在_叢集組態_區段中，檢閱可用的 Google Cloud VMware Engine 叢集組態：</block>
+  <block id="7e2f923c2ece67d7f03cea8cfc2cec3c" category="paragraph">這些組態方案按預計總成本（從低到高）排序，並顯示了以下不同組合：</block>
+  <block id="3eceea6468a6cb92c2559a2980f972be" category="list-text">Google Cloud VMware Engine 節點類型（ VE1 或 VE2 ）</block>
+  <block id="b260e33619eeabc05fb9f549d49c1bb7" category="list-text">預計總成本</block>
+  <block id="41d35228c5dd44718af03e95a7a66c0b" category="list-text">預計節省</block>
+  <block id="f143d990b31f7ac5e79358104cb48aff" category="list-text">節點計數</block>
+  <block id="06963bdc1e939a83554fb2f6e1123a88" category="list-text">VSAN 容錯設定：FTT（Fault Tolerance Type）和 FTM（Fault Tolerance Method）</block>
+  <block id="1586df1eb6fd24647c7b8eeea36a5684" category="list-text">過剩儲存容量（以 TiB 為單位）</block>
+  <block id="eb90cdaabce0e303a4bf416b7b3623b3" category="list-text">僅儲存節點類型</block>
+  <block id="649eaaada1930b6d058fcabd21cdda9f" category="list-text">按一下旁邊的單選按鈕，選擇您偏好的叢集組態。</block>
+  <block id="0437a536b5da65e60b818ed2bbc1a961" category="paragraph">預設選擇第一種（成本最低）配置。</block>
+  <block id="ed83440f7fa681e523c2732d38a7b2e0" category="section-title">選擇 VM 配置</block>
+  <block id="f75aafe44a7a24b5ed25b86c00e0392e" category="list-text">在「自動虛擬機器選擇」頁面上，查看根據您所需的外部儲存容量和偏好自動選擇的最佳虛擬機器配置。</block>
+  <block id="06c4948c691699c140b560bed36cf694" category="list-text">請查看 _VM inventory_ 部分，其中顯示：</block>
+  <block id="6fe50fe9d1984a8bbc393a22b0344b1b" category="list-text">虛擬機器總數</block>
+  <block id="ce1168c4a0150c3c5269489c6b1c044c" category="list-text">總容量（根據您先前的選擇進行佈建或使用）</block>
+  <block id="a6610a39936d624143ac328a4c30cf93" category="paragraph">您可以展開此區段以檢視下列詳細資料：</block>
+  <block id="9dbc75c2caf0bb17b2e5552da81dc213" category="list-text">聚合平均 IOPS</block>
+  <block id="287d022f0924b9434fe3c56becfa411c" category="list-text">聚合吞吐量 (MB/s)</block>
+  <block id="7e1e5cb9717e72ce67c3e7d3d42668e7" category="list-text">聚合峰值 IOPS</block>
+  <block id="88dde71fa61fc2745375f962ee0309de" category="list-text">聚合峰值吞吐量 (MB/s)</block>
+  <block id="c1757aa1ab464c2683bc6df2d33797b3" category="list-text">在_虛擬機器選擇首選項_部分中，選擇最佳化方法：</block>
+  <block id="42d2c38fdce391bb82af93c49a349f05" category="list-text">*成本*（預設）：將 I/O 密度最高的虛擬機器分配給 vSAN 儲存，這有助於在滿足效能要求的同時最大限度地降低 Google Cloud NetApp Volumes 的成本。</block>
+  <block id="44f37f35fadeb6bcf5373e762a8936f4" category="list-text">*保護*：將儲存容量最高的虛擬機器指派給 Google Cloud NetApp Volumes 外部資料存儲，透過 Google Cloud NetApp Volumes 快照和複製功能提供更好的復原能力。</block>
+  <block id="e9297f98306d30068ec163f2bedd4dfb" category="list-text">查看「外部資料儲存配置」部分，其中顯示了虛擬機器和容量如何在 Google Cloud NetApp Volumes 和 vSAN 儲存之間分配。</block>
+  <block id="18316d9ec941bf3b960518ec396bd83a" category="paragraph">您可以展開此部分以查看以下詳細資訊：* 彙總平均 IOPS * 彙總吞吐量（MB/s）* 彙總峰值 IOPS * 彙總峰值吞吐量（MB/s）</block>
+  <block id="79170f31bfd8aee21b7af21ea74b679c" category="list-text">在「為 Google Cloud NetApp Volumes NFS 資料儲存選擇的虛擬機器」表中，您可以：</block>
+  <block id="24d081499889e03a6f862bf9b92e1d7b" category="list-text">查看根據您選擇的最佳化方法自動選取的 VM。</block>
+  <block id="686d86bc6cf0f2dd81b047d6c6fb20ff" category="list-text">使用核取方塊手動選取或取消選取個別 VM。</block>
+  <block id="8fd7c4bce16287bc0901d76e6df18369" category="list-text">依叢集、作業系統或資料中心篩選 VM 。</block>
+  <block id="33a0f704fea457cd41d0c99aa0f2b24c" category="list-text">依任意可見列（例如 VM 名稱、已配置容量、平均讀取 IOPS）對 VM 進行排序。</block>
+  <block id="724ff45242187140f5f0fa936e3f1883" category="inline-image-macro">欄選擇器圖示</block>
+  <block id="d7c867e0983f09b2860e42622e3e18b3" category="list-text">點擊 <block ref="e09a28752dc289a931b5bd80d410bab8" category="inline-image-macro-rx" type="image"></block> 即可顯示或隱藏其他欄位。</block>
+  <block id="416c477b64c4b04c70f08817f2eec88e" category="admonition">如果您手動修改虛擬機器選擇，可以透過選取 *Reset* 來恢復根據最佳化偏好設定的自動選取。</block>
+  <block id="bcd1d263fedf745abaf10a8e39e3ce7a" category="section-title">檢閱 NFS 資料存放區指派</block>
+  <block id="313c4da174190a57c47b141b4c2d7d53" category="list-text">在 *Review instance store assignment* 頁面上，查看詳細的資料儲存佈局和 VM 分配。</block>
+  <block id="870e7ad52b7813eb4eef3d796cb12a23" category="list-text">使用 *Total* 和 *Per datastore* 標籤在匯總視圖和按資料儲存詳細資訊之間切換。</block>
+  <block id="ce4cbe9effb933914d8f4f5d04d7487b" category="list-text">在 *Total* 標籤中：</block>
+  <block id="90fa371363453317b8a8a48c353419b2" category="list-text">請查看顯示以下內容的 _Storage Capacity analysis_ 圖表：</block>
+  <block id="8ec9cb96f2eafa3544c3c5840e600ea6" category="list-text">Google Cloud NetApp Volumes 邏輯容量</block>
+  <block id="d9ff59373383aa2a2345132052d2620a" category="list-text">VM 已配置容量</block>
+  <block id="3a20649c9c4bd5b363e2188e9da436f1" category="list-text">VM 層級可用空間（如果選擇了已佈建容量）</block>
+  <block id="26aea18cb1e707f31b308dd33a47f2c3" category="list-text">整體容量餘裕</block>
+  <block id="efe33427acece88369716aee1cdb4638" category="list-text">快照緩衝區容量（如果啟用快照保護）</block>
+  <block id="fae8e96eddae7d4c06ba9e0ad951691e" category="list-text">檢閱 _Detailed information_ 區段，其中顯示：</block>
+  <block id="9a56ad3fb5b4c1c596bed3f9798d1942" category="list-text">已配置的虛擬機器總容量</block>
+  <block id="de7a1812653e49058c2b0fc45a470ac9" category="list-text">可用空間（如果選擇了已佈建容量）</block>
+  <block id="e0a1cac53f449fb872b32efaa226ad6d" category="list-text">所有 Google Cloud NetApp Volumes 儲存池的總邏輯容量</block>
+  <block id="942c9f9342b5559d33dba5f991c67499" category="list-text">Google Cloud NetApp Volumes 儲存池數量和類型</block>
+  <block id="3d7b1ea762753f455dec512bb7eb6366" category="list-text">虛擬機器總數和已配置容量</block>
+  <block id="32989a1d33776ff1c54d7b4624ff9d47" category="list-text">彙總 VM 平均 IOPS（可用時）</block>
+  <block id="f2800421c18cc8ac7fdd5415519aa5a7" category="list-text">平均 I/O 密度（附帶解釋計算方法的工具提示）</block>
+  <block id="4acce2ca98b00d1ec62bc94ab747eb4a" category="list-text">彙總的 VM 平均處理量（如有）</block>
+  <block id="f3ebbd3bdb6c006819938d3e634c8265" category="list-text">在 *Per datastore* 標籤中：</block>
+  <block id="46d30964efdee8f8361e173e01a56d75" category="list-text">選擇資料存放區索引標籤以檢視其詳細資訊。</block>
+  <block id="78d449d4ccb94b661a89d8d9bfd71ccd" category="list-text">檢閱該資料存放區的詳細資訊，其中包括：</block>
+  <block id="39b09228143d70a200a3d1e6a4bc34cc" category="list-text">容量細分圖</block>
+  <block id="2b5101c3a07098cfb9da6938626ef0a3" category="list-text">資料儲存區屬性：</block>
+  <block id="dcd418b970d58623db7272b29c5c9ab8" category="list-text">整體 VM 已利用容量</block>
+  <block id="966f3447d134a9f961844546224609b8" category="list-text">資料存放區邏輯容量</block>
+  <block id="3d482ed846681b98626621d5ee29828a" category="list-text">資料儲存服務等級（Standard、Premium、Extreme）</block>
+  <block id="622cf890d2202b708da731d4396a5fa3" category="list-text">平均資料存放區 I/O 密度（如有）</block>
+  <block id="b07508826fa15ee923db17879d587df2" category="list-text">查看 _Virtual machines_ 表，其中顯示了分配給此資料儲存的所有 VM，列包括 VM 名稱、容量、叢集、作業系統、IOPS、吞吐量和其他屬性。</block>
+  <block id="3f7787c2c84b9f020c78dd2570dd1978" category="section-title">檢閱並儲存您的部署計畫</block>
+  <block id="c84ae240c20ff075273c44b014156638" category="list-text">在 *Review your migration plan* 頁面上，儲存之前查看並自訂您的部署計畫。</block>
+  <block id="3f058a662c13b8d11a82eded614260de" category="list-text">從下拉式選單中選擇您的定價方案：</block>
+  <block id="32d62a345830565c255a1d5c52d0df8d" category="list-text">*On-demand* （預設）：即用即付定價</block>
+  <block id="e59a6c2b81411bb4102996997a1197ab" category="admonition">檢閱頁面上顯示的定價會根據您選擇的方案進行調整。</block>
+  <block id="932b3919e252fd94007b181facfea234" category="list-text">請查看 _Estimated savings_ 部分：</block>
+  <block id="9a12131dfe25a5d82a0f8c96d1aced53" category="list-text">_Google Cloud VMware Engine 設定方案比較_ 圖表比較：</block>
+  <block id="b27860d1731a66ef502cdae4b0a63ff9" category="list-text">Google Cloud VMware Engine vSAN 純配置的預估每月成本（運算節點 + 純儲存節點）</block>
+  <block id="496c4d4316776481a1482ddb965d07c2" category="list-text">Google Cloud VMware Engine vSAN + 外部資料儲存的預期每月成本（運算節點 + Google Cloud NetApp Volumes 外部資料儲存）</block>
+  <block id="9af29b9aea6f20fe939f651c5fbff823" category="list-text">節省百分比和金額</block>
+  <block id="8ed6faf7202e1f068aca46df984e41aa" category="list-text">「預計節省明細」表格對兩種配置進行了比較，詳細列出了節點數量、儲存容量、Google Cloud NetApp Volumes 池資訊以及每月和每年的成本節省。</block>
+  <block id="fd5e55f3dada0dfdea1e4a8db65d4f71" category="list-text">請查看 _Google Cloud NetApp Volumes 建議配置_ 部分。其中重點介紹了：</block>
+  <block id="412f1d25415ed6ae42d9f7093a892003" category="list-text">儲存池數量和類型</block>
+  <block id="bcefcdcb863748633ae2e2b4c03e8c5a" category="list-text">總儲存資源池容量</block>
+  <block id="03c3d7a09db2ac4b65e1eb25d5757b94" category="list-text">資料存放區（磁碟區）數量</block>
+  <block id="e02f0b9124dd4bd3f4df656a21f9f5dd" category="list-text">資料存放區彙總處理量</block>
+  <block id="69aa4b2dbd288e22e885b5bc2f41dc11" category="list-text">預計每月費用</block>
+  <block id="736d00d767eb2cc5061950d92fbae941" category="list-text">_Suggested configuration details_ 部分按服務等級（Standard、Premium、Extreme）細分，包括儲存池數量、容量、資料儲存區數量、處理量詳細資料、容量餘裕、快照緩衝區和每月預計總成本。</block>
+  <block id="ed79bf3416559d9d123df42da2af219a" category="list-text">「預計成本分析」部分按服務等級（Standard、Premium、Extreme）細分成本，包括容量成本、冷容量、複製資料、備份使用情況和容量，以及預計每月總成本。</block>
+  <block id="9217f03104bb17cedac81e390d6976a4" category="list-text">_Volume 配置_ 表列出了每個計劃的 Google Cloud NetApp Volumes 卷，其中包含名稱、池類型、協議（NFSv3）、容量、剩餘空間、快照策略和分層策略等詳細資訊。</block>
+  <block id="d45e3ff81cc5679c120fa221fff1d2f8" category="list-text">請查看 _Solution design assumptions_ 和 _Disclaimer_ 部分。</block>
+  <block id="78b0d963852b83be5e0705a4eabde39b" category="list-text">當您對遷移計劃感到滿意時，您有以下幾個選項：</block>
+  <block id="62d3f6597ca7730e26b8478a9cffb46d" category="list-text">在頁面頂端選取 *Manage plan* 。</block>
+  <block id="1c1d62c9225c5b62e271d7bdf78281fd" category="list-text">選擇下載：</block>
+  <block id="dc2dce04f4cc304eb4072ad5c870dc1f" category="list-text">*下載報告*：包含所有計劃詳情的完整 PDF 文檔</block>
+  <block id="252e7f3a52993e1074df197050c910ae" category="list-text">*下載實例儲存部署*：一個 CSV 檔案，將 VM 對應至其指派的資料存放區</block>
+  <block id="c0b5479b7a72a1c1a851285c1482619e" category="list-text">選擇 *Provision* 以使用 Terraform Infrastructure-as-Code 配置 Google Cloud NetApp Volumes NFS 資料存放區。</block>
+  <block id="4c9e1a6d5098db9ed0d8724f69b55509" category="paragraph">程式碼框會顯示產生的 Terraform 程式碼。您可以將程式碼複製到剪貼簿，或將其下載為檔案，以便在您自己的 Terraform 環境中執行。</block>
+  <block id="98eb3550d72a811f20fc4046f149ca3c" category="list-text">選擇 *Create* 以建立 Google Cloud NetApp Volumes NFS 資料儲存。</block>
+  <block id="e810691ddff205487cb9d1e71664def5" category="summary">NetApp Workload Factory for VMware 提供工具，可將您的資料從本機系統移轉到 Amazon EVS、VMware Cloud on AWS（VMC）、Amazon EC2 或 Google Cloud VMware Engine。</block>
+  <block id="b700ea2542063dec898122cc29ac6652" category="paragraph">NetApp Workload Factory for VMware 提供工具，可將您的資料從本機系統移轉到 Amazon Elastic VMware Service （EVS）、VMware Cloud on AWS （VMC）、Amazon EC2 或 Google Cloud VMware Engine。</block>
+  <block id="a8fe35dc679e31e460ff5314e4814c4f" category="paragraph">NetApp Workload Factory for VMware 提供規劃中心和遷移顧問，協助您分析本地 vSphere 環境中的目前虛擬機器配置。遷移顧問隨後會產生一個計劃，將推薦的虛擬機器佈局部署到 Amazon EVS、Amazon EC2、VMware Cloud on AWS vSphere 叢集或 Google Cloud VMware Engine，並使用自訂的雲端原生儲存作為外部資料儲存。對於 AWS 環境，這包括 Amazon FSx for NetApp ONTAP 檔案系統。對於 Google Cloud 環境，這包括 Google Cloud NetApp Volumes。規劃中心作為 Workload Factory for VMware 的控制面板，可讓您管理已儲存的虛擬機器清單資料集和已儲存的遷移計劃，並配置任何已儲存的遷移計劃。</block>
+  <block id="3e86d077ced845a408bf957ded3dbae8" category="paragraph">Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上的外部 NFS 資料存放區，可以掛載到 Amazon EVS 或 Amazon EC2 執行個體，或 VMware Cloud on AWS vSphere 叢集。同樣地，Google Cloud NetApp Volumes 為 Google Cloud VMware Engine 環境提供外部 NFS 資料存放區。無需新增更多主機來增加可用儲存空間，只需使用這些雲端原生儲存磁碟區作為外部資料存放區，以補充 vSAN 資料存放區。這為您提供一個靈活、高效能且虛擬化的儲存基礎架構，能夠獨立於運算資源進行擴展。</block>
+  <block id="2ccdcbb9ad87fe4eb4c7e0235ab222f3" category="paragraph">遷移顧問可以幫助您將運行在任何 VMware 支援的資料儲存上的本機虛擬機（VM）及其資料遷移到 Amazon EVS、Amazon EC2、VMware Cloud 或 Google Cloud VMware Engine 資料存儲，其中包括在 FSx for ONTAP 檔案系統或 Google Cloud NetApp Volumes 上的補充 NFS 資料儲存。</block>
+  <block id="2afa9ed57e4ce623bbccfda41d5d59af" category="list-text">決定要將哪些虛擬機器移轉到 Amazon EC2、Amazon EVS、VMware Cloud on AWS 或 Google Cloud VMware Engine</block>
+  <block id="0f4fbe30c2e887701c223f09e89387d8" category="list-text">確定用作 VM 外部資料存放區所需的雲端原生儲存磁碟區空間</block>
+  <block id="ff62f1e53387635f4c94e523c95339f7" category="list-text">執行實際部署（適用於 Amazon EC2、Amazon EBS 和 VMware Cloud on AWS）</block>
+  <block id="87439718ba32d403605af10fe103cda9" category="paragraph">遷移顧問支援針對單一 Amazon EVS、Amazon EC2 或 VMware Cloud on AWS 叢集，連接至 Amazon FSx for NetApp ONTAP 檔案系統，或連接至 Google Cloud VMware Engine 叢集與 Google Cloud NetApp Volumes 的組態規劃。</block>
+  <block id="53ece88b5f79298f3e39b4b2e9a3365d" category="paragraph">將您目前基礎架構的部分內容移轉到 Amazon EC2、Amazon EBS、VMware Cloud on AWS 或 Google Cloud VMware Engine，並使用雲端原生儲存作為外部 NFS 資料存放區，可帶來以下好處：</block>
+  <block id="546393155194873f3731142e84a340fd" category="inline-link">NetApp Workload Factory 的權限</block>
+  <block id="6bc7794709563656174e241f32f0298a" category="paragraph">在開始之前、您應該先了解<block ref="aae0d4009285116ff23f9a7f74c1f54b" category="inline-link-rx"></block>。</block>
+  <block id="2556da08e11585b605626929beefd4ce" category="summary">使用 VMware 遷移顧問，將您目前的基礎架構遷移到 Google Cloud VMware Engine，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料儲存。</block>
+  <block id="9e8284342c75f48a25dde90d2f2d0588" category="doc">使用 VMware 工作負載遷移顧問快速入門遷移至 Google Cloud VMware Engine</block>
+  <block id="b53d94934411cf1f04ae399b5c11817c" category="paragraph">如果您選擇不授予權限，則可以開始使用 Workload Factory for VMware 來複製部分完成的程式碼範例。</block>
+  <block id="50e7018c936f9967bef9aaaca1d14b1d" category="paragraph">如果您選擇授予權限，則需要<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>提供具有檢視和管理 Google Cloud NetApp Volumes 資源、VPC 配置以及 Google Cloud VMware Engine 資料儲存區連線所需權限的 GCP 服務帳戶。</block>
+  <block id="175be206f8668945b45511179609ebe3" category="paragraph">啟動 VMware migration advisor，並使用 Google Cloud NetApp Volumes 作為外部 NFS 資料存放區，配置您想要在 Google Cloud VMware Engine 基礎架構上建立的 VM 環境。</block>
+  <block id="020b682c9f65d6f17439d2cb0cf964bf" category="paragraph"><block ref="e3624573fd74cf60ac70575f2c86dc70" category="inline-link-macro-rx"></block>.</block>
+  <block id="955a2516353d537bc989165068e10d79" category="inline-link-macro">建立 Google Cloud VMware Engine 部署計劃</block>
+  <block id="fc32330336b033235d02cb9ee4ecb7f8" category="list-text"><block ref="fc32330336b033235d02cb9ee4ecb7f8" category="inline-link-macro-rx"></block></block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026 年 3 月 1 日</block>
+  <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">快速入門：遷移至 Google Cloud VMware Engine</block>
+  <block id="26786f5592c89fd387f588f17079366d" category="sidebar">遷移至 Google Cloud VMware Engine</block>
+  <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">遷移至 Google Cloud VMware Engine 的快速入門</block>
 </blocks>

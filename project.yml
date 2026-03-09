@@ -28,6 +28,8 @@ sidebar:
       url: "/quick-start-native.html"
     - title: 快速開始移轉至 AWS 上的 VMware Cloud
       url: "/quick-start.html"
+    - title: 遷移至 Google Cloud VMware Engine 的快速入門
+      url: "/quick-start-gcve.html"
     - title: 探索 VMware 規劃中心
       url: "/explore-planning-center.html"
   - title: 使用 VMware 規劃中心
@@ -44,6 +46,10 @@ sidebar:
         url: "/launch-migration-advisor-evs.html"
       - title: 部署 ONTAP 檔案系統的建議 FSX
         url: "/deploy-fsx-file-system-evs.html"
+    - title: 遷移至 Google Cloud VMware Engine
+      entries:
+      - title: 使用移轉顧問建立部署計畫
+        url: "/launch-migration-advisor-gcve.html"
     - title: 移轉至 Amazon EC2
       entries:
       - title: 使用移轉顧問建立部署計畫
