@@ -772,16 +772,7 @@
   <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自動最佳實務驗證</block>
   <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">主動可觀測性</block>
   <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">洞察化為行動</block>
-  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">架構良好的狀態</block>
-  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">在 Workload Factory 控制台中，所有已發現的 EVS 虛擬化環境都會顯示架構良好狀態。架構良好狀態分為「已最佳化」或「未最佳化」。選擇 *Inventory* 會將您引導至該環境內的架構良好狀態標籤，您可以在其中找到該環境的所有組態。</block>
-  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">組態類別</block>
-  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factory 會從多個類別評估 EVS 配置，以確保其符合 AWS 和 NetApp 最佳實踐。每個類別都專注於 EVS 環境的特定方面：</block>
-  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">可用性</block>
-  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">EVS 配置預計有多易於存取和操作。</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">安全性</block>
-  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">EVS 配置對資料保護和存取控制的有效性如何（例如，EC2 停止和終止保護）。</block>
-  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">彈性</block>
-  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">EVS 配置從故障或中斷中恢復的能力。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">接下來</block>
   <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">針對 EVS 環境的架構完善分析</block>
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">「架構完善」標籤可對您的 Amazon Elastic VMware Service (EVS) 環境進行每日自動分析，以確保其符合 AWS 和 NetApp 最佳實務。此標籤可識別配置問題，並提供詳細的修復指南，幫助您維持最佳的運作、安全性和成本效益。</block>
@@ -897,8 +888,6 @@
   <block id="a29465f74d83dc4ead73643e19ed4387" category="list-text">對僅使用 vSAN 的配置和使用 Google Cloud NetApp Volumes 增強的配置進行詳細的成本比較和 TCO 分析。</block>
   <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">支援標準版、進階版和至尊版 Google Cloud NetApp Volumes 服務等級。</block>
   <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">使用 Terraform 進行基礎架構即程式碼部署，實現自動化配置。</block>
-  <block id="6edf666a8e66c338ed987a8170473fc1" category="inline-link-macro">為 Google Cloud VMware Engine 計畫部署 Google Cloud NetApp Volumes 資料存放區</block>
-  <block id="c6fdbf6f595f7c0ad6e578b92f3bc742" category="list-text"><block ref="c6fdbf6f595f7c0ad6e578b92f3bc742" category="inline-link-macro-rx"></block></block>
   <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">從 VMware 規劃中心，您可以啟動 Google Cloud VMware Engine 遷移顧問，以協助建立符合您需求的客製化遷移計畫。</block>
   <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">使用遷移顧問為 Google Cloud VMware Engine 建立部署計畫</block>
   <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">您可以建立部署計劃，將虛擬機器遷移到 Google Cloud VMware Engine，並使用自訂的 Google Cloud NetApp Volumes 作為外部 NFS 資料儲存。遷移顧問中的選項可能會因用於收集虛擬機器清單資料的工具而異。</block>
@@ -1051,4 +1040,28 @@
   <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">快速入門：遷移至 Google Cloud VMware Engine</block>
   <block id="26786f5592c89fd387f588f17079366d" category="sidebar">遷移至 Google Cloud VMware Engine</block>
   <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">遷移至 Google Cloud VMware Engine 的快速入門</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">運作方式</block>
+  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory 每日分析您在 Amazon FSx for NetApp ONTAP 檔案系統部署上執行的工作負載。此分析提供架構完善的狀態資訊、洞察分析和建議。</block>
+  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">每日分析完成後，部署的 Well-architected 儀表板會顯示配置狀態為「已最佳化」或「未最佳化」。您可以在這裡查看總優化得分、按類別劃分的配置問題以及配置問題和建議清單。您可以查看針對配置問題的建議。部分問題可由 Workload Factory 自動修復，而其他問題則需要人工幹預。在這種情況下，Workload Factory 會提供詳細說明，幫助您實施建議的變更。</block>
+  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">您可以忽略不適用於您環境的配置分析。這樣可以避免不必要的警報和不準確的優化結果。當您忽略某個設定分析時，Workload Factory 不會將該配置計入總最佳化得分。</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">為什麼這很重要</block>
+  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory 將最佳實踐應用於大型儲存、資料庫和 VMware 環境，透過持續評估與建議洞察和修復措施相結合。在 Workload Factory 主控台中套用的自動化修復可減少人為錯誤、確保統一管理，並維護工作負載基礎架構的效能和可靠性。</block>
+  <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析要求</block>
+  <block id="bd126090c73a42fcacb46a16e66fc0d0" category="paragraph">要進行完整的組態分析、您必須執行以下操作：</block>
+  <block id="f95f58d64ce974b5c7aac839966c9c9b" category="list-text">關聯連結。連結連線功能可讓 Workload Factory 分析所有檔案系統組態，例如資料保護和效能。</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">了解如何關聯現有連結或建立並關聯新連結</block>
+  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.</block>
+  <block id="cb62e3613b98e65c2294e5b10993769d" category="list-text">授予 VMware 工作負載的 _view、planning 和 analysis_ 權限。</block>
+  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">了解如何授予 AWS 帳戶權限</block>
+  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
+  <block id="c6a26e796e7c4b35dd55f1fdf4b780ad" category="section-title">EVS 工作負載的最佳實務與建議</block>
+  <block id="dba86fe56ac5fd6ee1fc03a1c7c3d8f5" category="paragraph">Workload Factory 提供運作架構完善的 Amazon Elastic VMware Service（EVS）工作負載的最佳實務和建議。架構完善分析會評估 EVS 配置，以協助確保您的 VMware 環境在可靠性、安全性、卓越營運、成本最佳化和效能效率方面都達到最佳狀態。在 VMware 的「架構完善狀態」標籤中，您可以找到相關洞察和建議，協助您為 EVS 環境實施架構完善的最佳實務。</block>
+  <block id="4dddd21092aa16dc9dfae3d527b65882" category="paragraph">精心設計的分析將組態按以下架構支柱進行分類：_可靠性_ 和 _安全性_。</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">可靠性</block>
+  <block id="32293fdcb7dff0798e6d06da4b108ce6" category="paragraph">可靠性確保工作負載即使在出現中斷的情況下也能正確、持續地執行其預期功能。</block>
+  <block id="64ccb44013ef32cd6747200b28ee1c1b" category="list-text">*EVS 環境彈性*</block>
+  <block id="0ad9b54164298e25de96745a39c4ef18" category="paragraph">確保您的 EVS 叢集節點已正確分佈在分割區放置群組中。所有節點都應屬於單一分割區放置群組成員，且該群組設定為四個或更多分割區。正確的分割區放置可確保您的 EVS 叢集節點分佈在 AWS 可用區域內多個故障隔離的硬體分割區中。如果分割區放置不當，一旦某個分割區發生故障，可能會導致處理能力大幅下降或停機。</block>
+  <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">安全重點在於透過風險評估和緩解策略來保護資料、系統和資產。</block>
+  <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">* 叢集節點管理 *</block>
+  <block id="240380a5970626d74754b96038898f5e" category="paragraph">請確保您的 EVS 叢集節點已配置適當的 EC2 停止和終止保護。EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管理。如果沒有適當的 EC2 層級保護，節點可能會意外地從 EC2 主控台停止或終止，這可能導致虛擬機器資料無法使用或資料遺失。</block>
 </blocks>

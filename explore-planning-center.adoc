@@ -82,7 +82,6 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 ** link:deploy-fsx-file-system.html["為 Amazon VMware Cloud 計畫部署檔案系統"]
 ** link:deploy-fsx-file-system-native.html["為 Amazon EC2 計畫部署檔案系統"]
 ** link:deploy-fsx-file-system-evs.html["為 Amazon Elastic VMware Service 規劃部署檔案系統"]
-** link:deploy-gcnv-datastores.html["為 Google Cloud VMware Engine 計畫部署 Google Cloud NetApp Volumes 資料存放區"]
 
 
 
