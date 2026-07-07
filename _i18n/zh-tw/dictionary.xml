@@ -623,7 +623,6 @@
   <block id="df3078cbf2344fdc96564c4276d42b3a" category="paragraph">所有支援 FSx for ONTAP 的商業區域均支援 Workload Factory。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">以下 AWS 區域不受支援：</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中國地區</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（美國）區域</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">秘密雲</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">絕密雲</block>
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">NetApp Workload Factory for VMware 的法律聲明</block>
@@ -778,7 +777,6 @@
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">「架構完善」標籤可對您的 Amazon Elastic VMware Service (EVS) 環境進行每日自動分析，以確保其符合 AWS 和 NetApp 最佳實務。此標籤可識別配置問題，並提供詳細的修復指南，幫助您維持最佳的運作、安全性和成本效益。</block>
   <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">自動掃描使用 AWS API 執行，無需 vSphere 憑證。掃描結果按配置區域進行組織，每項結果都包括狀態、嚴重程度、受影響資源的詳細資訊以及逐步修復程序。</block>
   <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">在 Workload Factory 中實施架構良好的 EVS 配置</block>
-  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.== 成本</block>
   <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 審查針對您 EVS 環境的精心設計見解</block>
   <block id="9af4d557947285cd35bace6367e46950" category="paragraph">當您的 EVS 環境被發現時，Workload Factory 會自動執行每日 Well-Architected 掃描，以識別組態問題並提供修復建議。</block>
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">瞭解如何實作架構良好的組態</block>
@@ -1064,4 +1062,15 @@
   <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">安全重點在於透過風險評估和緩解策略來保護資料、系統和資產。</block>
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">* 叢集節點管理 *</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">請確保您的 EVS 叢集節點已配置適當的 EC2 停止和終止保護。EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管理。如果沒有適當的 EC2 層級保護，節點可能會意外地從 EC2 主控台停止或終止，這可能導致虛擬機器資料無法使用或資料遺失。</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">在 NetApp Workload Factory 中支援 AWS GovCloud（US）</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory 支援 AWS GovCloud （US） 帳戶。使用 GovCloud 帳戶，您可以在 AWS GovCloud （US） 區域中部署和管理儲存工作負載。</block>
+  <block id="caa606c0b1085a846c384cef14c3a17f" category="doc">EVS TCO 計算器中的 i7i.metal-24xl 執行個體支援</block>
+  <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">EVS TCO 計算器現已支援使用 AWS i7i.metal-24xl EC2 執行個體作為叢集主機。與 i4i.metal 配置相比，這些執行個體可將 EVS 的運算起始成本降低約 33%，vSAN 儲存起始成本降低約 25%。</block>
+  <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">計算器會自動比較兩種執行個體類型，並選擇最具成本效益的方案。新增的比較部分並排顯示 EVS 主機配置，方便您找到最符合自身需求的配置。</block>
+  <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">計算 EVS 的預計節省量</block>
+  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
+  <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">2026年7月6日</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026 年 5 月 31 日</block>
 </blocks>
