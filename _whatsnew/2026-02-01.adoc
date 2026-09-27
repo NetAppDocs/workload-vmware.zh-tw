@@ -4,6 +4,7 @@
 
 
 
+[[well-architected-analysis-for-amazon-elastic-vmware-service]]
 === 針對 Amazon Elastic VMware Service 的架構完善分析
 
 Workload Factory 現在可為您的 Amazon Elastic VMware Service（EVS）環境提供自動化、架構完善的分析。每日掃描可識別配置錯誤，並提供詳細的修復建議，幫助您維持最佳的運作、安全性和成本效益。

@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-data-reduction-ratio-help]]
 === VMware 移轉顧問的資料減量比率有助於您
 
 此版本的 VMware Workload Factory 提供資料減量比助理。資料減量比率助理可協助您在準備 AWS 雲端上線時、決定哪種比率最適合您的 VMware 庫存和儲存資產。

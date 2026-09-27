@@ -19,6 +19,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[support-registration-overview]]
 == 支援登錄總覽
 
 註冊您的帳戶 ID 支援訂閱（位於NetApp控制台中的「支援資源」頁面上的 20 位 960xxxxxxxxx 序號）作為您的單一支援訂閱 ID。每個NetApp帳號級支援訂閱都必須註冊。
@@ -27,12 +28,14 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[register-your-account-for-netapp-support]]
 == 註冊您的帳戶以取得 NetApp 支援
 
 若要註冊支援並啟動支援權利，您帳戶中的使用者必須將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。
 
 
 
+[[existing-customer-with-an-nss-account]]
 === 現有的客戶、擁有一個新服務客戶帳戶
 
 如果您是擁有 NSS 帳戶的NetApp客戶，只需透過NetApp控制台註冊即可獲得支援。
@@ -59,6 +62,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[existing-customer-but-no-nss-account]]
 === 現有客戶、但無NSS.帳戶
 
 如果您是現有NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的NetApp控制台登入關聯。
@@ -75,6 +79,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[brand-new-to-netapp]]
 === NetApp全新推出
 
 如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。

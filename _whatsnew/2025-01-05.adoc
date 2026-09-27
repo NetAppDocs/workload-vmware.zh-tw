@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2 移轉顧問的改善
 
 此版本的BlueXP Workload Factory for VMware 對遷移顧問體驗進行了多項改進：

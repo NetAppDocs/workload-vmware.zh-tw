@@ -17,6 +17,7 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 
 
 
+[[requirements]]
 == 需求
 
 * 您必須擁有 Amazon Elastic VMware Service 訂閱。
@@ -25,6 +26,7 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 
 
 
+[[considerations]]
 == 注意事項
 
 * 您可以使用「快速建立」或「進階建立」選項。進階建立提供數個額外的儲存參數、可供您自訂。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["瞭解這兩個選項的功能"]
@@ -33,6 +35,7 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 
 
 
+[[steps]]
 == 步驟
 
 . 在 * 審查計畫 * 頁面底部、選取 * 部署 * 、隨即顯示建立 ONTAP 檔案系統的 FSX 頁面。
@@ -124,6 +127,7 @@ summary: 在您驗證建議的 FSx for ONTAP檔案系統（或在某些情況下
 
 
 
+[[result]]
 == 結果
 
 已部署適用於 ONTAP 檔案系統的 FSX 。現在您可以使用 Codebox 中的 AWS CloudFormation 範本將建議的 VM 配置部署到您的 Amazon Elastic VMware Service 環境。

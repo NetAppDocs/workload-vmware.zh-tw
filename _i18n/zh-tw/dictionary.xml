@@ -614,7 +614,6 @@
   <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*：Workload Factory 包含 CloudShell CLI，可透過基於瀏覽器的單一 CLI 跨帳號管理和操作 AWS 和NetApp環境。從 Workload Factory 控制台頂部欄存取 CloudShell。</block>
   <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP檔案系統和其他 AWS 資源。</block>
   <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*：使用 AWS CloudFormation 程式碼執行您在 Workload Factory 控制台中定義的操作，以從您的 AWS 帳戶中的 CloudFormation 堆疊對 AWS 和第三方資源進行建模、配置和管理。</block>
-  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory 提供者*：使用 Terraform 建置和管理在 Workload Factory 控制台中產生的基礎架構工作流程。</block>
   <block id="62045227a15437e7b8cd0fed75ae596c" category="paragraph">使用 Workload Factory for VMware 是免費的。</block>
   <block id="e61183d7f582e42cf2a5f9b7d61ac0ee" category="paragraph">您需要根據遷移顧問的建議支付部署的 AWS 資源的費用。</block>
   <block id="63f2f07c0a027b7cde1cfd93d37fcb19" category="paragraph">無需NetApp的特殊授權即可使用 Workload Factory for VMware。</block>
@@ -1041,7 +1040,6 @@
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">運作方式</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory 每日分析您在 Amazon FSx for NetApp ONTAP 檔案系統部署上執行的工作負載。此分析提供架構完善的狀態資訊、洞察分析和建議。</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">每日分析完成後，部署的 Well-architected 儀表板會顯示配置狀態為「已最佳化」或「未最佳化」。您可以在這裡查看總優化得分、按類別劃分的配置問題以及配置問題和建議清單。您可以查看針對配置問題的建議。部分問題可由 Workload Factory 自動修復，而其他問題則需要人工幹預。在這種情況下，Workload Factory 會提供詳細說明，幫助您實施建議的變更。</block>
-  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">您可以忽略不適用於您環境的配置分析。這樣可以避免不必要的警報和不準確的優化結果。當您忽略某個設定分析時，Workload Factory 不會將該配置計入總最佳化得分。</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">為什麼這很重要</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory 將最佳實踐應用於大型儲存、資料庫和 VMware 環境，透過持續評估與建議洞察和修復措施相結合。在 Workload Factory 主控台中套用的自動化修復可減少人為錯誤、確保統一管理，並維護工作負載基礎架構的效能和可靠性。</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析要求</block>
@@ -1068,9 +1066,13 @@
   <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">EVS TCO 計算器現已支援使用 AWS i7i.metal-24xl EC2 執行個體作為叢集主機。與 i4i.metal 配置相比，這些執行個體可將 EVS 的運算起始成本降低約 33%，vSAN 儲存起始成本降低約 25%。</block>
   <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">計算器會自動比較兩種執行個體類型，並選擇最具成本效益的方案。新增的比較部分並排顯示 EVS 主機配置，方便您找到最符合自身需求的配置。</block>
   <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">計算 EVS 的預計節省量</block>
-  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
   <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">2026年7月6日</block>
   <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026 年 5 月 31 日</block>
+  <block id="034feb9138972a75bb0c4407e9663857" category="paragraph"><block ref="034feb9138972a75bb0c4407e9663857" category="inline-link-macro-rx"></block></block>
+  <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">您可以忽略不適用於您環境的組態分析。這樣可以避免不必要的警示和不準確的最佳化結果。</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">深入瞭解自訂規則</block>
+  <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
 </blocks>

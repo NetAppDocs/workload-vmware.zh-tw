@@ -17,6 +17,7 @@ summary: 登入NetApp Workload Factory 以存取 VMware 規劃中心。您可以
 
 
 
+[[requirements]]
 == 需求
 
 * 您必須擁有使用者名稱和密碼才能存取工作負載工廠。如果您還沒有帳號，請立即建立帳號。請參閱說明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["請按這裡"]。
@@ -25,6 +26,7 @@ summary: 登入NetApp Workload Factory 以存取 VMware 規劃中心。您可以
 
 
 
+[[steps]]
 == 步驟
 
 . 使用以下方式之一登入 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^] 。

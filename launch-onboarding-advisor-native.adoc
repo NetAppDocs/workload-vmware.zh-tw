@@ -17,6 +17,7 @@ summary: 登入NetApp Workload Factory 以存取 VMware 遷移顧問。您將按
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == 根據內部部署 vSphere 環境建立部署計畫
 
 您可以將內部部署 vSphere 環境中目前的虛擬機器組態移轉至 Amazon EC2 中的虛擬機器、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 作為外部資料存放區。

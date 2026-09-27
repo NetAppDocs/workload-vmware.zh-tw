@@ -15,18 +15,21 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[manage-vm-inventory-data]]
 == 管理虛擬機器庫存數據
 
 使用規劃中心建立和管理 VM 庫存資料。
 
 
 
+[[upload-vm-inventory-data]]
 === 上傳虛擬機器清單數據
 
 當您準備好使用 Workload Factory 探索遷移到 Amazon AWS 環境的選項時，您可以上傳 VM 庫存資料。參考link:upload-vm-inventory.html["上傳虛擬機器清單數據"]以取得說明。
 
 
 
+[[rename-a-dataset]]
 === 重新命名資料集
 
 您可以變更已儲存資料集的名稱。
@@ -43,6 +46,7 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[delete-a-dataset]]
 === 刪除資料集
 
 當不再需要資料集時，您可以隨時刪除它。
@@ -59,12 +63,14 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[manage-migration-plans]]
 == 管理遷移計劃
 
 使用遷移中心建立和管理遷移計劃。
 
 
 
+[[provision-a-migration-plan]]
 === 制定遷移計劃
 
 您可以選擇遷移計劃並進行配置，以便將虛擬機器遷移到您選擇的 Amazon AWS 環境。
@@ -88,6 +94,7 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === 編輯遷移計劃的註釋
 
 如果您需要更改遷移計劃的註釋詳細信息，請在規劃中心內編輯註釋。
@@ -105,6 +112,7 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === 建立遷移計劃的 PDF 或 CSV 報告
 
 產生一份包含遷移計劃詳細資訊的 PDF 或 CSV 報告。
@@ -122,6 +130,7 @@ VMware 規劃中心可讓您上傳新的 VM 庫存資料並建立新的遷移計
 
 
 
+[[delete-a-migration-plan]]
 === 刪除遷移計劃
 
 當不再需要遷移計劃時，您可以隨時刪除它。

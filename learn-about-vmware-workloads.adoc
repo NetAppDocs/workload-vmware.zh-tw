@@ -15,6 +15,7 @@ NetApp Workload Factory for VMware 提供工具，可將您的資料從本機系
 
 
 
+[[what-is-netapp-workload-factory-for-vmware]]
 == 什麼是NetApp Workload Factory for VMware？
 
 NetApp Workload Factory for VMware 提供規劃中心和遷移顧問，協助您分析本地 vSphere 環境中的目前虛擬機器配置。遷移顧問隨後會產生一個計劃，將推薦的虛擬機器佈局部署到 Amazon EVS、Amazon EC2、VMware Cloud on AWS vSphere 叢集或 Google Cloud VMware Engine，並使用自訂的雲端原生儲存作為外部資料儲存。對於 AWS 環境，這包括 Amazon FSx for NetApp ONTAP 檔案系統。對於 Google Cloud 環境，這包括 Google Cloud NetApp Volumes。規劃中心作為 Workload Factory for VMware 的控制面板，可讓您管理已儲存的虛擬機器清單資料集和已儲存的遷移計劃，並配置任何已儲存的遷移計劃。
@@ -25,6 +26,7 @@ Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上�
 
 
 
+[[how-the-vmware-migration-advisors-work]]
 == VMware 遷移顧問的工作原理
 
 遷移顧問可以幫助您將運行在任何 VMware 支援的資料儲存上的本機虛擬機（VM）及其資料遷移到 Amazon EVS、Amazon EC2、VMware Cloud 或 Google Cloud VMware Engine 資料存儲，其中包括在 FSx for ONTAP 檔案系統或 Google Cloud NetApp Volumes 上的補充 NFS 資料儲存。
@@ -33,6 +35,7 @@ Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上�
 
 
 
+[[what-you-can-do-with-the-migration-advisors]]
 == 移民顧問能為您做些什麼
 
 遷移顧問提供以下功能：
@@ -48,6 +51,7 @@ Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上�
 
 
 
+[[benefits-of-using-the-migration-advisors]]
 == 使用移民顧問的好處
 
 將您目前基礎架構的部分內容移轉到 Amazon EC2、Amazon EBS、VMware Cloud on AWS 或 Google Cloud VMware Engine，並使用雲端原生儲存作為外部 NFS 資料存放區，可帶來以下好處：
@@ -63,6 +67,7 @@ Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上�
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == 使用NetApp Workload Factory 的工具
 
 您可以將NetApp Workload Factory 與以下工具一起使用：
@@ -73,11 +78,12 @@ Amazon FSx for NetApp ONTAP 是一個建構於 NetApp 的 ONTAP 檔案系統上�
 * *CloudShell CLI*：Workload Factory 包含 CloudShell CLI，可透過基於瀏覽器的單一 CLI 跨帳號管理和操作 AWS 和NetApp環境。從 Workload Factory 控制台頂部欄存取 CloudShell。
 * *REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP檔案系統和其他 AWS 資源。
 * *CloudFormation*：使用 AWS CloudFormation 程式碼執行您在 Workload Factory 控制台中定義的操作，以從您的 AWS 帳戶中的 CloudFormation 堆疊對 AWS 和第三方資源進行建模、配置和管理。
-* *Terraform NetApp Workload Factory 提供者*：使用 Terraform 建置和管理在 Workload Factory 控制台中產生的基礎架構工作流程。
+* *NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。
 
 
 
 
+[[well-architected-analysis-for-evs-environments]]
 == 針對 EVS 環境的架構完善分析
 
 「架構完善」標籤可對您的 Amazon Elastic VMware Service (EVS) 環境進行每日自動分析，以確保其符合 AWS 和 NetApp 最佳實務。此標籤可識別配置問題，並提供詳細的修復指南，幫助您維持最佳的運作、安全性和成本效益。
@@ -88,6 +94,7 @@ link:view-evs-well-architected.html["在 Workload Factory 中實施架構良好�
 
 
 
+[[cost]]
 == 成本
 
 使用 Workload Factory for VMware 是免費的。
@@ -96,12 +103,14 @@ link:view-evs-well-architected.html["在 Workload Factory 中實施架構良好�
 
 
 
+[[licensing]]
 == 授權
 
 無需NetApp的特殊授權即可使用 Workload Factory for VMware。
 
 
 
+[[regions]]
 == 區域
 
 所有支援 FSx for ONTAP 的商業區域均支援 Workload Factory。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["看看支援的亞馬遜區域。"^]

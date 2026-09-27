@@ -4,6 +4,7 @@
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service-for-specific-regions]]
 === 計算遷移到 Amazon Elastic VMware Service 為特定區域節省的成本
 
 現在，您可以探索不同雲端遷移部署選項的價值，優化解決方案評估的投入，並深入了解有可能在雲端帶來價值和節省的解決方案。

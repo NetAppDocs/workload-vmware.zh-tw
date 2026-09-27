@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: 檢視 Workload Factory 中 EVS 組態的架構良好狀態，並根據 AWS 和 NetApp 最佳實務遵循補救指南。 
 ---
 = 實作架構良好的 EVS 配置
@@ -15,6 +15,7 @@ summary: 檢視 Workload Factory 中 EVS 組態的架構良好狀態，並根據
 
 
 
+[[about-this-task]]
 == 關於此任務
 
 使用 AWS API 對所有已發現的 EVS 環境進行每日自動掃描，分析您的 EVS 配置，並識別可能影響可用性、彈性、安全性或成本優化的潛在問題。掃描結果按配置區域進行分類，每項結果都包含狀態、嚴重程度、受影響資源的詳細資訊以及逐步修復程序。
@@ -29,6 +30,7 @@ summary: 檢視 Workload Factory 中 EVS 組態的架構良好狀態，並根據
 
 
 
+[[understanding-well-architected-insights]]
 === 瞭解架構完善的洞察
 
 Well-architected 選項卡顯示以下內容：
@@ -43,6 +45,7 @@ Well-architected 選項卡顯示以下內容：
 
 
 
+[[scan-frequency]]
 === 掃描頻率
 
 系統會自動對所有已發現的 EVS 配置執行架構完善的掃描。掃描調度方面的關鍵細節如下：
@@ -58,6 +61,7 @@ NOTE: 目前不支援按需執行 well-architected 掃描。所有掃描均按�
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 您必須擁有 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["已新增 AWS 憑證"^]VMware 工作負載的 _檢視、規劃和分析_ 權限。
@@ -66,6 +70,7 @@ NOTE: 目前不支援按需執行 well-architected 掃描。所有掃描均按�
 
 
 
+[[access-the-well-architected-status-tab]]
 == 存取 Well-Architected 狀態選項卡
 
 .步驟
@@ -89,10 +94,12 @@ NOTE: 目前不支援按需執行 well-architected 掃描。所有掃描均按�
 
 
 
+[[view-well-architected-assessments]]
 == 檢視架構完善的評估
 
 
 
+[[cluster-node-management]]
 === 叢集節點管理
 
 此操作會評估您的 EVS 叢集節點是否配置了適當的 EC2 停止和終止保護。
@@ -137,6 +144,7 @@ EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管
 
 
 
+[[evs-environment-resiliency]]
 === EVS 環境彈性
 
 此操作會評估您的 EVS 叢集節點是否已正確分佈在分割區放置群組中。
@@ -193,6 +201,7 @@ EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管
 
 
 
+[[whats-next]]
 == 接下來
 
 在審閱您的 Well-Architected 洞察並實施建議的變更後：
