@@ -42,8 +42,6 @@
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">部署適用於 ONTAP 檔案系統的 FSX 之後、您需要將該系統連線至 AWS 基礎架構上的 VMware Cloud 。您的 SDDC 提供網路選項、可透過 VPC 對等功能將網路連線延伸至外部 NFS 儲存磁碟區、以連線至 ONTAP 檔案系統的 FSx 。</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">將適用於 ONTAP 檔案系統的 FSX 連線至 AWS 上的 VMware Cloud</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">為 ONTAP 檔案系統部署 FSX 之後、您需要將該系統連線至 AWS 基礎架構上的 VMware Cloud 。您的軟體定義資料中心（ SDDC ）提供網路選項、可透過 VPC 對等功能將網路連線延伸至外部 NFS 儲存磁碟區、連接至適用於 ONTAP 檔案系統的 FSx 。</block>
-  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">如需詳細資訊、請參閱 Amazon VPC 對等記錄</block>
-  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
   <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">下圖顯示如何使用 VPC 對等功能、將單一可用性區域（ AZ ） SDDC 叢集連接至適用於 ONTAP 單一 AZ 部署的 FSX 。</block>
   <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">顯示如何使用 VPC 對等連接將單一 AZ SDDC 叢集連接至 ONTAP 單一 AZ 部署的 FSX 的圖表。</block>
   <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
@@ -1075,4 +1073,48 @@
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">深入瞭解自訂規則</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
+  <block id="b1980e2ec22c1bd0d98ba755ec8c6e01" category="inline-link">閱讀 Amazon FSx for NetApp ONTAP 搭配 VMware Cloud on AWS 的 VPC 對等連線</block>
+  <block id="0ced83efbc83d6325bf854e3d9ff902a" category="paragraph"><block ref="0ced83efbc83d6325bf854e3d9ff902a" category="inline-link-rx"></block></block>
+  <block id="38c274fda05ac23bc0c0e3ae43dd64a4" category="summary">關於 NetApp Workload Factory for VMware 移轉規劃和架構完善分析的常見問題。</block>
+  <block id="921197c062d49527e44f758465813b42" category="doc">NetApp Workload Factory for VMware 常見問題解答</block>
+  <block id="9c5f05ee10a27623a15b9e8038e413b7" category="paragraph">本常見問題旨在解答有關 NetApp Workload Factory for VMware 的常見問題。它重點介紹移轉規劃概念、清單、儲存設備、成本、支援的區域以及 EVS 分析，這些內容在評估或準備 VMware 工作負載移轉時非常有用。</block>
+  <block id="d437e7d8b6513f91bbd58e0b1e08c90b" category="section-title">移轉規劃</block>
+  <block id="68a48fbb2af3e6d7bde13f9b79c1c9b7" category="paragraph-title">NetApp Workload Factory for VMware 能協助我做什麼？</block>
+  <block id="7abe51b29673391c62dbf3f8749ad887" category="paragraph">它提供規劃中心和移轉顧問，用於分析內部部署 VMware 虛擬機器組態並建立雲端環境的移轉計畫。您可以在規劃中心管理已儲存的虛擬機器清單資料集和計畫。</block>
+  <block id="22f263390246a9c39cabb176ef631aad" category="paragraph-title">我可以規劃哪些移轉目標和外部儲存設備選項？</block>
+  <block id="e639c5502f615dfde1d0c499a1d62172" category="paragraph">顧問支援下列規劃：</block>
+  <block id="0adfc65f94dcc3f5f21a413837937795" category="list-text">*Amazon EVS、Amazon EC2 和 VMware Cloud on AWS*：Amazon FSx for NetApp ONTAP 外部資料儲存。</block>
+  <block id="814f242de9ef1ad90bde17a1732e1275" category="list-text">*Google Cloud VMware Engine*：Google Cloud NetApp Volumes 外部 NFS 資料儲存。</block>
+  <block id="a3f6e39522270495b7ade2db49e36aff" category="inline-link-macro">Amazon EVS</block>
+  <block id="c421d122321bec48d6b30858f4e7b515" category="inline-link-macro">Amazon EC2</block>
+  <block id="4dab2f9796b0af6304d00e21e2b9dfb4" category="inline-link-macro">VMware Cloud on AWS</block>
+  <block id="8cb69aa5b1609d0a39f0fcd576c07df6" category="inline-link-macro">Google Cloud VMware Engine</block>
+  <block id="1c262301540de33d6756655a686ed5b9" category="paragraph">如需每個目標的詳細資訊，請參閱 <block ref="9c2b1296fd4e6905a5138236d0b63e57" category="inline-link-macro-rx"></block>、<block ref="b56ba05800e5da500ec14669dcbe24fe" category="inline-link-macro-rx"></block>、<block ref="dbdf5d8b354615c538eac17b1cb7ef66" category="inline-link-macro-rx"></block> 及 <block ref="1604998c59575416bb03744d61eab4a1" category="inline-link-macro-rx"></block> 的移轉顧問主題。</block>
+  <block id="5ad7d3b807f99b46f69658ed88815e6d" category="paragraph-title">移轉顧問在制定計畫時會考慮哪些因素？</block>
+  <block id="e2145d872370b5ed7066380746bb8ac4" category="paragraph">顧問會分析 VM 組態，協助決定要移轉哪些 VM，估算雲端原生外部資料存放區所需的空間，並提出部署計畫。特定目標的選項可包括 VM 選擇、容量與保護偏好設定，以及儲存設備指派。</block>
+  <block id="a0d2df962201e828aaf8c55a8a8fcb4a" category="paragraph-title">Workload Factory 能否為每個移轉目標資源配置建議的資源？</block>
+  <block id="94985dfc0712efb12dc10d8fa2fc5e54" category="paragraph">Workload Factory 支援在 Amazon EC2、Amazon EVS 和 VMware Cloud on AWS 上部署。對於 Google Cloud VMware Engine，該計畫提供產生的 Terraform 程式碼，用於在您的 Terraform 環境中資源配置 Google Cloud NetApp Volumes NFS 資料儲存。請參閱 <block ref="4f67d9858e997a397a4969c6aa8fe655" category="inline-link-macro-rx"></block>、<block ref="6667ebc08e629643a12f3b7485d0395c" category="inline-link-macro-rx"></block> 和 <block ref="333d1147dd4e020c07f15b6f692fcc0e" category="inline-link-macro-rx"></block> 的部署計畫主題。</block>
+  <block id="6318da2d496e169f337afd4ff402526c" category="paragraph-title">外部資料儲存如何與 VMware 儲存設備相容？</block>
+  <block id="15e3eaa8417738fa9506f66df80fc23b" category="paragraph">FSx for ONTAP 或 Google Cloud NetApp Volumes 提供 NFS 資料存放區，可作為 vSAN 儲存設備的補充。此儲存設備可獨立於運算進行擴充，因此您無需新增主機即可增加儲存設備。</block>
+  <block id="55d66ec039b75fc2759a50f781a06ed7" category="section-title">虛擬機器清單</block>
+  <block id="a24d65bece3aee2663d885c0a64e92a7" category="paragraph-title">我可以使用哪些虛擬機器清單資料來源進行移轉規劃？</block>
+  <block id="f9af019e9f1c862aee89fe05ceb9591a" category="paragraph">您可以從 RVTools、Workload Factory VM 收集器指令碼或 NetApp Data Infrastructure Insights 提供清單。RVTools 可擷取 VM 組態資訊；收集器也可擷取目前的 VM 效能資料，而 Data Infrastructure Insights 則透過 API 通訊提供基礎架構資訊。如需詳細資訊，請參閱 <block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="7afee89e1a9e2debd08db073ec3934d9" category="paragraph-title">為什麼我會選擇 VM 收集器而不是 RVTools？</block>
+  <block id="be43335cbb078eb76cc8d740b569e465" category="inline-link-macro">擷取虛擬機器組態</block>
+  <block id="d3e4b204e59f5a98d1ebcceda70307fc" category="paragraph">收集器會擷取 VM 組態以及目前的讀取與寫入 IOPS 和處理量統計資料，這可支援更精確的規劃。RVTools 會擷取組態資訊，但不提供這些效能統計資料。如需詳細資訊，請參閱 <block ref="adf5172dac9e3bdd5d6cd83ffca17ea5" category="inline-link-macro-rx"></block>。</block>
+  <block id="8fed66a0c40dda072c94d458c872ef62" category="section-title">成本和可用度</block>
+  <block id="20fdf4b8688f4afc30202991997b4c2e" category="paragraph-title">使用 Workload Factory for VMware 需要付費嗎？需要 NetApp 授權嗎？</block>
+  <block id="341d2dffce381e61275067753696f7b6" category="paragraph">使用 Workload Factory for VMware 無需付費，也不需要任何特殊的 NetApp 授權。您只需根據顧問建議，為您所部署的 AWS 資源付費。</block>
+  <block id="765b05cb563da6f40d663d2593d0c763" category="paragraph-title">Workload Factory for VMware 可以與哪些 AWS 區域搭配使用？</block>
+  <block id="086cdec2519a73cf27a8a12e453eab47" category="inline-link">支援的 Amazon 區域</block>
+  <block id="448e3e4c660376567a40289818c91d91" category="paragraph">Workload Factory 在支援 FSx for ONTAP 的商業區域中提供支援。不支援中國區域、Secret Cloud 和 Top Secret Cloud。如需目前的 AWS 區域可用度，請參閱<block ref="809309708af46b9486c52391ea92f7d9" category="inline-link-rx"></block>。</block>
+  <block id="7f68e2bc2b8cbb72e6a5018e54563f19" category="paragraph-title">我可以從 EVS 節省計算機學到什麼？</block>
+  <block id="051af7bcf03c0c0d23d599186c282824" category="inline-link-macro">計算 EVS 節省</block>
+  <block id="4277946ad96fa77ee168524d39d3e1f0" category="paragraph">此計算器比較了使用和不使用 FSx for ONTAP 時 EVS 的潛力成本。您可以按區域、實體 CPU、實體記憶體容量、虛擬機器儲存設備和 EVS 計費方案調整估算值。如果 FSx for ONTAP 被確定為最具成本效益的儲存設備，您可以建立詳細的評估。請參閱 <block ref="778cca21f3f5bbf5509fd7145d83f99e" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba77922ef9e1baa3033e9b990b664a40" category="section-title">EVS 架構完善的分析</block>
+  <block id="f57cca92e666a3209a8832215b03ddf0" category="paragraph-title">EVS 架構完善的分析會檢視哪些內容？</block>
+  <block id="6afd14ee08adf3254ece642e2de1a862" category="paragraph">它分析已發現的 EVS 環境，以取得可靠性和安全性結果。記錄的檢查會評估分區放置群組的經銷以確保彈性，以及叢集節點的 EC2 停止和終止保護。結果包括狀態、嚴重性、受影響的資源和補救指引。請參閱 <block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>。</block>
+  <block id="92cf0e18866b04760e70a131cb85dfe9" category="paragraph-title">EVS 架構完善的分析多久執行一次？它需要哪些存取？</block>
+  <block id="dfd41ab037a25f5c2fce16d5ee27e400" category="inline-link-macro">EVS 架構良好的分析要求</block>
+  <block id="dff9e7d880dfe3330c2697a30f505e01" category="paragraph">系統每天使用 AWS API 自動掃描一次已探索的 EVS 組態；不需要 vSphere 憑證與 vCenter 連線。您需要具備 VMware 工作負載的檢視、規劃與分析權限的 AWS 憑證，以及至少一個已探索的 EVS 環境。如需詳細資訊，請參閱 <block ref="49902b356d6c7776da8fe31c598cd788" category="inline-link-macro-rx"></block>。</block>
 </blocks>
