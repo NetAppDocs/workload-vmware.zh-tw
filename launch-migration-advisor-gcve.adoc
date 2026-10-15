@@ -4,7 +4,7 @@ permalink: launch-migration-advisor-gcve.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, gcve, google cloud vmware engine, gcnv, deployment, plan 
 summary: 從 VMware 規劃中心，您可以啟動 Google Cloud VMware Engine 遷移顧問，以協助建立符合您需求的客製化遷移計畫。 
 ---
-= 使用遷移顧問為 Google Cloud VMware Engine 建立部署計畫
+= 為 Google Cloud VMware Engine 建立部署計畫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

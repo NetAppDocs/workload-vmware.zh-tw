@@ -4,7 +4,7 @@ permalink: upload-vm-inventory.html
 keywords: vm workloads, capture vm details 
 summary: 您可以使用規劃中心上傳有關目前 VMware 環境的資訊。 
 ---
-= 將虛擬機器庫存資料上傳至NetApp Workload Factory
+= 將虛擬機器清單資料上傳至 Workload Factory for VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

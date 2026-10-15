@@ -12,65 +12,65 @@ settings:
   langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
-  - title: VMware 工作負載文件
+  - title: NetApp Workload Factory for VMware 文檔
     url: "/index.html"
   - title: 版本資訊
     entries:
-    - title: 新增功能
+    - title: NetApp Workload Factory for VMware 有哪些新功能
       url: "/whats-new.html"
   - title: 開始使用
     entries:
     - title: 了解NetApp Workload Factory for VMware
       url: "/learn-about-vmware-workloads.html"
-    - title: 遷移到 Amazon EVS 的快速入門
+    - title: Amazon EVS 移轉快速入門
       url: "/quick-start-evs.html"
-    - title: 快速開始移轉至 Amazon EC2
+    - title: Amazon EC2 移轉快速入門
       url: "/quick-start-native.html"
-    - title: 快速開始移轉至 AWS 上的 VMware Cloud
+    - title: VMware Cloud on AWS 移轉快速入門
       url: "/quick-start.html"
-    - title: 遷移至 Google Cloud VMware Engine 的快速入門
+    - title: Google Cloud VMware Engine 移轉快速入門
       url: "/quick-start-gcve.html"
     - title: 探索 VMware 規劃中心
       url: "/explore-planning-center.html"
   - title: 使用 VMware 規劃中心
     entries:
-    - title: 上傳虛擬機器清單數據
+    - title: 將虛擬機器清單資料上傳至 Workload Factory for VMware
       url: "/upload-vm-inventory.html"
     - title: 移轉到 Amazon Elastic VMware Service
       entries:
-      - title: 探索儲蓄
+      - title: 透過 NetApp Workload Factory for VMware 探索 Amazon EVS 節省效益
         url: "/calculate-evs-savings.html"
       - title: 手動建立部署計劃
         url: "/launch-migration-advisor-evs-manual.html"
-      - title: 使用移轉顧問建立部署計畫
+      - title: 使用遷移顧問為 Amazon EVS 建立部署計劃
         url: "/launch-migration-advisor-evs.html"
-      - title: 部署 ONTAP 檔案系統的建議 FSX
+      - title: 為 Amazon EVS 部署 FSx for ONTAP
         url: "/deploy-fsx-file-system-evs.html"
     - title: 遷移至 Google Cloud VMware Engine
       entries:
-      - title: 使用移轉顧問建立部署計畫
+      - title: 為 Google Cloud VMware Engine 建立部署計畫
         url: "/launch-migration-advisor-gcve.html"
     - title: 移轉至 Amazon EC2
       entries:
-      - title: 使用移轉顧問建立部署計畫
+      - title: 建立 Amazon EC2 部署計畫
         url: "/launch-onboarding-advisor-native.html"
-      - title: 部署 ONTAP 檔案系統的建議 FSX
+      - title: 為 Amazon EC2 部署 FSx for ONTAP
         url: "/deploy-fsx-file-system-native.html"
     - title: 移轉至 AWS 上的 VMware Cloud
       entries:
-      - title: 使用移轉顧問建立部署計畫
+      - title: 為 VMware Cloud on AWS 建立部署計畫
         url: "/launch-onboarding-advisor.html"
-      - title: 部署 ONTAP 檔案系統的建議 FSX
+      - title: 為 VMware Cloud on AWS 部署 FSx for ONTAP
         url: "/deploy-fsx-file-system.html"
-      - title: 將適用於 ONTAP 的 FSX 連接至 AWS 上的 VMware Cloud
+      - title: 將適用於 ONTAP 檔案系統的 FSX 連線至 AWS 上的 VMware Cloud
         url: "/connect-sddc-to-fsx.html"
-      - title: 將資料移轉至新的基礎架構
+      - title: 將 VM 資料移轉至 VMware Cloud on AWS
         url: "/migrate-data.html"
   - title: 管理和監控
     entries:
     - title: EVS 組態的組態分析
       url: "/configuration-analysis.html"
-    - title: 實作架構良好的 EVS 配置
+    - title: 在 Workload Factory for VMware 中檢閱架構良好的 EVS 發現
       url: "/view-evs-well-architected.html"
   - title: 知識與支援
     entries:

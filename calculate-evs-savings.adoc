@@ -4,7 +4,7 @@ permalink: calculate-evs-savings.html
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco, regions 
 summary: 計算將 Amazon EVS 與 FSx for ONTAP結合使用可以節省多少。 
 ---
-= 探索使用NetApp Workload Factory 節省 Amazon Elastic VMware Service 成本的方法
+= 透過 NetApp Workload Factory for VMware 探索 Amazon EVS 節省效益
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

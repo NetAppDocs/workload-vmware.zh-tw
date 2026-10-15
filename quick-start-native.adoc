@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: 開始使用 VMware 移轉顧問、將您目前的基礎架構移轉至 Amazon EC2 、並使用 Amazon FSX for ONTAP 做為外部 NFS 資料存放區。 
 ---
-= 使用 VMware 工作負載移轉顧問快速開始移轉至 Amazon EC2
+= Amazon EC2 移轉快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
